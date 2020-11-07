@@ -1,0 +1,20 @@
+*{
+    background-color: #C6B8FF;
+}
+
+.ANABASLIK{
+    color:#CE482A;
+}
+
+.FOTO{
+    background-color: salmon;
+}
+
+.TOPLAMSONUC{
+    background-color: seagreen;
+    color: seagreen;
+}
+
+p{
+    text-indent: 40px;
+}

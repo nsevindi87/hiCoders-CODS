@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Week2 Nizami Sevindi DOM Uygulamalari</title>
+</head>
+<body>
+    <h1><u>Document Objekt Model`in (DOM) Görüntülenmesi ve Degistirilmesi</u></h1><br>
+    <details open="open">
+        <summary><strong> <mark>A- DOM Agacinin görüntülenmesi</mark></strong></summary>
+        <h3>1- Node (dügüm) incelemesi</h3>
+
+        <p>DOM agaci element paneli DOM ile iliskilendirilebiecek bütün aktivitelerin yer aldigi paneldir.
+        <strong>Node</strong> ifadesi DOM icersindeki en temel nesnedir. DOM agacinda karsilasacak her detay ayri bir Node olarak kabul edilir. 
+        Döküman icersinde herhangi bir Node incelenmek istenirse panele ulasmanin farkli yollari mevcuttur. <br></p>
+        
+        
+            <h3><b>Chrome DevTools Panelinin Acilma Sekilleri</b></h3>
+        
+            <ul>
+                <li>Incelenmek istenilen Node secilip menü listesinden "Inspect" secenegi ile</li>
+                <li>Chrome Menu seceneklerinden More Tools + Developer Tools ile </li>
+                <li> CTRL + SHIFT + I kisayolu ile </li>
+                <li>F12 kisayolu ile </li>
+                
+            </ul>
+        
+        <br>
+        <p>Panelin acilmasindan sonra bütün DOM yapisi ve Node`lar <i>elements</i> sekmesinde görüntülenebilir.
+        <br>
+        Özellikle bir kismin incelenmek istenilmesi halinde <img src="https://developers.google.com/web/tools/chrome-devtools/images/shared/inspect.png" alt=""> ikonu tiklanir. <br>   
+        Bu ikonun aktif hale gelmesinden fonra imlec ile incelenmek istenilen bolgeye tiklanarak o bölgeye ait Node larin getirilmesi saglanir.</p>
+
+        <h3>2- DOM agacinda klavye ile gezebilme</h3>
+        <p>DOM agacina girildikten sonra Node lar arainda klavye ile gezinebilmek mümkündür. <br>
+        Yukari veya asagi oklar ile tek tek gezinilebilir. <br>
+        Sol oka basildiginda secili olan Node`un kaynagi bir klasör gibi iceri taplanacaktir. <br>
+        Sag oka basildiginda ise kapali olan bir Node icersinde yer alan diger nodelari görünür hale getirecektir.
+
+        </p>
+        <h3>3- Sayfa icerisinde Gezinme Durumunda</h3>
+       <p>DOM agacinda inceleme yaparken sayfada baska bir bölümün acilmasi halinde secili Node kismina tekrar dönmek icin secili Node üzerine sag tiklanir ve <strong>"Scroll into view"</strong> sekmesi
+           tiklanarak tekrar ilk incelenilen yere geri dönülebilir.
+       </p>
+        <h3>4- NODE arastirmasi</h3>
+       <p>Elements sekmesinde bir string veya CSS gibi Node aramalari yapmak mumkundur. Klavyeden <strong>CTRL +F</strong> kisayolu kullanilarak arama gerceklestirilebilir.</p><br>
+        </details><br><br>
+        <details open="open">
+            <summary><strong><mark> B- NODE Düzenlemeleri</mark></strong></summary>
+        <h3>1- Icerik Düzenleme</h3>
+        <p>Secili olan Node üzerine cift tiklama sonrasi icerik silinerek farkli bir icerik girilebilir. Bu degisiklik sayfada da dogrudan görüntülenecektir.</p>
+        <h3>2-Özelliklerin Düzenlenmesi</h3>
+        <p>Secili olan Node üzerinde  Tag kismin cift tiklanarak secildikten sonra sag ok ile yan tarafina gelerek bu kisma yeni bir özellik eklenebilir.</p>
+        <h3>3-Node Type Degisimi</h3>
+        <p>Node icerisindeki Tag üzerine cift tiklanarak bu kisim baska bir özellik ile degistirilebilir halde gelir. Icerik degistirilince onaylanarak sayfaya yansimasi saglanir.</p>
+        <h3>4- Node Siralamasi</h3>
+        <p>Dom yapisinda bir node secildikten sonra sürükle birak yöntemi ile siralamasi degistirilebilir.</p>
+        <h3>5-Güclendirme Durumu</h3>
+        <p>Secili olan bir Node üzerine sag tiklayarak <strong>Force State > : hover </strong> sekmesi secilerek vurgulama saglanabilir.</p>
+        <h3>6- Gizli Node</h3>
+        <p>Secili olan Node üzerinde <strong>H</strong> tusuna basilarak Node gizlenmesi saglanir. Yine <strong>H</strong> tusuna basilarak gösterilmesi saglanir.</p>
+        <h3>7-Node Silinmesi</h3>
+        <p>Secilen Node <strong>delete</strong> tusuna basilarak silnebilir. Yine klavyeden <strong>CTRL+Z </strong> tuslari kullanilarak son yapilan silme islemi geri alinabilir.</p>
+        <br>
+        </details><br><br>
+        <details open="open">
+        <summary><strong><mark>C- Console Sekmesi Node Erisimi</mark></strong></summary>
+        <h3>1-Secili Olan Node'un $0 referanis</h3>
+        <p>Secili olan Node uzerinden <strong>console</strong></p>sekmesine gecilerek <strong>escape</strong>tusu ile <strong>$0</strong> tanimlamasi yapilabilir.
+        <br>*bunun pratikte ne ise yaradigini anladigim söylenemez.
+
+        <h3>2- Global Degisken Olarak Saklama</h3>
+        <p>Bir Node birden fazla kullanilmak istenildiginde Node üzerine gelip sag tiklayarak <strong>Store as global variable</strong></p> tiklanarak 
+        saklanabilir. Sonradan klavyeden <i>temp1</i> yazilarak saklanan Node erisim saglanabilir.
+        <h3>3- JavaScript Kodu'nun Kopyalanmasi</h3>
+        <p>Herhangi bir JS kodunun denenmek istenmesi kalinde Node üzerine sag tiklayarak <strong>Copy > Copy JS Path</strong> denilerek hafizaya alinir. Akabinde Console
+        kismina gelinerek <strong>enter</strong> tusu ile yapistirilmasi mumkundur.  </p>
+
+        </details><br><br>
+        <details open="open">
+            <summary><strong><mark> DOM Degisikliklerine Ara Verme </mark></strong></summary>
+            <h3>1- Özellik Degisiklerine Ara Verme</h3>
+            <p>Node üzerinde sag tiklandiktan sonra menüden <strong>Break On > Attribute Modifications</strong> secenekleri tiklanir.
+            Acilan pencerede durma dügmesine nastiktan sonra sayfanin hareket etmesi duracaktir. Tekrar hareket ettirebilmek icin <img src="https://developers.google.com/web/tools/chrome-devtools/images/shared/resume-script-execution.png"  alt="">ikonu tiklanmasi gerekmektedir.</p>
+            <h3>2- Node Kaldirmaya Ara Verme</h3>
+            <p>Bir Node silinmek ve ardindan duraklatilmak istenirse Node üzerine gelip sag tiklayarak <strong>Break On > Node Removal</strong> tiklanir.
+            Akabinde DevTool sayfayi duraklatarak Node silinmesine neden olan kodu vurgular. devam edilebilmesi icin <img src="https://developers.google.com/web/tools/chrome-devtools/images/shared/resume-script-execution.png" alt=""> tiklanmasi gerekir.</p>
+            <h3>3- Altsiralama Degisiklerine Ara Verme</h3>
+            <p>Altsiralamaya bir araverme Node konulduktan sonra DevTool altsiralamaya herhangi bir sey eklendiginde veya kaldirildiginda sayfa duraklatilir. Bunun icin <strong>Break On > Subtree Modifications</strong> secilmesi gerekmektedir.
+            Devam edilebilmesi icin <img src="https://developers.google.com/web/tools/chrome-devtools/images/shared/resume-script-execution.png" alt="x"> ikonuna tiklanmasi gerekir.  </p>
+
+
+        </details>
+
+
+
+    
+</body>
+</html>

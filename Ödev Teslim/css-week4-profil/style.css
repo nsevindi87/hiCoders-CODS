@@ -1,0 +1,245 @@
+/***********************************************
+                GENERAL
+*************************************************/
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+
+background{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 233, 248)
+}
+
+
+/***********************************************
+                CIRCLES
+*************************************************/
+
+/*--Büyük daire sol alt*/
+.daire1{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(89, 168, 233);
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+    margin-left: -5vw;
+    margin-top: 55vh;
+}
+/*--Büyük daire sag alt*/
+.daire2{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(73, 138, 190);
+    border-radius: 50%;
+    opacity: 0.8;
+    position: absolute;
+    margin-left: 75vw;
+    margin-top: 75vh;
+}
+/*--Büyük daire sag ust*/
+.daire3{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(141, 197, 243);
+    border-radius: 50%;
+    opacity: 0.4;
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: -5vh ;
+}
+/*--Büyük daire sol ust*/
+.daire4{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(183, 210, 233);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 10vh;
+}
+/*******************END OF circles************************/
+
+
+/***********************************************
+                    First Layer
+*************************************************/ 
+
+#first-layer{
+    display: flex;
+    justify-content: center;   
+    padding-top: 13vh;
+    /*burada neden align-content: center ise yaramiyor. margin verdigimde 
+    sayfanin baslangiciyla birlikte asagi iniyor. NEDEN*/
+}
+
+#first-layer-blue{
+    width: 325px;
+    height: 170px;
+    background: linear-gradient(100deg, rgb(128, 150, 240) 7%, rgba(173,221,249,1) 100%);
+    box-shadow: 5px 5px 40px rgb(146, 146, 146);
+}
+
+#first-layer-white{
+    width: 325px;
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 40px rgb(146, 146, 146);
+}
+/*******************END OF First Layer************************/
+
+
+
+/***********************************************
+                IKONS
+*************************************************/
+.topikons{
+    width:  25px;
+}
+
+#first-layer-blue section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.bottomikons{
+    width:  25px;
+    color: white;
+}
+
+#first-layer-white section{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 440px;
+}
+
+/*******************END OF IKONS************************/
+
+
+/***********************************************
+                SECOND LAYER
+*************************************************/
+
+.secondlayer-top{
+    width: 275px;
+    height: 175px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -550px;
+    margin-left: 27px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(146, 146, 146);
+    text-align: center;
+    padding-top: 14px ;
+}
+
+.secondlayer-top div ul, p{
+    color: rgb(153, 153, 153) ;
+}
+
+.secondlayer-bottom{
+    width: 275px;
+    height: 225px;
+    background-color: rgb(248, 248, 248);
+    margin-top: 200px;
+    margin-left: 27px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(146, 146, 146) ;
+}
+
+.secondlayer-bottom ul{
+    padding:0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.secondlayer-bottom ul li{
+    position: relative;
+}
+.secondlayer-bottom ul li a{ 
+    display: block;
+    width: 275px;
+    background-color: rgb(253, 251, 251);
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    padding: 19px 15px;
+    text-align: left;
+    border-radius: 10px;
+}
+.secondlayer-bottom ul li a:hover{ 
+    color: rgb(190, 10, 10); 
+    background-color: rgb(219, 217, 219);
+    border-radius: 10px;
+}
+
+.secondlayer-bottom ul li ul{
+    display: none;
+    position: absolute;
+}
+
+.secondlayer-bottom ul li:hover ul{
+    display:block;
+    left: 275px;
+    margin-top:-60px;
+}
+
+.head-account{
+    margin-top: -340px ;
+}
+
+.head-privacy{
+    margin-top: 260px;
+}
+
+.head-account, .head-privacy{
+    font-size: 14px;
+    padding-left: 10px;
+    color: rgb(202, 202, 202);
+}
+/*******************END OF SECOND LAYER************************/
+
+
+/***********************************************
+                PROFIL
+*************************************************/
+
+.profil-photo{
+    width: 75px;
+    height: 75px;
+    background-color: rgb(233, 231, 233);
+    margin-left: 130px;
+    margin-top: -210px;
+    border-radius: 50%;
+}
+
+.photo{
+    width: 75px;
+    z-index: 1;
+}  
+
+.social-icons {
+    text-align: center;
+}  
+
+  .social-icons li {
+    display:inline-block;
+    list-style-type:none;  
+}
+
+  .social-icons li a {
+    border-bottom: none;
+}
+
+  .social-icons li img {
+    width:20px;
+    height:20px;
+    margin-right: 20px;
+}
+
+  /*******************END OF PROFIL ************************/

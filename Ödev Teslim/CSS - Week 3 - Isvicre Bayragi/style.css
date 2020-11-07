@@ -1,0 +1,40 @@
+*{  
+    position: relative;
+    top:5px;
+    left:5px;
+}    
+
+#bayrakarkaplan{
+    width: 1100px;
+    height: 1100px;
+    background-color: #FF0000;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 0px 30px 30px rgb(138, 76, 76);
+}
+
+/*buradan sonrasi beyaz ikonun yapilmasini kapsar */
+
+#bayrakonplandik{
+    width: 240px;
+    height: 800px;
+    background-color: white;
+    position: absolute;
+    left: 430px;
+    top: 150px;
+    z-index: 2;
+}
+
+#bayrakonplanyatay{
+    width: 800px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    left: 150px;
+    top: 430px;
+    z-index: 3;
+}
+
+/*bu iki parca tek bir seferde yapilabilir mi arastirilacak.
+  ayrica bu haliyle tak bir arka plan yapilabilir mi oa bakilacak. 
+  Bu halinde arka plan yapilinca her bir parca icin ayri bir gölge birakiyor.*/

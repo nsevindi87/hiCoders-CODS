@@ -1,0 +1,56 @@
+#genelyapi{
+    width: 898px;  
+    border: 1px solid red ;
+    margin: auto;
+    margin-top: 25px;
+}
+
+#anaHeader{
+    width: 798px;
+    height: 80px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#icerikcerceve{
+    width: 800px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#anaSection{
+    width: 498px;
+    border: solid 1px red;
+    text-align: center;
+    float: left;
+}
+
+#anaAside{
+    width: 273px;
+    height: 498px;
+    border: red solid 1px;
+    text-align: center;
+    float: right;
+}
+
+#anaFooter{
+    width: 898px;
+    height: 200px;
+    border: 1px red solid;
+    text-align: left;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.anaArticle{
+    width: 398px;
+    height: 200px;
+    border: 1px red solid;
+    margin: auto;
+    margin-top: 25px;   
+    margin-bottom: 25px;
+}

@@ -1,0 +1,104 @@
+
+.header{
+    width: 900px;
+    height: 300px;
+    margin-left: 70px;
+    margin-top: 25px;
+    background-color: rgb(179, 137, 23);
+}
+header h1{
+    position: absolute;
+    margin: 40px 30px;
+    z-index: 2;
+    opacity: 0.6;
+}
+
+header img{
+    position: absolute;
+    margin: 30px;
+    z-index: 1;
+    width: 400px;
+    height: 250px;
+    opacity: 0.8
+}
+.arkaplan{
+    position: absolute;
+    padding-top: 100px;
+    z-index: 0;
+    font-size: 100px;
+    text-shadow: 10px 5px 15px rgb(59, 46, 117)
+}
+
+#anasection{
+    width: 550px;
+}
+
+.article{
+    color: rgb(189, 83, 79);
+    border: 3px red ridge;
+    margin: 70px;
+    padding: 15px;
+    background-color: rgb(219, 197, 164);
+}
+
+
+.ozgecmis{
+    width: 875px;
+    margin: 70px;
+    color: red;
+    background-color: rgb(205, 207, 175);   
+    
+}
+
+#a1{
+    font-style: italic;
+}
+
+#a3{
+    font-weight: bold;
+}
+
+#a4{
+    text-decoration: underline ;
+}
+
+#a5{
+    letter-spacing: 10px;
+}
+
+#a6{
+    text-transform: uppercase;
+}
+
+table {
+    width: 900px;
+    width: 900px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+table caption{
+    background-color: rgb(195, 106, 106);
+}
+
+table thead{ 
+    background-color: rgb(219, 133, 130);
+}
+
+table tbody{
+    background-color: rgb(224, 200, 200);
+}
+
+.footer{
+    background-color: rgb(80, 138, 146);
+    padding-left: 70px;
+}
+
+fieldset:hover{
+    color: seagreen;
+    font-size: x-large;
+}
+
+fieldset:active{
+    color: springgreen;
+}

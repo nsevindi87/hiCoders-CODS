@@ -1,0 +1,56 @@
+header, section, footer, div{
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    height: 2000px;
+    grid-template-rows: 50px 1fr 300px;
+}
+
+
+header{
+    grid-area: header;
+}
+
+section{
+    grid-area: section;
+    display: grid;
+    grid-template-rows: 3fr 8fr;
+}
+
+.article{
+    display: grid;
+    grid-template: 3fr 5fr 3fr/repeat(3,1fr); /* kisayolda önce rows / sonra columns geliyor*/
+    grid-gap:1rem;
+}
+
+footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.copyright{
+    grid-column: 1/span 4;
+    text-align: center;
+}
+.article > div:nth-child(1){
+    grid-column: 1/span 2
+}
+
+.article > div:last-child{
+    grid-column-start:4;
+    grid-column-end: 2;
+}
+
+.article > div{
+    border: none;
+    background-color: rgb(221, 182, 182);
+}

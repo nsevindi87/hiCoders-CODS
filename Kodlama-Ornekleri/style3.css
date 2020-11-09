@@ -1,7 +1,26 @@
-.a{
-    background-color: black;
-    width: 100px;
-    height: 100px;
-    margin: 10px;
+*{
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.container{
+    width: 95%;
+    background: rgb(255, 140, 140);
+    margin: 0 auto;
+}
+
+.row{
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid rgb(93, 90, 228);
+}
+
+.col{
+    vertical-align: top;
     display: inline-block;
+    width: 30%;
+    margin: 1%;
 }

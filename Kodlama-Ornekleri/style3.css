@@ -13,9 +13,10 @@ body{
 }
 
 .row{
+    text-align: justify;
     width: 100%;
     display: block;
-    border-bottom: 1px solid rgb(93, 90, 228);
+    margin: 2vh auto;
 }
 
 .col{
@@ -23,4 +24,20 @@ body{
     display: inline-block;
     width: 30%;
     margin: 1%;
+}
+
+@media screen and (max-width:900px){
+    .row{
+        text-align: center;
+    }
+    .col{
+        width: 95%;
+        margin: 2vh auto;
+        display: block;
+    }
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

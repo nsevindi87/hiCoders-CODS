@@ -78,3 +78,8 @@ section{
     margin: 0 auto;
     border: 2px solid magenta;
 }
+
+.section-two{
+    background: #2e354f;
+    color:#fff
+}

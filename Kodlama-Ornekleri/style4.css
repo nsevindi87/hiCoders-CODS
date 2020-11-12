@@ -74,7 +74,9 @@ section{
 }
 
 .container{
-    width: 50%;
+    width: 90%;
+    max-width: 900px;
+    min-width: 500px;
     margin: 0 auto;
     border: 2px solid magenta;
 }

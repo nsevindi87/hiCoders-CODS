@@ -2,6 +2,14 @@ body{
     font-size: 1.125rem;
     color: #707070;
     margin: 0;
+    background: pink;
+}
+
+@media (min-width: 501px){
+    body{
+        background: purple;
+    }
+
 }
 
 h1{

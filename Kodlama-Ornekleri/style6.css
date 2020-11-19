@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    text-align: center;
+    background:pink;
+    padding: 2em 0;
+}
+
+nav ul{
+    border: 1px solid magenta;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav  li{
+    border: 1px dotted orange;
+    margin: 0 1em;
+
+}
+
+nav a{
+    border: 1px solid green;
+
+
+}
+
+nav a:hover{
+
+
+}

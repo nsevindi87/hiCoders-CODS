@@ -27,6 +27,7 @@ h1{
     border: 1px solid magenta
     margin: 0 auto;
 }
+
 .container-nav{
     display: flex;
 }
@@ -40,12 +41,10 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
-
 }
 
 nav  li{
     margin: 0 1em;
-
 }
 
 nav a{
@@ -53,7 +52,6 @@ nav a{
     color: #707070;
     font-weight: 700;
     padding: .25em 0;
-
 }
 
 nav a:hover,

@@ -19,21 +19,21 @@
     <script>
         function verify() {
 
-            var month, day;
-            month = (document.getElementById('month').value);
-            day = (document.getElementById('day').value);
+            let month, day;
+            month = document.getElementById('month').value;
+            day = document.getElementById('day').value;
             if (isNaN(month)) {
                 message = "Lütfen dogdugunuz ayi sayisal olarak giriniz..."
             } else if (isNaN(day)) {
                 message = "Lütfen dogdugunuz günü sayisal olarak giriniz..."
             } else { //henüz ve veya baglaclarini oturtamadigim icin bir burc icin gerekli tarihi ikiye böldüm//
-                if (((month == 1) && (day >= 22 && day <= 31))) || ((month == 2) && (day >= 1 && day <= 19))) {
-                message = "Kova Burcusunuz"
-            } else if () {
-                message = "Kova "
+                if (month == 1 && day >= 22 && day <= 31) {
+                    message = "Kova Burcusunuz"
+                } else if (month == 2 && day >= 1 && day <= 19) {
+                    message = "Kova Burcusunuz"
+                }
             }
-        }
-        document.getElementById('result').innerHTML = message;
+            document.getElementById('result').innerHTML = message;
         }
     </script>
 

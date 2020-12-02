@@ -19,15 +19,38 @@
     <script>
         function verify() {
 
-            const month, day;
+            var month, day;
             month = (document.getElementById('month').value);
             day = (document.getElementById('day').value);
-            if () {
-
+            if (isNaN(month)) {
+                message = "Lütfen dogdugunuz ayi sayisal olarak giriniz..."
+            } else if (isNaN(day)) {
+                message = "Lütfen dogdugunuz günü sayisal olarak giriniz..."
             } else {
+                if (month == 1 && day >= 22 && day <= 31) {
+                    message = "Kova Burcusunuz"
+                } else if (month == 2 && day >= 1 && day <= 19) {
+                    message = "Kova Burcusunuz"
+                } else if (month == 2 && day >= 20 && day <= 29) {
+                    message = "Balik Burcusunuz"
+                } else if (month == 3 && day >= 1 && day <= 20) {
+                    message = "Balik Burcusunuz"
+                } else if (month == 3 && day >= 21 && day <= 31) {
+                    message = "Koc Burcusunuz"
+                } else if (month == 4 && day >= 1 && day <= 20) {
+                    message = "Koc Burcusunuz"
+                } else if (month == 4 && day >= 21 && day <= 30) {
+                    message = "Boga Burcusunuz"
+                } else if (month == 5 && day >= 1 && day <= 21) {
+                    message = "Boga Burcusunuz"
+                } else if (month == 5 && day >= 22 && day <= 31) {
+                    message = "Ikizler Burcusunuz"
+                } else if (month == 6 && day >= 1 && day <= 22) {
+                    message = "Ikizler Burcusunuz"
+                }
 
             }
-            document.getElementById('result').innerHTML = ;
+            document.getElementById('result').innerHTML = message;
         }
     </script>
 

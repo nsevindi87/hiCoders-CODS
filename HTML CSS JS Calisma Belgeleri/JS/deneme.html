@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Horoscope </title>
+</head>
+
+<body>
+    <div>
+        <h1>Burc bulma programi</h1>
+        <p id="result"></p>
+        <input type="nummer" id="month" placeholder="dogdugunuz ayi yaziniz">
+        <input type="nummer" id="day" placeholder="dogdugunuz günü yaziniz">
+        <button type="button" onclick="verify()">Burc Bul</button>
+    </div>
+
+    <script>
+        function verify() {
+
+            var month, day;
+            month = (document.getElementById('month').value);
+            day = (document.getElementById('day').value);
+            if (isNaN(month)) {
+                message = "Lütfen dogdugunuz ayi sayisal olarak giriniz..."
+            } else if (isNaN(day)) {
+                message = "Lütfen dogdugunuz günü sayisal olarak giriniz..."
+            } else { //henüz ve veya baglaclarini oturtamadigim icin bir burc icin gerekli tarihi ikiye böldüm//
+                if (((month == 1) && (day >= 22 && day <= 31))) || ((month == 2) && (day >= 1 && day <= 19))) {
+                message = "Kova Burcusunuz"
+            } else if () {
+                message = "Kova "
+            }
+        }
+        document.getElementById('result').innerHTML = message;
+        }
+    </script>
+
+</body>
+
+</html>

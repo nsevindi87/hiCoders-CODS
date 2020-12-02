@@ -33,45 +33,54 @@
             model = document.getElementById('model').value;
 
             if (devamli == "evet") {
-                message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...1"
+                message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
             } else if (devamli == "hayir") {
+                message =
+                    "Lütfen ilgili bölümleri eksiksiz doldurun...Aradiginiz kriterlerde bir araca hizmet veremiyoruz..."
                 if (marka == "bmw") {
                     if (renk == "kirmizi") {
                         if (model >= 2010 && model <= 2019) {
-                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...2"
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
                         } else {
-                            message = "Maalesef"
+                            message =
+                                "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
 
                         }
                     } else if (renk == "siyah") {
                         if (model == 2020) {
-                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...3"
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
                         } else {
-                            message = "Maalesef1"
+                            message =
+                                "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                         }
                     } else {
-                        massage = "Maaleseff"
+                        massage =
+                            "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                     }
                 } else if (marka == "audi") {
                     if (model >= 2005 && model <= 2010) {
-                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...4"
+                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
                     } else {
-                        message = "maalesef"
+                        message =
+                            "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                     }
 
                 } else if (marka == "vw") {
                     if (renk == "siyah") {
                         if (model >= 2001 && model <= 2018) {
-                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...5"
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
                         } else {
-                            message = "Maalesef"
+                            message =
+                                "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                         }
                     } else {
-                        message = "maalesef"
+                        message =
+                            "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                     }
                 }
             } else {
-                message = "Lütfen kriterleri doldurun"
+                message =
+                    "Lütfen ilgili bölümleri eksiksiz doldurdugunuzdan emin olun... Aradiginiz kriterlerde bir araca hizmet veremiyoruz..."
             }
             document.getElementById('result').innerHTML = message
         }

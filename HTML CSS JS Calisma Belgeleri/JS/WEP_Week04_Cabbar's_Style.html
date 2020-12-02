@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbar's Style JS</title>
+</head>
+
+<body>
+    <div>
+        <h1>Arac tamir programi</h1>
+        <p> 5 yildan uzun süreli müsteri misiniz?</p>
+        <input type="text" id="devamli" placeholder="evet / hayir"> <br>
+        <p>Aracinizin markasini yaziniz.</p>
+        <input type="text" id="marka" placeholder="Aracinizin markasi"> <br>
+        <p>Aracinizin rengini yaziniz.</p>
+        <input type="text" id="renk" placeholder="Aracinizin rengi"> <br>
+        <p>Aracinizin model yilini yaziniz.</p>
+        <input type="text" id="model" placeholder="Aracinizin model yili"> <br>
+        <button type="button" onclick="verify()" style="margin-top: 15px;">Arastir</button>
+        <p id="result"></p>
+
+    </div>
+
+    <script>
+        function verify() {
+
+            let devamli, marka, renk, model, message;
+            devamli = document.getElementById('devamli').value;
+            marka = document.getElementById('marka').value;
+            renk = document.getElementById('renk').value;
+            model = document.getElementById('model').value;
+
+            if (devamli == "evet") {
+                message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...1"
+            } else if (devamli == "hayir") {
+                if (marka == "bmw") {
+                    if (renk == "kirmizi") {
+                        if (model >= 2010 && model <= 2019) {
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...2"
+                        } else {
+                            message = "Maalesef"
+
+                        }
+                    } else if (renk == "siyah") {
+                        if (model == 2020) {
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...3"
+                        } else {
+                            message = "Maalesef1"
+                        }
+                    } else {
+                        massage = "Maaleseff"
+                    }
+                } else if (marka == "audi") {
+                    if (model >= 2005 && model <= 2010) {
+                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...4"
+                    } else {
+                        message = "maalesef"
+                    }
+
+                } else if (marka == "vw") {
+                    if (renk == "siyah") {
+                        if (model >= 2001 && model <= 2018) {
+                            message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...5"
+                        } else {
+                            message = "Maalesef"
+                        }
+                    } else {
+                        message = "maalesef"
+                    }
+                }
+            } else {
+                message = "Lütfen kriterleri doldurun"
+            }
+            document.getElementById('result').innerHTML = message
+        }
+    </script>
+
+</body>
+
+</html>

@@ -13,11 +13,11 @@
         <p> 5 yildan uzun süreli müsteri misiniz?</p>
         <input type="text" id="devamli" placeholder="evet / hayir"> <br>
         <p>Aracinizin markasini yaziniz.</p>
-        <input type="text" id="marka" placeholder="Aracinizin markasi"> <br>
+        <input type="text" id="marka" placeholder="marka (bmw, audi, vw...)"> <br>
         <p>Aracinizin rengini yaziniz.</p>
-        <input type="text" id="renk" placeholder="Aracinizin rengi"> <br>
+        <input type="text" id="renk" placeholder="renk (siyah, kirmizi, beyaz...)"> <br>
         <p>Aracinizin model yilini yaziniz.</p>
-        <input type="text" id="model" placeholder="Aracinizin model yili"> <br>
+        <input type="text" id="model" placeholder="model  (2019,2020...)"> <br>
         <button type="button" onclick="verify()" style="margin-top: 15px;">Arastir</button>
         <p id="result"></p>
 
@@ -58,7 +58,7 @@
                             "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
                     }
                 } else if (marka == "audi") {
-                    if (model >= 2005 && model <= 2010) {
+                    if ((model >= 2005 && model <= 2010) || (model >= 2014 && model <= 2020)) {
                         message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
                     } else {
                         message =

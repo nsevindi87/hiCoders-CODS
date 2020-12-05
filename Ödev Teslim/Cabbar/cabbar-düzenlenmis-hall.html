@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
-​
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabbar's Style JS</title>
 </head>
-​
 
 <body>
     <div>
@@ -22,18 +20,14 @@
         <input type="text" id="model" placeholder="model  (2019,2020...)"> <br>
         <button type="button" onclick="verify()" style="margin-top: 15px;">Arastir</button>
         <p id="result"></p>
-        ​
     </div>
-    ​
     <script>
         function verify() {
-            ​
             let devamli, marka, renk, model, message;
             devamli = document.getElementById('devamli').value;
             marka = document.getElementById('marka').value;
             renk = document.getElementById('renk').value;
             model = document.getElementById('model').value; // convert to int
-            ​
             if (devamli == "" || marka == "" || renk == "" || model == "") {
                 message =
                     "Lütfen ilgili bölümleri eksiksiz doldurun...Aradiginiz kriterlerde bir araca hizmet veremiyoruz..."
@@ -56,11 +50,9 @@
                     }
                 }
             }
-            document.getElementById('result').innerHTML = message
+            document.getElementById('result').innerHTML = message;
         }
     </script>
-    ​
 </body>
-​
 
 </html>

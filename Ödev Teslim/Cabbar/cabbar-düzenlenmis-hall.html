@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabbar's Style JS</title>
+</head>
+​
+
+<body>
+    <div>
+        <h1>Arac tamir programi</h1>
+        <p> 5 yildan uzun süreli müsteri misiniz?</p>
+        <input type="text" id="devamli" placeholder="evet / hayir"> <br>
+        <p>Aracinizin markasini yaziniz.</p>
+        <input type="text" id="marka" placeholder="marka (bmw, audi, vw...)"> <br>
+        <p>Aracinizin rengini yaziniz.</p>
+        <input type="text" id="renk" placeholder="renk (siyah, kirmizi, beyaz...)"> <br>
+        <p>Aracinizin model yilini yaziniz.</p>
+        <input type="text" id="model" placeholder="model  (2019,2020...)"> <br>
+        <button type="button" onclick="verify()" style="margin-top: 15px;">Arastir</button>
+        <p id="result"></p>
+        ​
+    </div>
+    ​
+    <script>
+        function verify() {
+            ​
+            let devamli, marka, renk, model, message;
+            devamli = document.getElementById('devamli').value;
+            marka = document.getElementById('marka').value;
+            renk = document.getElementById('renk').value;
+            model = document.getElementById('model').value; // convert to int
+            ​
+            if (devamli == "" || marka == "" || renk == "" || model == "") {
+                message =
+                    "Lütfen ilgili bölümleri eksiksiz doldurun...Aradiginiz kriterlerde bir araca hizmet veremiyoruz..."
+            } else {
+                message =
+                    "Maalesef aracinizin markasi, rengi veya modeliyle ilgili olarak hizmet veremiyoruz. Lütfen bilgileri eksiksiz girdiginizden emin olunuz..."
+                if (devamli == "evet") {
+                    message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...";
+                } else {
+                    if (marka == "bmw" && (
+                            (renk == "kirmizi" && model >= 2010 && model <= 2019) ||
+                            (renk == "siyah" && model == 2020)
+                        )) {
+                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
+                    } else if (marka == "audi" &&
+                        ((model >= 2005 && model <= 2010) || (model >= 2014 && model <= 2020))) {
+                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim..."
+                    } else if (marka == "vw" && renk == "siyah" && model >= 2001 && model <= 2018) {
+                        message = "Buyrun... Hemen aracinizi tamir etmeye baslayalim...";
+                    }
+                }
+            }
+            document.getElementById('result').innerHTML = message
+        }
+    </script>
+    ​
+</body>
+​
+
+</html>

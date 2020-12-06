@@ -46,3 +46,4 @@ if(yas>=18){
 }else{
     console.log("baska kapiya...")
 }
+

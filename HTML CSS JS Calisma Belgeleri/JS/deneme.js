@@ -47,7 +47,9 @@ if(yas>=18){
     console.log("baska kapiya...")
 }*/
 
-const sicaklik = 25;
+
+
+/*const sicaklik = 25;
 
 if (sicaklik <0 ){
     console.log("Donduukkkk!")
@@ -61,5 +63,29 @@ if (sicaklik <0 ){
     console.log("Havalar bu aralar cok güzel!")
 }else{
     console.log("Yaniyoruz arkadas!")
-}
+}*/
 
+/*const ay="Nisan";
+const gun="Carsamba"
+const saat=17
+
+if (ay == "Nisan"){
+    if (gun =="Pazartesi"){
+        console.log ("oooo")
+    }else if (gun=="Sali"){
+        console.log ("!!!!")
+    }else{
+        if (saat==12){
+            console.log ("?????")
+        }else if (saat==17){
+            console.log ("Saat 17, Carsamba, Nisan ayi")
+        }else if (saat==21){
+            console.log (".....")
+        }else{
+            console.log ("-----")
+        }
+    }
+    
+}else{
+    console.log ("aaaa")
+}*/

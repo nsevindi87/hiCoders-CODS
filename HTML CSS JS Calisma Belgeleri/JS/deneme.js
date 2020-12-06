@@ -37,3 +37,12 @@ let c=10;
 let sonuc3 = (a>b && b>c) || (b-c>a && a!=10);
 
 console.log("sonuc: " + sonuc3)
+
+let yas =15;
+
+if(yas>=18){
+    console.log("izin var...")
+
+}else{
+    console.log("baska kapiya...")
+}

@@ -1,4 +1,4 @@
-let birinciSayi = 5;
+/*let birinciSayi = 5;
 let ikinciSayi = 3;
 
 let toplamSonucu= birinciSayi+ikinciSayi;
@@ -45,5 +45,21 @@ if(yas>=18){
 
 }else{
     console.log("baska kapiya...")
+}*/
+
+const sicaklik = 25;
+
+if (sicaklik <0 ){
+    console.log("Donduukkkk!")
+}else if(sicaklik >= 0 && sicaklik <9){
+    console.log("Havalar cok soguk!")
+}else if (sicaklik >=10 && sicaklik<=18){
+    console.log("Bir isinamadi su havalar!")
+}else if (sicaklik>=19 && sicaklik <= 26){
+    console.log("Oh kemiklerimiz isindi!")
+}else if (sicaklik >=27 && sicaklik <35){
+    console.log("Havalar bu aralar cok güzel!")
+}else{
+    console.log("Yaniyoruz arkadas!")
 }
 

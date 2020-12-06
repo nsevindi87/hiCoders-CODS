@@ -12,19 +12,48 @@
     <div>
         <h1>Arac Tamir Programi</h1>
         <p>Eski müsteri misiniz?</p>
-        <input type="text" placeholder="evet/hayir"> <br>
+        <input type="text" id="devamli" placeholder="evet/hayir"> <br>
         <p>Aracinizin markasi nedir?</p>
-        <input type="text" placeholder="Arac markasi...">
+        <input type="text" id="marka" placeholder="Arac markasi...">
         <p>Aracin rengi nedir?</p>
-        <input type="text" placeholder="Aracin rengi...">
+        <input type="text" id="renk" placeholder="Aracin rengi...">
         <p>Aracin modeli nedir?</p>
-        <input type="text" placeholder="Arac modeli..."> <br>
-        <button style="margin-top: 15px;" onclick="verify()">Arastir</button>
+        <input type="nummer" id="model" placeholder="Arac modeli..."> <br>
+        <button onclick="verify()">Arastir</button>
         <p id="result"></p>
     </div>
 
     <script>
+        function verify() {
+            const devamli = document.getElementById('devamli').value;
+            const marka = document.getElementById('marka').value;
+            const renk = document.getElementById('renk').value;
+            const model = document.getElementById('model').value;
+            const retCevabi = "Maalesef araciniza bakamiyoruz..."
+            const kabulCevabi = "Arabaniza hemen bakalim"
+            const bosluk = "Bosluklari doldurun lütfen"
 
+            if (devamli == "" || marka == "" || renk == "" || model == "") {
+                message = bosluk;
+            } else {
+                message = bosluk;
+                if (devamli == "evet") {
+                    message = kabulCevabi;
+                } else {
+                    if (marka == "bmw" && (
+                            (renk == "kirmizi" && model >= 2010 && model <= 2020) ||
+                            (renk == "siyah" && model == 2020)
+                        )) {
+                        message = kabulCevabi;
+                    } else if (marka == "audi" &&
+                        ((model >= 2005 && model <= 2010) || (model >= 2014 && model <= 2020))) {
+                        message = kabulCevabi;
+                    } else if (marka == "vw" && renk == "siyah" && model >= 2001 && model <= 2018) {
+                        (marka == "vw" && renk == "siyah" && (model >= 2001 && model <= 2018))
+                    }
+                }
+                document.getElementById('result').innerHTML = message
+            }
     </script>
 
 </body>

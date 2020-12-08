@@ -22,7 +22,13 @@ while (isBittimi == false ){
 console.log(sayi);*/
 
 
-
+/*
 for(let sayac = 0, yas=0; sayac <60 && yas>-10; sayac++, yas--){
     console.log("Sayac degeri: ", sayac);
+}*/
+
+let myStringArray = ["Hello", "World"];
+let arrayLength = myStringArray.length;
+for (let i=0; i<arrayLength; i++){
+    console.log(myStringArray[i]);
 }

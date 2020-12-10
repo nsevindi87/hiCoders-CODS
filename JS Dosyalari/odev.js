@@ -13,6 +13,10 @@ for (let sayac=0; sayac < diziUzunlugu; sayac++){
     let sayi = sayilarArray[sayac];
     carpimi= sayi*sayi;
 }
+
+while (){
+    
+}
  
 console.log ("Sayilar toplami: ", sayilarToplami);
 console.log("Sayilarin ortalamasi: ", sayilarToplami/diziUzunlugu);

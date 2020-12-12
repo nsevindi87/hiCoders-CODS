@@ -1,4 +1,4 @@
-let numbers = [3,1,2,6,7,3,6,8,6,9,4];
+/*let numbers = [3,1,2,6,7,3,6,8,6,9,4];
 let product = 1;
 
 for(let index=0; index<numbers.length; index++){
@@ -14,4 +14,15 @@ for(let index=0; index<numbers.length; index++){
         max = nextValue;
     }
  }
- console.log(max);
+ console.log(max);*/
+
+ let question = [
+     "Yasiniz Kac"
+     "Programlama seviniz nedir?"
+     "Kac dil biliyorsun"
+ ]
+
+ for (let index = 0; index < question.length; index++) {
+     const nextQuestion = question[index];
+     
+ }

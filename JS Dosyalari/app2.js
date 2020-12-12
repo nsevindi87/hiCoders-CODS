@@ -17,12 +17,20 @@ for(let index=0; index<numbers.length; index++){
  console.log(max);*/
 
  let question = [
-     "Yasiniz Kac"
-     "Programlama seviniz nedir?"
-     "Kac dil biliyorsun"
- ]
+     "Yasiniz Kac",
+     "Programlama seviniz nedir?",
+     "Kac dil biliyorsun?"
+ ];
 
  for (let index = 0; index < question.length; index++) {
      const nextQuestion = question[index];
      
+     let answer = prompt(nextQuestion);
+     answerList.push(answer);
+ }
+
+ for (let index = 0; index < question.length; index++) {
+     const nextQuestion = question[index];
+     const nextAnswer = answerList[index];
+     console.log("soru: ", nextQuestion, ", Cevap: ", nextAnswer)
  }

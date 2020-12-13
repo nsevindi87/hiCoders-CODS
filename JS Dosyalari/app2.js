@@ -39,4 +39,5 @@ for(let index=0; index<numbers.length; index++){
 
  for (let index = 0; index < question.length; index++){
      const nextQuestion = question[index];
+     
  }

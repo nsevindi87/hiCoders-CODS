@@ -22,6 +22,7 @@ for(let index=0; index<numbers.length; index++){
      "Kac dil biliyorsun?"
  ];
 
+
  for (let index = 0; index < question.length; index++) {
      const nextQuestion = question[index];
      
@@ -29,8 +30,13 @@ for(let index=0; index<numbers.length; index++){
      answerList.push(answer);
  }
 
+
  for (let index = 0; index < question.length; index++) {
      const nextQuestion = question[index];
      const nextAnswer = answerList[index];
      console.log("soru: ", nextQuestion, ", Cevap: ", nextAnswer)
+ }
+
+ for (let index = 0; index < question.length; index++){
+     const nextQuestion = question[index];
  }

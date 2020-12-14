@@ -11,10 +11,10 @@ const RENK_KIRMIZI = "Kirmizi";
 const RENK_SIYAH = "Siyah";
 
 //program datasi / modeli  (degiskenler)
-const arabaRengi = "kirmizi";
-const arabaMarkasi = "Audi";
-const arabaModeli = 2015;
-const kacYillikMusteri = 6;
+const arabaRengi = "Kirmizi";
+const arabaMarkasi = "BMW";
+const arabaModeli = 2018;
+const kacYillikMusteri = 3;
 
 let result = "Firmamizda arabaniz tamir edilmemektedir.";
 
@@ -41,14 +41,22 @@ if (kacYillikMusteri >= 5) {
     if (arabaRengi == RENK_KIRMIZI || arabaRengi == RENK_SIYAH) {
         if ((arabaModeli > 2005 && arabaModeli < 2010) || (arabaModeli > 2014 && arabaModeli < 2020)) {
             result = CEVAP_POZITIF;
+        } else {
+            result = CEVAP_NEGATIF_MODEL;
         }
+    } else {
+        result = CEVAP_NEGATIF_RENK;
+    }
+} else if (arabaMarkasi == MARKA_VW) {
+    if (arabaRengi == RENK_SIYAH) {
+        if (arabaModeli > 2001 && arabaModeli < 2018) {
+            result = CEVAP_POZITIF;
+        } else {
+            result = CEVAP_NEGATIF_MODEL;
+        }
+    } else {
+        result = CEVAP_NEGATIF_RENK;
     }
 }
-
-
-
-
-
-
 
 console.log(result);

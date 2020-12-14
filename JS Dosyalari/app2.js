@@ -16,7 +16,10 @@ for(let index=0; index<numbers.length; index++){
  }
  console.log(max);*/
 
- let question = [
+
+
+
+ /*let question = [
      "Yasiniz Kac",
      "Programlama seviniz nedir?",
      "Kac dil biliyorsun?"
@@ -40,4 +43,18 @@ for(let index=0; index<numbers.length; index++){
  for (let index = 0; index < question.length; index++){
      const nextQuestion = question[index];
      
+ }*/
+
+
+ let sayi = 2; // prompt ("Sayiyi gir");
+ let sonucYazisi = "Sonuc: "
+ if (sayi >3 ){ 
+     let ikincisayi=5;
+     let sonuc = sayi + ikincisayi;
+     console.log (sonucYazisi, sonuc);
+ }else{
+     let ikincisayi = -4
+     sonuc=sayi*ikincisayi;
+
+    console.log(sonucYazisi, sonuc)
  }

@@ -103,3 +103,18 @@ let sayi = 4;
      }
  }
 console.log("Is bitti, sonuc: ", sayi)
+
+
+//for döngü denemesi
+//sayacli döngülerdir
+//su sayi kadar dön
+//while da ilkleme disarda yapiliyor. 
+//for da ilklemeler icerde yapilabiliyor
+
+for (let sayac=0;                                          //initialization   sifirlama
+    sayac< 60;                                            //control           ne zamana kadar
+    sayac++){                                            //increment           arttirma
+
+
+        
+}

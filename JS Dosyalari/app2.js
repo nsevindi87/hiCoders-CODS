@@ -122,8 +122,8 @@ for (let sayac=0, yas=0; sayac<=20 && yas>-10; sayac++, yas--){
 }*/
 
 for (let sayac=0; sayac<10; sayac++){
-    if (sayac % 2 == 0){                  //eger sayi cift ise
-        continue;
+    if (sayac >5 ){                  //eger sayi cift ise
+        break;
     }
 
     console.log(sayac)

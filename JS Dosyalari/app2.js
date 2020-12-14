@@ -58,3 +58,7 @@ for(let index=0; index<numbers.length; index++){
 
     console.log(sonucYazisi, sonuc)
  }
+
+ //literal = degerin acik olarak görülebildigi durumlar. Ciplak ifadeler
+ //statement = ; ile biten code komutlari
+ //code block = süslü parantezler arasida kalan kisimlar. diger adi da SCOPE tur.

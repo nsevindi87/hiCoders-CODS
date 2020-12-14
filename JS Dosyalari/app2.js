@@ -116,6 +116,15 @@ console.log("Is bitti, sonuc: ", sayi)*/
     sayac++){                                            //increment           arttirma
 }*/
 
+/*
 for (let sayac=0, yas=0; sayac<=20 && yas>-10; sayac++, yas--){
     console.log("sayac degeri: ", sayac , yas)
+}*/
+
+for (let sayac=0; sayac<10; sayac++){
+    if (sayac % 2 == 0){                  //eger sayi cift ise
+        continue;
+    }
+
+    console.log(sayac)
 }

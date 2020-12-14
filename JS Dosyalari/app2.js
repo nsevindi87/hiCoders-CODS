@@ -93,7 +93,7 @@ for(let index=0; index<numbers.length; index++){
  }*/
 
  //while döngü denemesi
-
+/*
 let isbittimi = false;
 let sayi = 4;
  while (isbittimi == false){
@@ -102,7 +102,7 @@ let sayi = 4;
          isbittimi = true;
      }
  }
-console.log("Is bitti, sonuc: ", sayi)
+console.log("Is bitti, sonuc: ", sayi)*/
 
 
 //for döngü denemesi
@@ -111,10 +111,11 @@ console.log("Is bitti, sonuc: ", sayi)
 //while da ilkleme disarda yapiliyor. 
 //for da ilklemeler icerde yapilabiliyor
 
-for (let sayac=0;                                          //initialization   sifirlama
+/*for (let sayac=0;                                          //initialization   sifirlama
     sayac< 60;                                            //control           ne zamana kadar
     sayac++){                                            //increment           arttirma
+}*/
 
-
-        
+for (let sayac=0; sayac<=5; sayac++){
+    console.log("sayac degeri: ", sayac)
 }

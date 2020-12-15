@@ -19,7 +19,7 @@ for (numberOfPredictions = 0; numberOfPredictions < MAX_HAK_SAYISI; numberOfPred
 
 //How many times
 if (numberOfPredictions < MAX_HAK_SAYISI) {
-    console.log('Congratulations you have known ${numberOfPredictions} times. You got ${25 * (MAX_HAK_SAYISI-numberOfPredictions)} points')
+    console.log(`Congratulations you have known ${numberOfPredictions} times. You got ${25 * (MAX_HAK_SAYISI-numberOfPredictions)} points`)
 } else {
     console.log('Your lost your points 0')
 }

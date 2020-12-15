@@ -6,12 +6,12 @@ for (let selectionRepeatNumber = 1; selectionRepeatNumber <= 4; selectionRepeatN
     let chosenWagon = +prompt("Vagon sec");
 
     if (selectionRepeatNumber === 4 && chosenWagon !== suspectWagon) {
-        alert('Hakkiniz bitti. Suclu bulunamadi. Suclu ${suspectWagon} numarali vagondaydi.');
+        alert(`Hakkiniz bitti. Suclu bulunamadi. Suclu ${suspectWagon} numarali vagondaydi.`);
         console.log('hakkiniz bitti. ')
     } else {
         if (chosenWagon == suspectWagon) {
             let puan = 100 - 25 * (selectionRepeatNumber - 1)
-            alert('Tebrikler, ${selectionRepeatNumber} hakkinizda sucluyu buldunuz.Puaniniz ${puan}');
+            alert(`Tebrikler, ${selectionRepeatNumber} hakkinizda sucluyu buldunuz.Puaniniz ${puan}`);
             break;
         } else if (chosenWagon < suspectWagon) {
             alert("Arkalara");

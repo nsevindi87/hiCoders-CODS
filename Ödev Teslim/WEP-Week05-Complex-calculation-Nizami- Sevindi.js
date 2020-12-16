@@ -1,4 +1,4 @@
-let sayilarArray = [15, 36, 6, 58, 95, 84, 55, 66, 9, 77];
+let sayilarArray = [16, 36, 9, 58, 91, 81, 49, 4, 9, 64];
 
 let diziUzunlugu = sayilarArray.length;
 
@@ -25,14 +25,20 @@ console.log("Carpimi", carpimi);
 
 
 //sayilarin karesi
-let kareleri = 1;
+let sayilarinKareleri = 1;
 
 for (let sayac = 0; sayac < diziUzunlugu; sayac++) {
     let sayi = sayilarArray[sayac];
-    kareleri = sayi * sayi;
-    console.log(sayi, "sayisinin karesi", kareleri)
+    sayilarinKareleri = sayi * sayi;
+    console.log(sayi, "sayisinin karesi", sayilarinKareleri) // sayilarinKokleri = []  /  sayilarinKareleri.push (Math.sqrt(sayilarArray[sayac]));
+    // sayilarinKareleri = []  /  sayilarinKareleri.push (Math.pow(sayilarArray[sayac],2));
 }
 
+//sayilarik karekokleri
+for (let sayac = 0; sayac < diziUzunlugu; sayac++) {
+    let kareKoku = Math.sqrt(sayilarArray[sayac]);
+    console.log("Array icindeki", sayilarArray[sayac], "sayisinin kare kökü ", kareKoku);
+}
 
 //arraydeki en büyük sayi
 let max = sayilarArray[0];

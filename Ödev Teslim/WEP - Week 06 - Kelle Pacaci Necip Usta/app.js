@@ -21,22 +21,22 @@ let numberOfLegs = 4;
 let numberOfLegsTavuk = 2;
 
 for (index = 0; index < animalList.length; index++) {
-    let kontrol = prompt("lütfen hayvan cinsi giriniz...");
+    let hayvanCinsi = prompt("lütfen hayvan cinsi giriniz...");
     let hayvanSayisi = +prompt("lütfen sayisini giriniz...")
 
     //4 bacakli hayvan bacagina ozel
-    if (kontrol === "inek" || kontrol === "domuz" || kontrol === "koyun") {
-        console.log(`Su anda ${kontrol} hayvanina ait ${numberOfLegs * hayvanSayisi} bacak var`);
+    if (hayvanCinsi === "inek" || hayvanCinsi === "domuz" || hayvanCinsi === "koyun") {
+        console.log(`Su anda ${hayvanCinsi} hayvanina ait ${numberOfLegs * hayvanSayisi} bacak var.`);
         break;
     }
     //2 bacakli hayvan bacagina
-    else if (kontrol == "tavuk") {
-        console.log(`Su anda ${kontrol} hayvanina ait ${numberOfLegsTavuk * hayvanSayisi} bacak var`);
+    else if (hayvanCinsi == "tavuk") {
+        console.log(`Su anda ${hayvanCinsi} hayvanina ait ${numberOfLegsTavuk * hayvanSayisi} bacak var.`);
         break;
     }
     //cins ve sayi girilmeden dogrudan giris yapildiginda mevcut tüm bacaklar
     else {
-        console.log(`Su anda bütün hayvanlara ait toplam ${(numberOfLegsTavuk * dortBacakliHayvanSayisi) + (numberOfLegs * tavukSayisi)} bacak var`);
+        console.log(`Su anda bütün hayvanlara ait toplam ${(numberOfLegsTavuk * dortBacakliHayvanSayisi) + (numberOfLegs * tavukSayisi)} bacak var.`);
         break;
     }
 }

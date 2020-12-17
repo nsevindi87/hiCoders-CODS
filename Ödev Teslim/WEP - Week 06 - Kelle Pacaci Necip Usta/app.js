@@ -29,7 +29,7 @@ for (index = 0; index < animalList.length; index++) {
         console.log(`Su anda ${hayvanCinsi} hayvanina ait ${numberOfLegs * hayvanSayisi} bacak var.`);
         break;
     }
-    //2 bacakli hayvan bacagina
+    //2 bacakli hayvan bacagina ozel
     else if (hayvanCinsi == "tavuk") {
         console.log(`Su anda ${hayvanCinsi} hayvanina ait ${numberOfLegsTavuk * hayvanSayisi} bacak var.`);
         break;

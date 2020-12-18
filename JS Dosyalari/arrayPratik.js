@@ -76,7 +76,7 @@ console.log(hiCodersParticipantList)
 hiCodersParticipantList.splice(2, 2); //aradan cikar. 2.den sonra 2 tane cikar.
 console.log(hiCodersParticipantList)
 */
-
+/*
 let numbers = [2, 6, 5, 9, 8, 7, 8, 5, 4, 5, 11];
 
 let product = 1;
@@ -85,3 +85,13 @@ for (let index = 0; index < numbers.length; index++) {
     product = product * nextValue;
 }
 console.log(product);
+*/
+
+/*
+//Faktöriyel
+let product = 1
+for (let index = 1; index <= 5; index++) {
+    product = product * index;
+}
+console.log(product);
+*/

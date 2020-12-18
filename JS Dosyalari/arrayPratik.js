@@ -66,7 +66,7 @@ console.log(hiCodersParticipantList.splice(3, 0, "Selcuk"));  //3. indexten sonr
 console.log(hiCodersParticipantList);
 
 */
-
+/*
 let hiCodersParticipantList = ["Oktay", "Hamide", "Gülsah", "süleyman", "Fatih", "Salih", "Adem"];
 hiCodersParticipantList.pop(); // pop sadece en sondan ve sadece bir eleman cikarir.
 console.log(hiCodersParticipantList)
@@ -75,3 +75,13 @@ console.log(hiCodersParticipantList)
 
 hiCodersParticipantList.splice(2, 2); //aradan cikar. 2.den sonra 2 tane cikar.
 console.log(hiCodersParticipantList)
+*/
+
+let numbers = [2, 6, 5, 9, 8, 7, 8, 5, 4, 5, 11];
+
+let product = 1;
+for (let index = 0; index < numbers.length; index++) {
+    let nextValue = numbers[index];
+    product = product * nextValue;
+}
+console.log(product);

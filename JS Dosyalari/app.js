@@ -48,7 +48,7 @@ for(let sayac = 0; sayac <10; sayac++){
     }
     console.log(sayac)
 }*/
-
+/*
 let aKenari = 3;
 let bKenari = 4;
 let cKenari = null;
@@ -58,4 +58,12 @@ function hesaplama() {
     console.log("Hipotenüs ", cKenari);
 }
 
-hesaplama();
+hesaplama();*/
+
+function hesapla(kk, uk) {
+    let alan = kk * uk;
+    let cevre = (kk * uk) * 2;
+    console.log("Dörtgenin alani", alan, "cevresi de", cevre);
+}
+
+hesapla(3, 5);

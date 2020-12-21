@@ -117,3 +117,28 @@ let sonMeyveCikarma = meyveler.pop();
 console.log(sonMeyveCikarma);
 console.log(meyveler);
 */
+/*
+let meyveler = ["elma", "armut", "muz", "kiraz"];
+meyveler.push("üzüm");
+console.log(meyveler);
+*/
+
+/*
+let meyveler = ["elma", "armut", "muz", "kiraz"];
+meyveler.sort();                        //siralama yapiyor
+console.log(meyveler);
+*/
+
+
+let i = 0;
+let sayi = Math.round(Math.random() * 100);
+
+let tahmin = 26;
+
+if (tahmin > sayi) {
+    console.log("Biraz asagi in...");
+} else if (tahmin < sayi) {
+    console.log("biraz yukari cik");
+} else if (tahmin === sayi) {
+    console.log("tebrikler");
+}

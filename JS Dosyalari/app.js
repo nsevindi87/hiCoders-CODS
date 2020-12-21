@@ -41,10 +41,21 @@ for(let sayac = 0; sayac <10; sayac++){
     }
     console.log(sayac)
 }*/
-
+/*
 for(let sayac = 0; sayac <10; sayac++){
     if(sayac>5){
         break;
     }
     console.log(sayac)
+}*/
+
+let aKenari = 3;
+let bKenari = 4;
+let cKenari = null;
+
+function hesaplama() {
+    cKenari = Math.sqrt((aKenari * aKenari) + (bKenari * bKenari));
+    console.log("Hipotenüs ", cKenari);
 }
+
+hesaplama();

@@ -60,6 +60,7 @@ function hesaplama() {
 
 hesaplama();*/
 
+/*
 function hesapla(kk, uk) {
     let alan = kk * uk;
     let cevre = (kk * uk) * 2;
@@ -67,3 +68,15 @@ function hesapla(kk, uk) {
 }
 
 hesapla(3, 5);
+*/
+/*
+function faktoriyel(a) {
+    let number = a;
+    let sonuc = 1;
+    for (let index = 1; index <= number; index++) {
+        sonuc = sonuc * index;
+    }
+    console.log(sonuc)
+}
+faktoriyel(5)
+*/

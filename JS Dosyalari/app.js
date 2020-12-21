@@ -98,9 +98,16 @@ function buyukSayilar(deger) {
 let yeniDizi = [1, 25, 45, 85, 69, 87].filter(buyukSayilar);
 console.log(yeniDizi);
 */
-
+/*
 let meyveler = ["armut", "elma"];
 let sebzeler = ["marul", "havuc"];
 let bitkiler = [];
 bitkiler = meyveler.concat(sebzeler);
 console.log(bitkiler);
+*/
+/*
+let meyveler = ["elma", "armut", "muz", "kiraz"];
+let dizi1 = meyveler.join(",");
+let dizi2 = meyveler.join("+");
+console.log(dizi1, dizi2);
+*/

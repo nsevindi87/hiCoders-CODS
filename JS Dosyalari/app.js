@@ -71,12 +71,21 @@ hesapla(3, 5);
 */
 /*
 function faktoriyel(a) {
-    let number = a;
     let sonuc = 1;
-    for (let index = 1; index <= number; index++) {
+    for (let index = 1; index <= a; index++) {
         sonuc = sonuc * index;
     }
     console.log(sonuc)
 }
 faktoriyel(5)
+*/
+/*
+let sehir = ["ankara", "konya", "izmir", "mugla"]
+let index = 0;
+let text = "";
+while (sehir[index]) {
+    text += sehir[index] + "\n";
+    index++;
+}
+console.log(text)
 */

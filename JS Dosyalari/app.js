@@ -111,3 +111,9 @@ let dizi1 = meyveler.join(",");
 let dizi2 = meyveler.join("+");
 console.log(dizi1, dizi2);
 */
+/*
+let meyveler = ["elma", "armut", "muz", "kiraz"];
+let sonMeyveCikarma = meyveler.pop();
+console.log(sonMeyveCikarma);
+console.log(meyveler);
+*/

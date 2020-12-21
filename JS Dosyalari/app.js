@@ -89,3 +89,10 @@ while (sehir[index]) {
 }
 console.log(text)
 */
+
+function buyukSayilar(deger) {
+    return deger >= 25;
+}
+
+let yeniDizi = [1, 25, 45, 85, 69, 87].filter(buyukSayilar);
+console.log(yeniDizi);

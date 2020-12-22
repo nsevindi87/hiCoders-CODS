@@ -19,3 +19,24 @@ const notes = [
     ["Urs", 49, 45, 56, 67],
     ["Monika", 49, 42, 16, 62]
 ];
+
+//Her dersin ortalamsi
+
+let matematikArray = [];
+let almancaArray = [];
+let ingilizceArray = [];
+let cografyaArray = [];
+for (ogrenciSayaci = 0; ogrenciSayaci < notes.length; ogrenciSayaci++) {
+    let matematik = notes[ogrenciSayaci][1];
+    let almanca = notes[ogrenciSayaci][2];
+    let ingilizce = notes[ogrenciSayaci][3];
+    let cografya = notes[ogrenciSayaci][4];
+    matematikArray.push(matematik);
+    almancaArray.push(almanca);
+    ingilizceArray.push(ingilizce);
+    cografyaArray.push(cografya);
+}
+console.log(matematikArray);
+console.log(almancaArray);
+console.log(ingilizceArray);
+console.log(cografyaArray);

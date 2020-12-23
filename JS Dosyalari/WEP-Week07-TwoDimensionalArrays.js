@@ -20,13 +20,26 @@ const notes = [
     ["Monika", 49, 42, 16, 62]
 ];
 
-
-function ders(a) {
-    for (index = 0; index < 9; index++) {
-        for (i = 1; i < 2; i++) {
-            let nextValue = notes[index][a];
-            console.log(nextValue)
-        }
+//ders ortalamalari
+function ortalama(a) {
+    let array = [];
+    let toplam = 0;
+    let ortalama = 0;
+    for (let index = 0; index <= 7; index++) {
+        array.push(notes[index][a])
+        let next = array[index];
+        toplam = toplam + next;
+        ortalama = toplam / notes.length
     }
+    console.log("Ders ortalamasi", ortalama);
 }
-ders(1)
+ortalama(1) //matematik
+ortalama(2) //almanca
+ortalama(2) //ingilizce
+ortalama(2) //cografya
+
+//70 üstü notlar
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+
+}

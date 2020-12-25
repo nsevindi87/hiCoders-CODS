@@ -39,7 +39,3 @@ ortalama(2) //ingilizce
 ortalama(2) //cografya
 
 //70 üstü notlar
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-
-}

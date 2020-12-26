@@ -129,7 +129,7 @@ meyveler.sort();                        //siralama yapiyor
 console.log(meyveler);
 */
 
-
+/*
 let i = 0;
 let sayi = Math.round(Math.random() * 100);
 
@@ -141,4 +141,12 @@ if (tahmin > sayi) {
     console.log("biraz yukari cik");
 } else if (tahmin === sayi) {
     console.log("tebrikler");
+}*/
+
+let text = "";
+for (index = 0; index <= 10; index++) {
+    if ((index % 2) === 0) {
+        text += index + "<br>";
+    }
 }
+console.log(text)

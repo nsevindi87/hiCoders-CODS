@@ -143,6 +143,7 @@ if (tahmin > sayi) {
     console.log("tebrikler");
 }*/
 
+/*
 let text = "";
 for (index = 0; index <= 10; index++) {
     if ((index % 2) === 0) {
@@ -150,3 +151,11 @@ for (index = 0; index <= 10; index++) {
     }
 }
 console.log(text)
+*/
+
+let sayi = 7,
+    vektor = 1;
+for (index = 1; index <= sayi; index++) {
+    vektor = vektor * index;
+}
+console.log(vektor);

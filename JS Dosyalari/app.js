@@ -154,8 +154,8 @@ console.log(text)
 */
 
 let sayi = 7,
-    vektor = 1;
+    faktor = 1;
 for (index = 1; index <= sayi; index++) {
-    vektor = vektor * index;
+    faktor *= index; // faktor = faktor * index
 }
-console.log(vektor);
+console.log(faktor);

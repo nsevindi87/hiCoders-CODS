@@ -30,11 +30,22 @@
             ["lion", "small", "white"]
         ]
 
-        //show array
+        //show array about
         for (let i = 0; i < animals.length; i++) {
             outputText += "[" + animals[i] + "]<br>";
         }
         document.getElementById("output_above").innerHTML = outputText;
+
+        // search the animal array
+        let query = document.forms["search_form"]["search_query"].value;
+
+        function searchAnimals() {
+            for (i = 0; i < animals.length; i++) {
+                for (k = 0; j < animals[i].length; k++) {
+                    if (animals[i][k].search(query) != -1)
+                }
+            }
+        }
     </script>
 
 

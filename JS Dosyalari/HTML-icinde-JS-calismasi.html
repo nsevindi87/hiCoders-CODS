@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Array</title>
+</head>
+
+<body>
+    <div id="output_above"></div>
+    <form action="javascript:searchAnimals();" name="search_form">
+        <input type="text" name="search_query">
+        <input type="submit" value="Search">
+    </form>
+    <div id="output_below"></div>
+
+
+
+
+
+    <script>
+        var outputText = "";
+        var animals = [
+            ["cat", "small", "green"],
+            ["dog", "big", "grey"],
+            ["elephant", "small", "brown"],
+            ["rhino", "small", "red"],
+            ["bird", "middle", "black"],
+            ["lion", "small", "white"]
+        ]
+
+        //show array
+        for (let i = 0; i < animals.length; i++) {
+            outputText += "[" + animals[i] + "]<br>";
+        }
+        document.getElementById("output_above").innerHTML = outputText;
+    </script>
+
+
+
+</body>
+
+</html>

@@ -36,13 +36,18 @@
         }
         document.getElementById("output_above").innerHTML = outputText;
 
-        // search the animal array
-        let query = document.forms["search_form"]["search_query"].value;
 
+
+        // search the animal array
         function searchAnimals() {
+            let query = document.forms["search_form"]["search_query"].value;
+            outputText = "";
             for (i = 0; i < animals.length; i++) {
                 for (k = 0; j < animals[i].length; k++) {
-                    if (animals[i][k].search(query) != -1)
+                    if (animals[i][k].search(query) != -1) {
+                        outputText += "[" + animals[i] + "]<br>";
+                        break;
+                    }
                 }
             }
         }

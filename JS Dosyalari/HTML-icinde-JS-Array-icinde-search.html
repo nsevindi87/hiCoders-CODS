@@ -9,7 +9,7 @@
 
 <body>
     <div id="output_above"></div>
-    <form action="javascript:searchAnimals();" name="search_form">
+    <form name="search_form" action="javascript:searchAnimals();">
         <input type="text" name="search_query">
         <input type="submit" value="Search">
     </form>
@@ -42,14 +42,15 @@
         function searchAnimals() {
             let query = document.forms["search_form"]["search_query"].value;
             outputText = "";
-            for (i = 0; i < animals.length; i++) {
-                for (k = 0; j < animals[i].length; k++) {
+            for (let i = 0; i < animals.length; i++) {
+                for (let k = 0; k < animals[i].length; k++) {
                     if (animals[i][k].search(query) != -1) {
                         outputText += "[" + animals[i] + "]<br>";
                         break;
                     }
                 }
             }
+            document.getElementById("output_below").innerHTML = outputText;
         }
     </script>
 

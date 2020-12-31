@@ -153,9 +153,16 @@ for (index = 0; index <= 10; index++) {
 console.log(text)
 */
 
+/* FAKTOR
 let sayi = 7,
     faktor = 1;
 for (index = 1; index <= sayi; index++) {
     faktor *= index; // faktor = faktor * index
 }
-console.log(faktor);
+console.log(faktor);*/
+
+function greeting(name, nachname) {
+    let result = "Hello" + " " + name + " " + nachname;
+    console.log(result);
+}
+greeting("Ali", "Yilmaz");

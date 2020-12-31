@@ -161,8 +161,16 @@ for (index = 1; index <= sayi; index++) {
 }
 console.log(faktor);*/
 
-function greeting(name, nachname) {
+/* function greeting(name, nachname) {
+
     let result = "Hello" + " " + name + " " + nachname;
     console.log(result);
 }
-greeting("Ali", "Yilmaz");
+greeting("Ali", "Yilmaz"); */
+
+
+let emptyArray = [];
+for (let index = 0; index < 10; index++) {
+    emptyArray.push(index);
+}
+console.log(emptyArray);

@@ -123,6 +123,7 @@ const personList = [{
 ];
 */
 
+//newPerson object
 const newPerson = {
     firstName: "John",
     lastName: "Smith",
@@ -148,5 +149,19 @@ const newPerson = {
         }
     ],
     children: [],
-    spouse: null
+    spouse: null,
+
+    reachPhone(time) {
+        if (time == "day") {
+            return this.phoneNumbers[0];
+        } else {
+            return this.phoneNumbers[1];
+        }
+    }
 }
+
+console.log(newPerson.phoneNumbers.length);
+console.log(newPerson.adress.city);
+console.log(newPerson.children.length);
+console.log(newPerson.spouse);
+console.log(newPerson.reachPhone("day"));

@@ -64,7 +64,7 @@ console.log(age, lastName);
  */
 
 
-/* //Objecte sonradan bilgi ekleme - cikarma
+/* //Objecte sonradan bilgi ekleme -
 const person = {
     firstName: "Mehmet",
     lastName: "Dogan",
@@ -89,6 +89,8 @@ const person = {
         return this.salary > 60000;
     }
 };
+
+
 
 
 person.friends = ["Mustafa", "Mesut"];

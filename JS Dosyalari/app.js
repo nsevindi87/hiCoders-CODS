@@ -171,6 +171,6 @@ greeting("Ali", "Yilmaz"); */
 
 let emptyArray = [];
 for (let index = 0; index < 10; index++) {
-    emptyArray.push(index);
+    emptyArray.push(++index);
 }
 console.log(emptyArray);

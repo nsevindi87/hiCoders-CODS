@@ -130,3 +130,23 @@ for (let sayac=0; sayac<10; sayac++){
     console.log(sayac)
 }
 */
+
+const personList = [{
+        firstName: "Joey",
+        lastName: "Tribiani",
+        age: 29,
+        salayr: 2000.00
+    },
+    {
+        firstName: "Ross",
+        lastName: "Geller",
+        age: 30,
+        salayr: 56000.00
+    },
+    {
+        firstName: "Rachel",
+        lastName: "Green",
+        age: 29,
+        salayr: 48000.00
+    }
+];

@@ -64,7 +64,7 @@ console.log(age, lastName);
  */
 
 
-/* //Objecte sonradan bilgi ekleme
+/* //Objecte sonradan bilgi ekleme - cikarma
 const person = {
     firstName: "Mehmet",
     lastName: "Dogan",
@@ -93,6 +93,10 @@ const person = {
 
 person.friends = ["Mustafa", "Mesut"];
 console.log(person.friends)
+
+person.firstName = "Cemil";
+console.log(person.firstName);
+
  */
 
 /* array icinde object

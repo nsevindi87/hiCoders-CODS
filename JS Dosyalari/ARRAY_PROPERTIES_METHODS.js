@@ -23,6 +23,7 @@ function isBigEnough(value) {
 var filtered = [12, 5, 8, 130, 44].find(isBigEnough);
 console.log(filtered); //12
 
+//------------------------
 const inventory = [{
         name: 'apples',
         quantity: 2
@@ -36,3 +37,6 @@ const inventory = [{
         quantity: 5
     }
 ]
+
+const result = inventory.find(fruit => fruit.name === 'cherries');
+console.log(result)

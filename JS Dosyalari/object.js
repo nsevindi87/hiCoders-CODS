@@ -123,7 +123,7 @@ const personList = [{
 ];
 */
 
-//newPerson object
+/* //newPerson object
 const newPerson = {
     firstName: "John",
     lastName: "Smith",
@@ -164,4 +164,27 @@ console.log(newPerson.phoneNumbers.length);
 console.log(newPerson.adress.city);
 console.log(newPerson.children.length);
 console.log(newPerson.spouse);
-console.log(newPerson.reachPhone("day"));
+console.log(newPerson.reachPhone("day")); */
+
+/* //object.assign (birlestirme)
+const target = {
+    a: 1,
+    b: 2
+};
+const source = {
+    b: 4,
+    c: 5
+};
+
+const returnedTarget = Object.assign(target, source); //concat gibi
+
+console.log(target); //artik degisti  - ayni etiket varsa degistirir.
+console.log(returnedTarget); // son hali - aynisi */
+
+const person = {
+    isHuman: false,
+    printIntroduction: function () {
+        console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+    }
+};
+person.printIntroduction();

@@ -1,4 +1,4 @@
-//  1-  array.prototype.map() - bir nesneyi ayni halden baska bir hale getiriyor. Parcaliyor. 
+/* //  1-  array.prototype.map() - bir nesneyi ayni halden baska bir hale getiriyor. Parcaliyor. 
 // sayilar arrayinin iki katini bul gibi
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 let result = numbers.map(function (number) { // let result = numbers.map(number => number * 2 );
@@ -6,29 +6,29 @@ let result = numbers.map(function (number) { // let result = numbers.map(number 
 });
 
 console.log(numbers);
-console.log(result);
+console.log(result); */
 
 
-//   2- array.prototype.reduce()  - kendisine verilen nesneleri bir araya getirip sonuc üretiyor.  
+/* //   2- array.prototype.reduce()  - kendisine verilen nesneleri bir araya getirip sonuc üretiyor.  
 //Yemekleri veriyoruz ve eat diyoruz  - sonuc olarak wc cikiyor
 // Array icindekileri toplamak icin kullanilabilir.
 const newArray = [1, 2, 3, 4, 5];
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
 console.log(newArray.reduce(reducer));
-console.log(newArray.reduce(reducer, 5));
+console.log(newArray.reduce(reducer, 5)); */
 
 
-//   3- array.prototype.filter() 
+/* //   3- array.prototype.filter() 
 //asdece vegetarian olanlari bir gruba topla - Yeni Array döndürür
 function isBigEnough(value) {
     return value >= 10;
 }
 var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
-console.log(filtered); //12,130,44
+console.log(filtered); //12,130,44 */
 
 
-//   4  -  array.prototype.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
+/* //   4  -  array.prototype.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
 function isBigEnough(value) {
     return value >= 10;
 }
@@ -51,4 +51,20 @@ const inventory = [{
 ]
 
 const result2 = inventory.find(fruit => fruit.name === 'cherries');
-console.log(result2)
+console.log(result2) */
+
+/* // 5- array.prototype.some()   -  fonksiyondaki sarti herhangi biri karsilarsa true veya false döndürür
+function isBigerThan10(element, index, array) {
+    return element >= 10;
+};
+
+console.log([2, 5, 8, 1, 4].some(isBigerThan10));
+console.log([12, 5, 8, 1, 4].some(isBigerThan10)); */
+
+/* // 6- array.prototype.every()   -  fonksiyondaki sarti hepsi karsilarsa true veya false döndürür
+function isBigerThan10(element, index, array) {
+    return element >= 10;
+};
+
+console.log([12, 5, 18, 1, 4].every(isBigerThan10));
+console.log([12, 54, 88, 96, 541].every(isBigerThan10)); */

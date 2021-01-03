@@ -166,6 +166,9 @@ console.log(newPerson.children.length);
 console.log(newPerson.spouse);
 console.log(newPerson.reachPhone("day")); */
 
+
+//OBJECTLERIN ONEMLI METHODLARI 
+
 /* //object.assign (birlestirme)
 const target = {
     a: 1,
@@ -181,6 +184,7 @@ const returnedTarget = Object.assign(target, source); //concat gibi
 console.log(target); //artik degisti  - ayni etiket varsa degistirir.
 console.log(returnedTarget); // son hali - aynisi */
 
+/* //object.create ile var olan bir objeyi alip cogalttim ve degistirdim
 const person = {
     isHuman: false,
     printIntroduction: function () {
@@ -192,4 +196,20 @@ person.printIntroduction();
 const me = Object.create(person);
 me.name = "Ali";
 me.isHuman = true;
-me.printIntroduction();
+me.printIntroduction(); */
+
+/* //object.values ile objedeki sadece degerler alinabilir.
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: true
+};
+console.log(Object.values(object1)); */
+
+/* //object.keys ile objedeki sadece degerler alinabilir.
+const object1 = {
+    a: 'somestring',
+    b: 42,
+    c: true
+};
+console.log(Object.keys(object1)); */

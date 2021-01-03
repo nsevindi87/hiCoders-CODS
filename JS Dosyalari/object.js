@@ -188,3 +188,8 @@ const person = {
     }
 };
 person.printIntroduction();
+
+const me = Object.create(person);
+me.name = "Ali";
+me.isHuman = true;
+me.printIntroduction();

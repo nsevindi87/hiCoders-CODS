@@ -135,10 +135,16 @@ items.forEach((item) => {
 const hasInexpensiveItem = items.some((item) => {
     return item.price <= 100;
 })
-console.log(hasInexpensiveItem); //true döner
+console.log(hasInexpensiveItem); //true döner // bir tanesi sarti tasisa yeter
 
 //EVERY
 const hasInexpensiveItem2 = items.every((item) => {
-    return item.price <= 1000;
+    return item.price <= 100;
 })
-console.log(hasInexpensiveItem2);
+console.log(hasInexpensiveItem2); // false döner  //hepsinin sarti saglamasi lazim
+
+//REDUCE
+const total = items.reduce((currentTotal, item) => {
+    return item.price + currentTotal
+}, 0);
+console.log(total);

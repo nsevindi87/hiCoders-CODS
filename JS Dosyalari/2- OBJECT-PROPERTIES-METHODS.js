@@ -63,7 +63,6 @@ let { //object destructuring
 console.log(age, lastName);
  */
 
-
 /* //Objecte sonradan bilgi ekleme -
 const person = {
     firstName: "Mehmet",

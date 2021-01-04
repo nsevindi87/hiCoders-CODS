@@ -1,4 +1,4 @@
-/* //  1-  array.prototype.map() - bir nesneyi ayni halden baska bir hale getiriyor. Parcaliyor. 
+/* //  1-  array.map() - bir nesneyi ayni halden baska bir hale getiriyor. Parcaliyor. 
 // sayilar arrayinin iki katini bul gibi
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 let result = numbers.map(function (number) { // let result = numbers.map(number => number * 2 );
@@ -9,7 +9,7 @@ console.log(numbers);
 console.log(result); */
 
 
-/* //   2- array.prototype.reduce()  - kendisine verilen nesneleri bir araya getirip sonuc üretiyor.  
+/* //   2- array.reduce()  - kendisine verilen nesneleri bir araya getirip sonuc üretiyor.  
 //Yemekleri veriyoruz ve eat diyoruz  - sonuc olarak wc cikiyor
 // Array icindekileri toplamak icin kullanilabilir.
 const newArray = [1, 2, 3, 4, 5];
@@ -19,7 +19,7 @@ console.log(newArray.reduce(reducer));
 console.log(newArray.reduce(reducer, 5)); */
 
 
-/* //   3- array.prototype.filter() 
+/* //   3- array.filter() 
 //asdece vegetarian olanlari bir gruba topla - Yeni Array döndürür
 function isBigEnough(value) {
     return value >= 10;
@@ -28,7 +28,7 @@ var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 console.log(filtered); //12,130,44 */
 
 
-/* //   4  -  array.prototype.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
+/* //   4  -  array.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
 function isBigEnough(value) {
     return value >= 10;
 }
@@ -53,7 +53,7 @@ const inventory = [{
 const result2 = inventory.find(fruit => fruit.name === 'cherries');
 console.log(result2) */
 
-/* // 5- array.prototype.some()   -  fonksiyondaki sarti herhangi biri karsilarsa true veya false döndürür
+/* // 5- array.some()   -  fonksiyondaki sarti herhangi biri karsilarsa true veya false döndürür
 function isBigerThan10(element, index, array) {
     return element >= 10;
 };
@@ -61,7 +61,7 @@ function isBigerThan10(element, index, array) {
 console.log([2, 5, 8, 1, 4].some(isBigerThan10));
 console.log([12, 5, 8, 1, 4].some(isBigerThan10)); */
 
-/* // 6- array.prototype.every()   -  fonksiyondaki sarti hepsi karsilarsa true veya false döndürür
+/* // 6- array.every()   -  fonksiyondaki sarti hepsi karsilarsa true veya false döndürür
 function isBigerThan10(element, index, array) {
     return element >= 10;
 };
@@ -69,10 +69,21 @@ function isBigerThan10(element, index, array) {
 console.log([12, 5, 18, 1, 4].every(isBigerThan10));
 console.log([12, 54, 88, 96, 541].every(isBigerThan10)); */
 
-// 7- array.prototype.filter()
+/* // 7- array.fill()
 const array1 = [1, 2, 3, 4];
 console.log(array1.fill(5, 1)); //1.indexten itibaren 5 ile doldurur. [ 1, 5,5,5]
-console.log(array1.fill(0, 2, 4)); //2.indexten 4. endexe kadar(haric)  0 ile doldurur. [ 1, 2, 0,0]
+console.log(array1.fill(0, 2, 4)); //2.indexten 4. endexe kadar(haric)  0 ile doldurur. [ 1, 2, 0,0] */
+
+/* // 8- array.concat()
+const array1 = [1, 2, 3, 4];
+const array2 = [5, 6, 7, 8];
+const array3 = array1.concat(array2);
+console.log(array3); */
+
+// 8- array.concat()
+const array1 = [1, 2, 3, 4];
+console.log(array1.copyWithin(1, 3)) //3.indexi 1.nci indexe kopyala
+
 
 
 /* //ARRAY lere ait 8 özellik ve örmekleri  - filter - map- find - forEach - Some - Every - Reduce -  Includes -

@@ -69,6 +69,9 @@ function isBigerThan10(element, index, array) {
 console.log([12, 5, 18, 1, 4].every(isBigerThan10));
 console.log([12, 54, 88, 96, 541].every(isBigerThan10)); */
 
+
+/* //ARRAY lere ait 8 özellik ve örmekleri  - filter - map- find - forEach - Some - Every - Reduce -  Includes -
+
 const items = [{
         name: 'Bike',
         price: 100
@@ -98,7 +101,6 @@ const items = [{
         price: 25
     },
 ];
-
 
 //FILTER 
 const filteredItems = items.filter((item) => {
@@ -148,3 +150,8 @@ const total = items.reduce((currentTotal, item) => {
     return item.price + currentTotal
 }, 0);
 console.log(total);
+
+//INCLUDES
+const items2 = [1, 2, 3, 4, 5];
+const includesNumber = items2.includes(2); //icinde 2 var mi yok mu?
+console.log(includesNumber); */

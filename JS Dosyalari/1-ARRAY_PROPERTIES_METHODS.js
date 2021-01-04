@@ -68,3 +68,77 @@ function isBigerThan10(element, index, array) {
 
 console.log([12, 5, 18, 1, 4].every(isBigerThan10));
 console.log([12, 54, 88, 96, 541].every(isBigerThan10)); */
+
+const items = [{
+        name: 'Bike',
+        price: 100
+    },
+    {
+        name: 'TV',
+        price: 200
+    },
+    {
+        name: 'Album',
+        price: 10
+    },
+    {
+        name: 'Book',
+        price: 5
+    },
+    {
+        name: 'Phone',
+        price: 500
+    },
+    {
+        name: 'Computer',
+        price: 1000
+    },
+    {
+        name: 'Keyboard',
+        price: 25
+    },
+];
+
+
+//FILTER 
+const filteredItems = items.filter((item) => {
+    return item.price <= 100;
+})
+
+console.log(items);
+console.log(filteredItems);
+
+//MAP
+const itemNames = items.map((item) => {
+    return item.name;
+})
+console.log(itemNames);
+
+const itemPrice = items.map((item) => {
+    return item.price;
+})
+console.log(itemPrice);
+
+//FIND
+const foundItem = items.find((item) => {
+    return item.name === 'Book'; //büyük kucuk harfe dikkat et. 
+});
+console.log(foundItem);
+
+//forEach
+items.forEach((item) => {
+    console.log(item.name);
+    console.log(item.price);
+})
+
+//SOME
+const hasInexpensiveItem = items.some((item) => {
+    return item.price <= 100;
+})
+console.log(hasInexpensiveItem); //true döner
+
+//EVERY
+const hasInexpensiveItem2 = items.every((item) => {
+    return item.price <= 1000;
+})
+console.log(hasInexpensiveItem2);

@@ -135,5 +135,6 @@ console.log(fiyatAraligiIsimler);
 
 //Bern Kis
 const bernVeKis = fishFarm.filter((item) => {
-    return item.saleLocations >= 500;
+    return item.season === "Winter";
 })
+console.log(bernVeKis);

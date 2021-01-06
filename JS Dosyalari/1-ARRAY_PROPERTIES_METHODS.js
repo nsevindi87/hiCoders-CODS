@@ -27,6 +27,16 @@ function isBigEnough(value) {
 var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 console.log(filtered); //12,130,44 */
 
+//   3- array.foreach()
+const myToDos = [];
+myToDos.push('Buy Bread');
+myToDos.push('Buy Tomato');
+myToDos.push('Buy Milk');
+
+myToDos.forEach(function (toDo, index) {
+    console.log(`your number ${index} is ${toDo}`);
+});
+
 
 /* //   4  -  array.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
 function isBigEnough(value) {
@@ -80,9 +90,9 @@ const array2 = [5, 6, 7, 8];
 const array3 = array1.concat(array2);
 console.log(array3); */
 
-// 8- array.concat()
+/* // 8- array.concat()
 const array1 = [1, 2, 3, 4];
-console.log(array1.copyWithin(1, 3)) //3.indexi 1.nci indexe kopyala
+console.log(array1.copyWithin(1, 3)) //3.indexi 1.nci indexe kopyala */
 
 
 

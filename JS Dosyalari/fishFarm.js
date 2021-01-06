@@ -110,8 +110,6 @@ const fishFarm = [{
     },
 ];
 
-
-
 //Stog miktari 500 kg üzerinde olan balik isimleri
 
 const stog500ustu = fishFarm.filter((item) => {
@@ -156,7 +154,8 @@ console.log(total);
 
 //Ticino Kantonu icin stokta toplam ne kadar balik mevcut
 const ticino = fishFarm.filter((item) => {
-    return item.saleLocations;
-})
+    return item.saleLocations === "ZH";
+});
+console.log(ticino);
 
 //Yazlik sezonda cikan ve AB disindan gelen ve ZH de satilan baliklarin ortalama gramaji ne kadar?

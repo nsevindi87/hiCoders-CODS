@@ -1,0 +1,38 @@
+const YEDEK_PARCA_SABIT = "KREMAG_";
+const parcaList = ["Ejjdj87st ", "sdds7dna ", " asdfask4", "ayna", "janT"];
+
+function bosluklariEle(pYedekParca) {
+    return pYedekParca.trim();
+}
+
+function buyukHarfeCevir(pYedekParca) {
+    return pYedekParca.toUpperCase();
+}
+
+function arrayaAyir(pYedekParca) {
+    return pYedekParca.split();
+}
+
+function sayilariEle(pYedekParca) {
+    return pYedekParca.replace([0 - 9], "")
+}
+
+function sabitKelimeEkle(pYedekParca) {
+    return YEDEK_PARCA_SABIT.concat(pYedekParca);
+}
+
+function tarihEkle(pYedekParca) {
+    let tarih = new Date().toDateString("en");
+    return pYedekParca + tarih.replaceAll(" ", "");
+}
+
+
+parcaList.forEach(function (pYedekParca) {
+    let bosluguGiden = bosluklariEle(pYedekParca);
+    let buyukHarfeDonen = buyukHarfeCevir(bosluguGiden);
+    let arrayaAyrilanlar = arrayaAyir(buyukHarfeDonen);
+    let sayilariSifirlananlar = sayilariEle(arrayaAyrilanlar);
+    let kelimeEklenen = sabitKelimeEkle(sayilariSifirlananlar);
+    let tarihEklenmisHal = tarihEkle(kelimeEklenen);
+    console.log(kelimeEklenen);
+});

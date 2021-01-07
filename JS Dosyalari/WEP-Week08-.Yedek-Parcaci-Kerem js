@@ -1,3 +1,5 @@
+//Fonksiyonlar ile Bosluklari gideme - Buyuk harfe dondur - arraya ayir  - sayilari cikar - sabit kelime ekle - tarih ekle
+
 const YEDEK_PARCA_SABIT = "KREMAG_";
 const parcaList = ["Ejjdj87st ", "sdds7dna ", " asdfask4", "ayna", "janT"];
 
@@ -14,7 +16,7 @@ function arrayaAyir(pYedekParca) {
 }
 
 function sayilariEle(pYedekParca) {
-    return pYedekParca.replace([0 - 9], "")
+    return pYedekParca.toString().replace(/[0-9]/g, "")
 }
 
 function sabitKelimeEkle(pYedekParca) {
@@ -34,5 +36,5 @@ parcaList.forEach(function (pYedekParca) {
     let sayilariSifirlananlar = sayilariEle(arrayaAyrilanlar);
     let kelimeEklenen = sabitKelimeEkle(sayilariSifirlananlar);
     let tarihEklenmisHal = tarihEkle(kelimeEklenen);
-    console.log(kelimeEklenen);
+    console.log(tarihEklenmisHal);
 });

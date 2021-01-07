@@ -1,4 +1,14 @@
-//Fonksiyonlar ile Bosluklari gideme - Buyuk harfe dondur - arraya ayir  - sayilari cikar - sabit kelime ekle - tarih ekle
+/** YEDEK PARCACI KEREM
+ * Yedek parcaci Kerem'in aldigi yedek parcalar bir karisik ve düzensiz olarak bir arrayde toplanmistir.
+ * Bu Array'deki parca isimlerine asagidaki islemler uygulanacaktir.
+ * 1. Parca isimleri büyük harflere cevrilecek,
+ * 2. Parca isimlerinden sayilar cikartilacak,
+ * 3. Parca isimleri tersine cevrilecek,
+ * 4. Her parcanin basina KEREMAG_ eklenecek,
+ * 5. Her parcanin sonuna ise parcanin sisteme girildigi tarih eklenecektir.
+ */
+
+/* // *Mehmet Dogan - Fonksiyonlar ile Bosluklari gideme - Buyuk harfe dondur - arraya ayir  - sayilari cikar - sabit kelime ekle - tarih ekle
 
 const YEDEK_PARCA_SABIT = "KREMAG_";
 const parcaList = ["Ejjdj87st ", "sdds7dna ", " asdfask4", "ayna", "janT"];
@@ -37,4 +47,4 @@ parcaList.forEach(function (pYedekParca) {
     let kelimeEklenen = sabitKelimeEkle(sayilariSifirlananlar);
     let tarihEklenmisHal = tarihEkle(kelimeEklenen);
     console.log(tarihEklenmisHal);
-});
+}); */

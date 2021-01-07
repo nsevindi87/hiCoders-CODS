@@ -10,3 +10,6 @@ console.log(carpim1, carpim2);
 let carpma = (x, y) => x * y;
 let sonuc = carpma(8, 9)
 console.log(sonuc);
+
+let tarih = new Date().toDateString("en");
+console.log(tarih)

@@ -27,15 +27,15 @@ function isBigEnough(value) {
 var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 console.log(filtered); //12,130,44 */
 
-//   3- array.foreach()
+/* //   3- array.foreach()
 const myToDos = [];
 myToDos.push('Buy Bread');
 myToDos.push('Buy Tomato');
 myToDos.push('Buy Milk');
 
 myToDos.forEach(function (toDo, index) {
-    console.log(`your number ${index} is ${toDo}`);
-});
+    console.log(`your number ${index+1} is ${toDo}`);
+}); */
 
 
 /* //   4  -  array.find()  - filtreleme gibi düsünülebilir. ANCAK verilen degeri buldugu an cikar. Elemani döndürür Arrayi degil
@@ -93,7 +93,6 @@ console.log(array3); */
 /* // 8- array.concat()
 const array1 = [1, 2, 3, 4];
 console.log(array1.copyWithin(1, 3)) //3.indexi 1.nci indexe kopyala */
-
 
 
 /* //ARRAY lere ait 8 özellik ve örmekleri  - filter - map- find - forEach - Some - Every - Reduce -  Includes -

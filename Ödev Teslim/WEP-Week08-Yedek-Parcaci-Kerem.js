@@ -47,4 +47,24 @@ parcaList.forEach(function (pYedekParca) {
     let kelimeEklenen = sabitKelimeEkle(sayilariSifirlananlar);
     let tarihEklenmisHal = tarihEkle(kelimeEklenen);
     console.log(tarihEklenmisHal);
-}); */
+}); 
+parcaList.forEach((pYedekParca) => {
+    let bosluguGiden = bosluklariEle(pYedekParca);
+    let buyukHarfeDonen = buyukHarfeCevir(bosluguGiden);
+    let arrayaAyrilanlar = arrayaAyir(buyukHarfeDonen);
+    let sayilariSifirlananlar = sayilariEle(arrayaAyrilanlar);
+    let kelimeEklenen = sabitKelimeEkle(sayilariSifirlananlar);
+    let tarihEklenmisHal = tarihEkle(kelimeEklenen);
+    console.log(tarihEklenmisHal);
+});
+
+parcaList.map(bosluklariEle)
+         .map(buyukHarfeCevir)
+         .map(sayilariEle)
+         .map(sabitKelimeEkle)
+         .map(tarihEkle)
+         .forEach(sp=> console.log(sp));
+
+
+
+*/

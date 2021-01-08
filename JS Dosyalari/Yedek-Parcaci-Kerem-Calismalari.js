@@ -18,11 +18,18 @@ function changedList(pList) {
     for (let index = 0; index < pList.length; index++) {
         pSiradakiParca = pList[index];
         upper = changeUpper(pSiradakiParca);
-
+        remove = removeNumber(upper);
+        reverse = reverseWord(remove);
+        addKerem = addWord(reverse);
+        date = addDate(addKerem);
+        newList.push(date);
     }
+    return newList.join("\n");
+
 }
 
-
+let result = changedList(yedekParca);
+console.log(result)
 
 
 

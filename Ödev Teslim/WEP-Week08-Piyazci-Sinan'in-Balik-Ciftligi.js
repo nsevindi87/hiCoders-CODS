@@ -133,9 +133,12 @@ console.log(fiyatAraligiIsimler);
 
 //Bern ve kis ayinda satilan
 const bernVeKis = fishFarm.filter((item) => {
-    return (item.season === "Winter") && (item.saleLocations === "BE"); //Bern kismi calismadi
+    return (item.season === "Winter") && (item.saleLocations.includes("BE")); //önemli - object icindeki arrayin icine bakma
 });
-console.log(bernVeKis);
+const bernveKisAyiIsimler = bernVeKis.map((item) => {
+    return item.fishType;
+})
+console.log(bernveKisAyiIsimler);
 
 //son kullanma tarihine göre balik siralama
 

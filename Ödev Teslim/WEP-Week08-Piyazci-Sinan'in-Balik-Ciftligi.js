@@ -121,7 +121,7 @@ const stog500ustuBalikIsimler = stog500ustu.map((item) => {
 })
 console.log(stog500ustuBalikIsimler);
 
-/* //Fiyat araligi 9 ile 12 arasindaki baliklar
+//Fiyat araligi 9 ile 12 arasindaki baliklar
 
 const fiyatAraligi = fishFarm.filter((item) => {
     return (item.price >= 9) && (item.price <= 12)
@@ -129,13 +129,13 @@ const fiyatAraligi = fishFarm.filter((item) => {
 const fiyatAraligiIsimler = fiyatAraligi.map((item) => {
     return item.fishType;
 })
-console.log(fiyatAraligiIsimler); */
+console.log(fiyatAraligiIsimler);
 
-/* //Bern Kis
+//Bern ve kis ayinda satilan
 const bernVeKis = fishFarm.filter((item) => {
     return (item.season === "Winter") && (item.saleLocations === "BE"); //Bern kismi calismadi
 });
-console.log(bernVeKis); */
+console.log(bernVeKis);
 
 //son kullanma tarihine göre balik siralama
 

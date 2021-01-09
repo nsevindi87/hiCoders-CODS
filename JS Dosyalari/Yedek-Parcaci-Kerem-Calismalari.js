@@ -24,7 +24,7 @@ function changedList(pList) {
         date = addDate(addKerem);
         newList.push(date);
     }
-    return newList.join("\n");
+    return newList.join("\n")
 
 }
 

@@ -7,7 +7,10 @@
  * - Sinifin en kötü oldugu dersi gostermesi
  * - Tüm derslerin en iyi ögrencilerini bulmasi
  */
-
+const MATH_DERS_INDEX = 1;
+const ALM_DERS_INDEX = 2;
+const ING_DERS_INDEX = 3;
+const COG_DERS_INDEX = 4;
 
 const notes = [
     ["Hans", 80, 90, 10, 50],
@@ -21,21 +24,19 @@ const notes = [
 ];
 
 //ders ortalamalari
-function ortalama(a) {
-    let array = [];
-    let toplam = 0;
-    let ortalama = 0;
-    for (let index = 0; index <= 7; index++) {
-        array.push(notes[index][a])
-        let next = array[index];
-        toplam = toplam + next;
-        ortalama = toplam / notes.length
+
+function notOrtalamasiBul(pDersIndex) {
+    let notToplami = 0;
+    let dersOrtalamasi = 0;
+    for (let index = 0; index < notes.length; index++) {
+        notToplami = notToplami + notes[index][pDersIndex];
     }
-    console.log("Ders ortalamasi", ortalama);
+    dersOrtalamasi = notToplami / notes.length;
+    return dersOrtalamasi;
 }
-ortalama(1) //matematik
-ortalama(2) //almanca
-ortalama(2) //ingilizce
-ortalama(2) //cografya
+console.log(notOrtalamasiBul(1)) //matematik
+console.log(notOrtalamasiBul(2)) //almanca
+console.log(notOrtalamasiBul(3)) //ingilizce
+console.log(notOrtalamasiBul(4)) //cografya
 
 //70 üstü notlar

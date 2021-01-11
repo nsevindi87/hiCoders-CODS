@@ -121,6 +121,8 @@ const stog500ustuBalikIsimler = stog500ustu.map((item) => {
 })
 console.log(stog500ustuBalikIsimler);
 
+
+
 //Fiyat araligi 9 ile 12 arasindaki baliklar
 
 const fiyatAraligi = fishFarm.filter((item) => {
@@ -130,6 +132,8 @@ const fiyatAraligiIsimler = fiyatAraligi.map((item) => {
     return item.fishType;
 })
 console.log(fiyatAraligiIsimler);
+
+
 
 //Bern ve kis ayinda satilan
 const bernVeKis = fishFarm.filter((item) => {

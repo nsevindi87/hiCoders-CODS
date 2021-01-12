@@ -1,35 +1,47 @@
-//array
+function getFishNames(pList) {
+    return pList.map(fish => fish.fishType)
+}
 
-fishFarm.forEach(fish => document.getElementById("output").innerHTML += fish.fishType);
+function convertToText(pList) {
+    return pList.join(",");
+}
+
+function find(pSelector) {
+    return document.querySelector(pSelector);
+}
+
+function updateUI(pContainer, pText) {
+    pContainer.innerHTML = pText;
+}
+
 
 //Stog miktari 500 kg üzerinde olan balik isimleri
 
 const fishListStockOver500 = fishFarm.filter(fish => fish.stockVolumeInKg >= 500);
-const fishNameListInStockOver500 = fishListStockOver500.map(fish => fish.fishType);
+const fishNameListInStockOver500 = getFishNames(fishListStockOver500);
 
-const domContainerDishNameListInStock500 = document.querySelector("#containerFischStockOver500");
-domContainerDishNameListInStock500.innerHTML = fishNameListInStockOver500.join(",")
-
+const domContainerDishNameListInStock500 = find("#containerFischStockOver500");
+updateUI(domContainerDishNameListInStock500, convertToText(fishNameListInStockOver500));
 
 
 
 //Fiyat araligi 9 ile 12 arasindaki baliklar
 
 const fishListBetween9Frand12Fr = fishFarm.filter(fish => fish.price >= 9 && fish.price <= 12);
-const fishNameListBetween9Frand12Fr = fishListBetween9Frand12Fr.map(fish => fish.fishType);
+const fishNameListBetween9Frand12Fr = getFishNames(fishListBetween9Frand12Fr);
 
-document.querySelector("#containerFischPriceBetween9and12").innerHTML = fishNameListBetween9Frand12Fr.join(",");
-
+updateUI(find("#containerFischPriceBetween9and12"), convertToText(fishNameListBetween9Frand12Fr));
 
 
 //Sadece Bern'de ve kis ayinda satilan baliklar
 
 
 const fishListFromBernSeasonWinter = fishFarm.filter(fish => fish.season === "Winter" && fish.saleLocations.includes("BE"));
-const fishNameListFromBernSeasonWinter = fishListFromBernSeasonWinter.map(fish => fish.fishType);
+const fishNameListFromBernSeasonWinter = getFishNames(fishListFromBernSeasonWinter);
 
-document.querySelector("#containerFischfromBernAndSoldWinter").innerHTML = fishNameListFromBernSeasonWinter.join(",");
+find("#containerFischfromBernAndSoldWinter").innerHTML = convertToText(fishNameListFromBernSeasonWinter);
 
+updateUI(find("#containerFischfromBernAndSoldWinter"), convertToText(fishNameListFromBernSeasonWinter));
 
 
 

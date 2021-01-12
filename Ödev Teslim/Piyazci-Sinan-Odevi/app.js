@@ -15,26 +15,27 @@ domContainerDishNameListInStock500.innerHTML = fishNameListInStockOver500.join("
 
 //Fiyat araligi 9 ile 12 arasindaki baliklar
 
+const fishListBetween9Frand12Fr = fishFarm.filter(fish => fish.price >= 9 && fish.price <= 12);
+const fishNameListBetween9Frand12Fr = fishListBetween9Frand12Fr.map(fish => fish.fishType);
 
-
-const fiyatAraligi = fishFarm.filter((item) => {
-    return (item.price >= 9) && (item.price <= 12)
-})
-const fiyatAraligiIsimler = fiyatAraligi.map((item) => {
-    return item.fishType;
-})
-console.log(fiyatAraligiIsimler);
+document.querySelector("#containerFischPriceBetween9and12").innerHTML = fishNameListBetween9Frand12Fr.join(",");
 
 
 
-//Bern ve kis ayinda satilan
-const bernVeKis = fishFarm.filter((item) => {
-    return (item.season === "Winter") && (item.saleLocations.includes("BE")); //önemli - object icindeki arrayin icine bakma
-});
-const bernveKisAyiIsimler = bernVeKis.map((item) => {
-    return item.fishType;
-})
-console.log(bernveKisAyiIsimler);
+//Sadece Bern'de ve kis ayinda satilan baliklar
+
+
+const fishListFromBernSeasonWinter = fishFarm.filter(fish => fish.season === "Winter" && fish.saleLocations.includes("BE"));
+const fishNameListFromBernSeasonWinter = fishListFromBernSeasonWinter.map(fish => fish.fishType);
+
+document.querySelector("#containerFischfromBernAndSoldWinter").innerHTML = fishNameListFromBernSeasonWinter.join(",");
+
+
+
+
+
+
+
 
 //son kullanma tarihine göre balik siralama
 

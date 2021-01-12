@@ -1,17 +1,21 @@
+//array
+
+fishFarm.forEach(fish => document.getElementById("output").innerHTML += fish.fishType);
+
 //Stog miktari 500 kg üzerinde olan balik isimleri
 
-const stog500ustu = fishFarm.filter((item) => {
-    return item.stockVolumeInKg >= 500;
-})
+const fishListStockOver500 = fishFarm.filter(fish => fish.stockVolumeInKg >= 500);
+const fishNameListInStockOver500 = fishListStockOver500.map(fish => fish.fishType);
 
-const stog500ustuBalikIsimler = stog500ustu.map((item) => {
-    return item.fishType;
-})
-console.log(stog500ustuBalikIsimler);
+const domContainerDishNameListInStock500 = document.querySelector("#containerFischStockOver500");
+domContainerDishNameListInStock500.innerHTML = fishNameListInStockOver500.join(",")
+
 
 
 
 //Fiyat araligi 9 ile 12 arasindaki baliklar
+
+
 
 const fiyatAraligi = fishFarm.filter((item) => {
     return (item.price >= 9) && (item.price <= 12)

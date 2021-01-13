@@ -11,6 +11,8 @@ for (let i = 0; i < splitedName.length; i++) {
 }
 console.log(splitedName.join(" "));
 
+
+
 //0-100 arasi sayilar  - her satirda 10 sayi
 const sayilar = [];
 let sayilarList = 0;
@@ -43,7 +45,6 @@ function renderZeroToValue(pDeger) {
 
 
 
-
 //sifre olusturma
 let uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTVYZXW";
 let lowercaseLetters = "abcdefghijklmnopqrstvyzxw";
@@ -73,6 +74,7 @@ function createPassword(pNumber) {
     }
 }
 createPassword(30);
+
 
 //yildiz motifi yapma
 

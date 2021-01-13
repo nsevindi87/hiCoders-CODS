@@ -14,34 +14,36 @@ function updateUI(pContainer, pText) {
     pContainer.innerHTML = pText;
 }
 
+function getFishListOver(pList, pVolume) {
+    return pList.filter(fish => fish.stockVolumeInKg > pVolume);
+}
+
+
+function getFishListPriceBetween(pList, pLowerBound, pUpperBound) {
+    return pList.filter(fish => fish.price >= pLowerBound && fish.price <= pUpperBound);
+}
+
+function getFishListSeasonAndCanton(pList, pSeason, pCanton) {
+    return pList.filter(fish => fish.season.toUpperCase() === pSeason && fish.saleLocations.includes(pCantone))
+}
+
 
 //Stog miktari 500 kg üzerinde olan balik isimleri
 
-const fishListStockOver500 = fishFarm.filter(fish => fish.stockVolumeInKg >= 500);
-const fishNameListInStockOver500 = getFishNames(fishListStockOver500);
-
-const domContainerDishNameListInStock500 = find("#containerFischStockOver500");
-updateUI(domContainerDishNameListInStock500, convertToText(fishNameListInStockOver500));
+updateUI(find("#containerFischStockOver500"), convertToText(getFishNames(getFishListOver(fishFarm, 500))));
 
 
 
 //Fiyat araligi 9 ile 12 arasindaki baliklar
 
-const fishListBetween9Frand12Fr = fishFarm.filter(fish => fish.price >= 9 && fish.price <= 12);
-const fishNameListBetween9Frand12Fr = getFishNames(fishListBetween9Frand12Fr);
+updateUI(find("#containerFischPriceBetween9and12"), convertToText(getFishNames(getFishListPriceBetween(fishFarm, 9, 12))));
 
-updateUI(find("#containerFischPriceBetween9and12"), convertToText(fishNameListBetween9Frand12Fr));
 
 
 //Sadece Bern'de ve kis ayinda satilan baliklar
 
-
 const fishListFromBernSeasonWinter = fishFarm.filter(fish => fish.season === "Winter" && fish.saleLocations.includes("BE"));
-const fishNameListFromBernSeasonWinter = getFishNames(fishListFromBernSeasonWinter);
-
-find("#containerFischfromBernAndSoldWinter").innerHTML = convertToText(fishNameListFromBernSeasonWinter);
-
-updateUI(find("#containerFischfromBernAndSoldWinter"), convertToText(fishNameListFromBernSeasonWinter));
+updateUI(find("#containerFischfromBernAndSoldWinter"), convertToText(getFishNames(fishListFromBernSeasonWinter)));
 
 
 

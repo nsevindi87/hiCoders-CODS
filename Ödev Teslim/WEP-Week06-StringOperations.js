@@ -12,7 +12,6 @@ for (let i = 0; i < splitedName.length; i++) {
 console.log(splitedName.join(" "));
 
 
-
 //0-100 arasi sayilar  - her satirda 10 sayi
 const sayilar = [];
 let sayilarList = 0;
@@ -40,9 +39,6 @@ function renderZeroToValue(pDeger) {
         }
     }
 }
-
-// 0-100 arasi asal sayilar
-
 
 
 //sifre olusturma
@@ -83,3 +79,7 @@ for (let sira = 0; sira <= 6; sira++) {
     yildiz.push("*");
     console.log(yildiz.join("")); //icerigi birlestirir ve her seferde bir arttirarak yazdirir. Parantez disina gelseydi sadece 6 yildiz basilirdi.
 }
+
+
+
+// 0-100 arasi asal sayilar

@@ -40,3 +40,46 @@ for (index = 0; index < animalList.length; index++) {
         break;
     }
 }
+
+let farm = ["Cow", "cOw", "chicken", "pig", "sheep", "pig", "chicken", "cow"];
+const COW_LEG = 4;
+const CHICKEN_LEG = 2;
+const PIG_LEG = 4;
+const SHEEP_LEG = 4;
+let numberOfCow = 0,
+    numberOfChicken = 0,
+    numberOfPig = 0,
+    numberOfSheep = 0;
+/*
+for(let index = 0;index < farm.length;index++){
+    let animal = farm[index].toLowerCase();
+    if(animal.includes("cow")){
+        numberOfCow++;
+    }else if(animal.includes("chicken")){
+        numberOfChicken++;
+    }else if(animal.includes("pig")){
+        numberOfPig++;
+    }else if(animal.includes("sheep")){
+        numberOfSheep++;
+    }else{
+        console.log("Sorgulanan hayvanlardan degil");
+    }
+}
+let totalAnimalLeg = (numberOfCow * COW_LEG) + (numberOfChicken * CHICKEN_LEG) + (numberOfPig * PIG_LEG) + (numberOfSheep * SHEEP_LEG);
+let halalLeg = (numberOfCow * COW_LEG) + (numberOfChicken * CHICKEN_LEG) + (numberOfSheep * SHEEP_LEG);
+let kellePacaLeg = (numberOfCow * COW_LEG) + (numberOfSheep * SHEEP_LEG);
+console.log(totalAnimalLeg=${totalAnimalLeg});
+console.log(halalLeg=${halalLeg});
+console.log(kellePacaLeg=${kellePacaLeg});
+*/
+function LegOfAnimals(pAnimalArray, pAnimal, pAnimalLeg) {
+    return pAnimalArray.filter(animal => animal.toLowerCase().includes(pAnimal)).map(animal => animal = pAnimalLeg).reduce((sayi1, sayi2) => sayi1 + sayi2)
+}
+let numberOfCowLeg = LegOfAnimals(farm, "cow", COW_LEG);
+let numberOfChickenLeg = farm.filter(x => x.toLowerCase().includes("chicken")).map(x => x = CHICKEN_LEG).reduce((x, y) => x + y);
+let numberOfPigLeg = farm.filter(x => x.toLowerCase().includes("pig")).map(x => x = PIG_LEG).reduce((x, y) => x + y);
+let numberOfSheepLeg = farm.filter(x => x.toLowerCase().includes("sheep")).map(x => x = SHEEP_LEG).reduce((x, y) => x + y);
+console.log(numberOfCowLeg);
+console.log(numberOfChickenLeg);
+console.log(numberOfPigLeg);
+console.log(numberOfSheepLeg);

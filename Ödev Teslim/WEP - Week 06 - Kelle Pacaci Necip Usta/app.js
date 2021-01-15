@@ -11,7 +11,7 @@
 * - koyun
 */
 
-let animalList = ["inek", "tavuk", "domuz", "koyun"];
+/* let animalList = ["inek", "tavuk", "domuz", "koyun"];
 let inekSayisi = 10;
 let tavukSayisi = 11;
 let domuzSayisi = 12;
@@ -39,7 +39,7 @@ for (index = 0; index < animalList.length; index++) {
         console.log(`Su anda bütün hayvanlara ait toplam ${(numberOfLegsTavuk * dortBacakliHayvanSayisi) + (numberOfLegs * tavukSayisi)} bacak var.`);
         break;
     }
-}
+} */
 
 let farm = ["Cow", "cOw", "chicken", "pig", "sheep", "pig", "chicken", "cow"];
 const COW_LEG = 4;

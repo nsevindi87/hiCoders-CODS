@@ -76,7 +76,7 @@ function LegOfAnimals(pAnimalArray, pAnimal, pAnimalLeg) {
     return pAnimalArray.filter(animal => animal.toLowerCase().includes(pAnimal)).map(animal => animal = pAnimalLeg).reduce((sayi1, sayi2) => sayi1 + sayi2)
 }
 let numberOfCowLeg = LegOfAnimals(farm, "cow", COW_LEG);
-let numberOfChickenLeg = farm.filter(x => x.toLowerCase().includes("chicken")).map(x => x = CHICKEN_LEG).reduce((x, y) => x + y);
+let numberOfChickenLeg = farm.filter(x => x.toLowerCase().includes("chicken")).map(x => x = CHICKEN_LEG).reduce((x, y) => x + y); // arrayi icindekileri kuculterek filtrele - sonra bulduklarini map ile sayiya cevir - sonra reduce ile array icindekileri topla.
 let numberOfPigLeg = farm.filter(x => x.toLowerCase().includes("pig")).map(x => x = PIG_LEG).reduce((x, y) => x + y);
 let numberOfSheepLeg = farm.filter(x => x.toLowerCase().includes("sheep")).map(x => x = SHEEP_LEG).reduce((x, y) => x + y);
 console.log(numberOfCowLeg);

@@ -1,3 +1,4 @@
+
 main{
     margin: 0 auto;
     width: 30vw;
@@ -5,7 +6,7 @@ main{
 
 section{
     text-align: center;
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 #battery{
@@ -15,22 +16,22 @@ section{
     border: 1px solid black;
 }
 
-#battery div {
+#battery div{
     height: 50px;
 }
 
 .energy-level-0 div{
     background: white;
 }
+
 .energy-level-1 div:last-child{
     background: red;
-
 }
-.energy-level-2 div:nth-child(2), .energy-level-2 div:last-child {
+
+.energy-level-2 div:nth-child(2), .energy-level-2 div:last-child{
     background: orange;
 }
 
 .energy-level-3 div{
     background: green;
-
 }

@@ -20,6 +20,20 @@
  * 
  */
 
+//Functions
+
+function updateUI(pEnergyLevel, pBatteryContainer) {
+    if (pEnergyLevel == 0) {
+        pBatteryContainer.className = "energy-level-0";
+    } else if (pEnergyLevel == 1) {
+        pBatteryContainer.className = "energy-level-1";
+    } else if (pEnergyLevel == 2) {
+        pBatteryContainer.className = "energy-level-2";
+    } else if (pEnergyLevel == 3) {
+        pBatteryContainer.className = "energy-level-3";
+    }
+}
+
 // Data model
 let energyLevel = 0; // max = 3
 
@@ -32,32 +46,12 @@ increasingElement.addEventListener("click", function (eventBilgisi) {
     if (energyLevel < 3) {
         energyLevel++;
     }
-    if (energyLevel == 0) {
-        batteryElement.className = "energy-level-0";
-    } else if (energyLevel == 1) {
-        batteryElement.className = "energy-level-1"
-    } else if (energyLevel == 2) {
-        batteryElement.className = "energy-level-2"
-    } else if (energyLevel == 3) {
-        batteryElement.className = "energy-level-3"
-    }
+    updateUI(energyLevel, batteryElement);
 });
-
-
-
-
 
 decreasingElement.addEventListener("click", function (eventBilgisi) {
     if (energyLevel > 0) {
         energyLevel--;
     }
-    if (energyLevel == 0) {
-        batteryElement.className = "energy-level-0";
-    } else if (energyLevel == 1) {
-        batteryElement.className = "energy-level-1"
-    } else if (energyLevel == 2) {
-        batteryElement.className = "energy-level-2"
-    } else if (energyLevel == 3) {
-        batteryElement.className = "energy-level-3"
-    }
+    updateUI(energyLevel, batteryElement);
 });

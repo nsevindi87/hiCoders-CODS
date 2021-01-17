@@ -19,3 +19,17 @@
  *    5.1 Arttima esnasinda pilin rengi kirmizidan yesile dogru degisecek
  * 
  */
+
+// Data model
+let energyLevel = 0; // max = 3
+
+//DOM API - Event handler - Interactions
+const increasingElement = document.querySelector("#increaseHandle");
+const decreasingElement = document.querySelector("#decreaseHandle");
+
+increasingElement.addEventListener("click", function (eventBilgisi) {
+    alert("+")
+});
+decreasingElement.addEventListener("click", function (eventBilgisi) {
+    alert("-")
+});

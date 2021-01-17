@@ -23,10 +23,12 @@ section{
 .energy-level-0 div{
     background: white;
 }
+
 .energy-level-1 div:last-child{
     background: red;
 
 }
+
 .energy-level-2 div:nth-child(2), .energy-level-2 div:last-child {
     background: orange;
 }

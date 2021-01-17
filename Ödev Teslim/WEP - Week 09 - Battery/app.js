@@ -26,10 +26,38 @@ let energyLevel = 0; // max = 3
 //DOM API - Event handler - Interactions
 const increasingElement = document.querySelector("#increaseHandle");
 const decreasingElement = document.querySelector("#decreaseHandle");
+const batteryElement = document.querySelector("#battery");
 
 increasingElement.addEventListener("click", function (eventBilgisi) {
-    alert("+")
+    if (energyLevel < 3) {
+        energyLevel++;
+    }
+    if (energyLevel == 0) {
+        batteryElement.className = "energy-level-0";
+    } else if (energyLevel == 1) {
+        batteryElement.className = "energy-level-1"
+    } else if (energyLevel == 2) {
+        batteryElement.className = "energy-level-2"
+    } else if (energyLevel == 3) {
+        batteryElement.className = "energy-level-3"
+    }
 });
+
+
+
+
+
 decreasingElement.addEventListener("click", function (eventBilgisi) {
-    alert("-")
+    if (energyLevel > 0) {
+        energyLevel--;
+    }
+    if (energyLevel == 0) {
+        batteryElement.className = "energy-level-0";
+    } else if (energyLevel == 1) {
+        batteryElement.className = "energy-level-1"
+    } else if (energyLevel == 2) {
+        batteryElement.className = "energy-level-2"
+    } else if (energyLevel == 3) {
+        batteryElement.className = "energy-level-3"
+    }
 });

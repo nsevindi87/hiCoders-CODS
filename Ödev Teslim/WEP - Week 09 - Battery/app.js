@@ -23,15 +23,7 @@
 //Functions
 
 function updateUI(pEnergyLevel, pBatteryContainer) {
-    if (pEnergyLevel == 0) {
-        pBatteryContainer.className = "energy-level-0";
-    } else if (pEnergyLevel == 1) {
-        pBatteryContainer.className = "energy-level-1";
-    } else if (pEnergyLevel == 2) {
-        pBatteryContainer.className = "energy-level-2";
-    } else if (pEnergyLevel == 3) {
-        pBatteryContainer.className = "energy-level-3";
-    }
+    pBatteryContainer.className = `energy-level-${pEnergyLevel}`;
 }
 
 // Data model
@@ -42,6 +34,8 @@ const increasingElement = document.querySelector("#increaseHandle");
 const decreasingElement = document.querySelector("#decreaseHandle");
 const batteryElement = document.querySelector("#battery");
 
+
+//arttirma ve azaltma eylemleri
 increasingElement.addEventListener("click", function (eventBilgisi) {
     if (energyLevel < 3) {
         energyLevel++;

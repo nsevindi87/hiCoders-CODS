@@ -1,8 +1,8 @@
-function header() {
+function createHeader() {
     return `<h1>Battary Prototype</h1>`;
 }
 
-function battery() {
+function createBattery() {
     return `<section id="battery">
                 <div>...</div>
                 <div>...</div>
@@ -19,3 +19,9 @@ function createButtons() {
                 <button id="increase-handle">+</button> <button id="decrease-handle">-</button>
             </section>`;
 }
+
+const mainElement = document.querySelector("#app");
+mainElement.innerHTML = createHeader() +
+    createBattery() +
+    createLevelInfo() +
+    createButtons();

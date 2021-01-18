@@ -22,17 +22,19 @@
 
 //Functions
 
-function updateUI(pEnergyLevel, pBatteryContainer) {
+function updateUI(pEnergyLevel, pBatteryContainer, pLevelInfo) {
     pBatteryContainer.className = `energy-level-${pEnergyLevel}`;
+    pLevelInfo.innerHTML = Math.round((energyLevel / 3) * 100);
 }
 
 // Data model
 let energyLevel = 0; // max = 3
 
 //DOM API - Event handler - Interactions
-const increasingElement = document.querySelector("#increaseHandle");
-const decreasingElement = document.querySelector("#decreaseHandle");
+const increasingElement = document.querySelector("#increase-handle");
+const decreasingElement = document.querySelector("#decrease-handle");
 const batteryElement = document.querySelector("#battery");
+const levelInfoElement = document.querySelector("#energy-level-info")
 
 
 //arttirma ve azaltma eylemleri
@@ -40,12 +42,12 @@ increasingElement.addEventListener("click", function (eventBilgisi) {
     if (energyLevel < 3) {
         energyLevel++;
     }
-    updateUI(energyLevel, batteryElement);
+    updateUI(energyLevel, batteryElement, levelInfoElement);
 });
 
 decreasingElement.addEventListener("click", function (eventBilgisi) {
     if (energyLevel > 0) {
         energyLevel--;
     }
-    updateUI(energyLevel, batteryElement);
+    updateUI(energyLevel, batteryElement, levelInfoElement);
 });

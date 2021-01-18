@@ -18,3 +18,7 @@ article{
 h1{
     text-align: center;
 }
+#total{
+    display: flex;
+    justify-content: flex-end;
+}

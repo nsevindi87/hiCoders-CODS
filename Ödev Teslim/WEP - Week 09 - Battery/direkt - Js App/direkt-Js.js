@@ -50,4 +50,5 @@ function updateUI(pEnergyLevel) {
         createButtons();
 }
 
+//initialization / ilkleme
 updateUI(0);

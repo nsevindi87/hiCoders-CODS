@@ -34,20 +34,16 @@ let newProduct = document.querySelector("#new-product")
 } */
 
 redBuyButton.addEventListener("click", function (pEvent) {
-    redTshirt.innerHTML = "";
-    newProduct.innerHTML = "Red T-Shirt" + "\n" + "20.-"
+    newProduct.firstChild = "Red T-Shirt" + "\n" + "20.-"
 });
 
 blueBuyButton.addEventListener("click", function (pEvent) {
-    blueTshirt.innerHTML = "";
-    newProduct.innerHTML = "Blue T-Shirt" + "\n" + "20.-"
+    newProduct.appendChild.innerHTML = "Blue T-Shirt" + "\n" + "20.-"
 });
 blackBuyButton.addEventListener("click", function (pEvent) {
-    blackTshirt.innerHTML = "";
     newProduct.innerHTML = "Red T-Shirt" + "\n" + "15.-"
 });
 orangeBuyButton.addEventListener("click", function (pEvent) {
-    orangeTshirt.innerHTML = "";
     newProduct.innerHTML = "Red T-Shirt" + "\n" + "12.-"
 });
 

@@ -61,13 +61,3 @@ orangeBuyButton.addEventListener("click", buyOrangeTshirt)
 function buyOrangeTshirt() {
     document.querySelector("#new-product").appendChild(orangeTshirt);
 }
-
-
-
-let elmaReceli = document.querySelector("#elma-receli")
-elmaReceli.addEventListener("click", sepeteElmaReceliAt);
-
-function sepeteElmaReceliAt() {
-    document.querySelector("#newDiv").appendChild(elmaReceli);
-    return
-}

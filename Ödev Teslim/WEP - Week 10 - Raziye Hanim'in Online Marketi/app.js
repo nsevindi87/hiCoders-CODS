@@ -23,33 +23,51 @@ let blueBuyButton = document.querySelector("#blue-buy-button")
 let blackBuyButton = document.querySelector("#black-buy-button")
 let orangeBuyButton = document.querySelector("#orange-buy-button")
 
-let redTshirt = document.querySelector("#red-tsirt")
-let blueTshirt = document.querySelector("#blue-tsirt")
-let blackTshirt = document.querySelector("#black-tsirt")
-let orangeTshirt = document.querySelector("#orange-tsirt")
+let redTshirt = document.querySelector("#red-tshirt")
+let blueTshirt = document.querySelector("#blue-tshirt")
+let blackTshirt = document.querySelector("#black-tshirt")
+let orangeTshirt = document.querySelector("#orange-tshirt")
 
 let newProduct = document.querySelector("#new-product")
 /* function buyButton(pColor) {
     document.querySelector(`#${pColor}-buy-button`)
 } */
 
-redBuyButton.addEventListener("click", function (pEvent) {
-    newProduct.firstChild = "Red T-Shirt" + "\n" + "20.-"
-});
 
-blueBuyButton.addEventListener("click", function (pEvent) {
-    newProduct.appendChild.innerHTML = "Blue T-Shirt" + "\n" + "20.-"
-});
-blackBuyButton.addEventListener("click", function (pEvent) {
-    newProduct.innerHTML = "Red T-Shirt" + "\n" + "15.-"
-});
-orangeBuyButton.addEventListener("click", function (pEvent) {
-    newProduct.innerHTML = "Red T-Shirt" + "\n" + "12.-"
-});
+//red
+redBuyButton.addEventListener("click", buyRedTshirt)
 
-function productAdd() {
-    let product = document.createElement("article");
-    let article = document.getElementById("new-product");
-    product.src = redTshirt
-    article.appendChild(product);
+function buyRedTshirt() {
+    document.querySelector("#new-product").appendChild(redTshirt);
+}
+
+//blue
+blueBuyButton.addEventListener("click", buyBlueTshirt)
+
+function buyBlueTshirt() {
+    document.querySelector("#new-product").appendChild(blueTshirt);
+}
+
+//black
+blackBuyButton.addEventListener("click", buyBlackTshirt)
+
+function buyBlackTshirt() {
+    document.querySelector("#new-product").appendChild(blackTshirt);
+}
+
+//orange
+orangeBuyButton.addEventListener("click", buyOrangeTshirt)
+
+function buyOrangeTshirt() {
+    document.querySelector("#new-product").appendChild(orangeTshirt);
+}
+
+
+
+let elmaReceli = document.querySelector("#elma-receli")
+elmaReceli.addEventListener("click", sepeteElmaReceliAt);
+
+function sepeteElmaReceliAt() {
+    document.querySelector("#newDiv").appendChild(elmaReceli);
+    return
 }

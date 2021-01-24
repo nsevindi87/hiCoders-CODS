@@ -8,6 +8,6 @@
  *      -Ikinci kisma ise saat gelecek
  *           -ikinci div de secilen ülkeye göre saat dilimi de degisecek
  *     2-2.DIV
- *      -Option ile farkli ülke secenekleri gelecek
+ *      -Button ile farkli ülke secenekleri gelecek
  * 
  */

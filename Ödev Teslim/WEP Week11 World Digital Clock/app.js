@@ -8,7 +8,7 @@
  *      -Ikinci kisma ise saat gelecek
  *           -ikinci div de secilen ülkeye göre saat dilimi de degisecek
  *     2-2.DIV
- *      -Button ile farkli ülke secenekleri gelecek
+ *      -Butonlara basildikca farkli ülke secenekleri gelecek
  * 
  */
 
@@ -36,5 +36,4 @@ function showTime() {
     let time = hours + ":" + minutes + ":" + seconds
     document.getElementById("clock").innerHTML = time;
 }
-
 setInterval(showTime, 1000);

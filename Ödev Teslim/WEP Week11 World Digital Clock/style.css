@@ -1,3 +1,28 @@
+#generalContainer{
+    display: flex;
+}
+
+h1{
+    font-size: 50px;
+    margin-left: 150px;
+}
+#clockContainer{
+    width: 60vw;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.dropdown{
+    width: 30vw;
+}
+
+#cityName{
+    text-align: end;
+}
+
+#clock{
+    font-size: 300px;
+}
 /* Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;

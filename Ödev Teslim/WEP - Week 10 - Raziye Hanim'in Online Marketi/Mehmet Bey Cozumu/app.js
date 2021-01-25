@@ -10,6 +10,7 @@
  * Silme islemi yine sepete container üzerine yerlestirilir. Olay gerceklestiginde alinan referans ile ilgili ürün sepet arrayinden kaldirilir 
  * ve sepert HTML güncellenir.
  */
+const basketList = [];
 
 function formatDate(pDate) {
     return pDate.toLocaleDateString(`de-CH`);
@@ -38,25 +39,29 @@ function createProductCatalogHeader() {
 }
 
 function createProductLines(plist) {
-    return plist.map(product => `
+    return plist.map((product, index) => `
         <tr>
             <td>${product.productName}</td>
             <td>${product.totalCalories}</td>
             <td>${formatDate(product.expireDate)}</td>
             <td>${product.price}</td>
             <td><img src="${product.productImage}"></img></td>
-            <td><button>add</button></td>
+            <td><button id="${index}">add</button></td> 
         </tr>
-    `);
+    `).join("");
 }
 
 document.querySelector("#products-container").innerHTML = createProductCatalog(productList);
 
-
-
-
-
-
+//EKLEME FONKSIYONU
+document.querySelector("#products-container").addEventListener("click", function (pEvent) {
+    let clickedElement = pEvent.target;
+    if (clickedElement.tagName.toLowerCase() === "button") {
+        let index = parseInt(clickedElement.id);
+        let selectedProduct = productList[index];
+        alert(selectedProduct.productName)
+    }
+})
 
 
 
@@ -92,3 +97,5 @@ document.querySelector("#products-container").innerHTML = createProductCatalog(p
  * BUNDAN SONRA URUNU BASKETE EKLEME ISLEMI
 
 */
+
+//buttona index id ataniyor.

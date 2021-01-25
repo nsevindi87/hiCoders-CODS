@@ -13,7 +13,6 @@
 const basketList = [];
 
 document.querySelector("#products-container").innerHTML = createProductCatalog(productList);
-
 //EKLEME FONKSIYONU
 document.querySelector("#products-container").addEventListener("click", addButtonClickedEvent)
 

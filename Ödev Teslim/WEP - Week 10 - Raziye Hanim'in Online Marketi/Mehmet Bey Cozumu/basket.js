@@ -23,6 +23,11 @@ function createBasketItems(pList) {
 }
 
 function createTotalSection(pList) {
+
+    let total;
+    pList.forEach(p => total += p.price);
+    //pList.reduce(p=>total+p.price,0);
+
     return `
         <tr>
             <td colspan="2">Total Price</td>

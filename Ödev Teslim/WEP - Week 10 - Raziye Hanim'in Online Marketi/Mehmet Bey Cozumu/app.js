@@ -11,11 +11,11 @@
  * ve sepert HTML güncellenir.
  */
 
-function createProductCatalog() {
+function createProductCatalog(plist) {
     return `
         <table>
-            ${createProductCatalogHeader}
-            ${createProductCatalogLines}
+            ${createProductCatalogHeader()}
+            ${createProductLines(plist)}
         </table>
     `;
 }
@@ -23,7 +23,7 @@ function createProductCatalog() {
 function createProductCatalogHeader() {
     return `
         <tr>
-            <th>name</th>
+            <th>Name</th>
             <th>Calory</th>
             <th>Exp. Date</th>
             <th>Price</th>
@@ -33,15 +33,17 @@ function createProductCatalogHeader() {
     `;
 }
 
-function createProductCatalogLines() {
-    return `
+function createProductLines(plist) {
+    return plist.map(product => `
         <tr>
-            <td>Aprikosen</td>
-            <td>200</td>
-            <td>01.01.2022</td>
-            <td>3.60</td>
-            <td><img src="" alt=""></td>
+            <td>${product.productName}</td>
+            <td>${product.price}</td>
+            <td>${product.expireDate}</td>
+            <td>${product.productImage}</td>
+            <td><img src="${product.totalCalories}"></img></td>
             <td><button>add</button></td>
         </tr>
-    `;
+    `);
 }
+
+document.querySelector("#products-container").innerHTML = createProductCatalog(productList);

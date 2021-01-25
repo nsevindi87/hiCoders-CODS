@@ -42,6 +42,7 @@ function addButtonClickedEvent(pEvent) {
     if (clickedElement.tagName.toLowerCase() === "button") {
         let index = parseInt(clickedElement.id);
         let selectedProduct = productList[index];
-        basketList.push(selectedProduct);
+
+        updateBasket(selectedProduct);
     }
 }

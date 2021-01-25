@@ -1,8 +1,8 @@
-function updateBasket(pList) {
-
+function priceFormat(pMoney) {
+    return pMoney.toFixed(2);
 }
 
-function crateBasket() {
+function createBasket(pList) {
     return `
         <table>
             ${createBasketItems(pList)}
@@ -12,7 +12,7 @@ function crateBasket() {
 }
 
 function createBasketItems(pList) {
-    return plist.map((product, index) => `
+    return pList.map((product, index) => `
         <tr>
             <td>${product.productName}</td>
             <td>${product.price}</td>
@@ -23,15 +23,21 @@ function createBasketItems(pList) {
 }
 
 function createTotalSection(pList) {
-
-    let total;
+    let total = 0;
     pList.forEach(p => total += p.price);
     //pList.reduce(p=>total+p.price,0);
 
     return `
         <tr>
             <td colspan="2">Total Price</td>
-            <td colspan="2">3.60 Fr.</td>
+            <td colspan="2">${priceFormat(total)} Fr.</td>
         </tr>
     `;
+}
+
+
+//main
+function updateBasket(pProduct) {
+    basketList.push(pProduct);
+    document.querySelector("#basket-container").innerHTML = createBasket(basketList)
 }

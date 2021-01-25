@@ -24,7 +24,7 @@ function changeFormat(sayi) {
     }
 }
 
-function showTime() {
+function showTime(ders = 0) {
     let date = new Date;
     hours = date.getHours();
     minutes = date.getMinutes();
@@ -33,7 +33,9 @@ function showTime() {
     hours = changeFormat(hours);
     minutes = changeFormat(minutes);
     seconds = changeFormat(seconds);
-    let time = hours + ":" + minutes + ":" + seconds
+    let time = hours + ders + ":" + minutes + ":" + seconds
     document.getElementById("clock").innerHTML = time;
 }
-setInterval(showTime, 1000);
+//setInterval(showTime(), 1000); switzerland
+setInterval(showTime(-2), 1000); //istanbul
+//setInterval(showTime(12), 1000);  //new york

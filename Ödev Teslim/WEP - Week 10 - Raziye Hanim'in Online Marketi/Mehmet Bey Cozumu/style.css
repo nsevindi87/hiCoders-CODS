@@ -5,3 +5,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
+
+#products-container td img{
+    width: 30px;
+}

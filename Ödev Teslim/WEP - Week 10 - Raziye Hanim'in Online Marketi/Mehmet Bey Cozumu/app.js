@@ -11,6 +11,10 @@
  * ve sepert HTML güncellenir.
  */
 
+function formatDate(pDate) {
+    return pDate.toLocaleDateString(`de-CH`);
+}
+
 function createProductCatalog(plist) {
     return `
         <table>
@@ -37,10 +41,10 @@ function createProductLines(plist) {
     return plist.map(product => `
         <tr>
             <td>${product.productName}</td>
+            <td>${product.totalCalories}</td>
+            <td>${formatDate(product.expireDate)}</td>
             <td>${product.price}</td>
-            <td>${product.expireDate}</td>
-            <td>${product.productImage}</td>
-            <td><img src="${product.totalCalories}"></img></td>
+            <td><img src="${product.productImage}"></img></td>
             <td><button>add</button></td>
         </tr>
     `);

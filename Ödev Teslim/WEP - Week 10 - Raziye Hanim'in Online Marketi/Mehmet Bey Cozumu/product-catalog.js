@@ -1,7 +1,9 @@
+//tarihi formatlama
 function formatDate(pDate) {
     return pDate.toLocaleDateString(`de-CH`);
 }
 
+//ürünlerin yer aldigi kismin ana yapisi
 function createProductCatalog(plist) {
     return `
         <table>
@@ -11,6 +13,7 @@ function createProductCatalog(plist) {
     `;
 }
 
+//ürünler tablosu baslik
 function createProductCatalogHeader() {
     return `
         <tr>
@@ -24,6 +27,7 @@ function createProductCatalogHeader() {
     `;
 }
 
+//ürünler tablosu listeleri
 function createProductLines(plist) {
     return plist.map((product, index) => `
         <tr>
@@ -37,6 +41,7 @@ function createProductLines(plist) {
     `).join("");
 }
 
+//Ekleme butonu calismasi
 function addButtonClickedEvent(pEvent) {
     let clickedElement = pEvent.target;
     if (clickedElement.tagName.toLowerCase() === "button") {

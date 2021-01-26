@@ -24,18 +24,23 @@ function changeFormat(sayi) {
     }
 }
 
-function showTime(ders = 0) {
+function showTime(pHour) {
     let date = new Date;
-    hours = date.getHours();
-    minutes = date.getMinutes();
-    seconds = date.getSeconds();
+    hours = changeFormat(date.getHours());
+    minutes = changeFormat(date.getMinutes());
+    seconds = changeFormat(date.getSeconds());
 
-    hours = changeFormat(hours);
-    minutes = changeFormat(minutes);
-    seconds = changeFormat(seconds);
-    let time = hours + ders + ":" + minutes + ":" + seconds
+    let time = hours + ":" + minutes + ":" + seconds
+
     document.getElementById("clock").innerHTML = time;
+    document.getElementById("clock").textContent = time;
+    setTimeout(showTime, 1000)
+
 }
-//setInterval(showTime(), 1000); switzerland
-setInterval(showTime(-2), 1000); //istanbul
-//setInterval(showTime(12), 1000);  //new york
+
+//setInterval(showTime, 1000);
+document.querySelector(".dropdown-content").addEventListener("click", function (pEvent) {
+    if (pEvent.target.id === "switzerland") {
+        return showTime()
+    }
+})

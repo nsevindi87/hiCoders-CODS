@@ -1,7 +1,12 @@
-function priceFormat(pMoney) {
-    return pMoney.toFixed(2);
+const basketList = [];
+
+//main - secilen ürünleri buradan basketListe atmaya yarar
+function updateBasket(pProduct) {
+    basketList.push(pProduct);
+    document.querySelector("#basket-container").innerHTML = createBasket(basketList)
 }
 
+//Sepet olusturma ANA Semasi
 function createBasket(pList) {
     return `
         <table>
@@ -11,6 +16,7 @@ function createBasket(pList) {
     `;
 }
 
+//Sepete eklenen ürün özelliklerini ceken fonksiyon
 function createBasketItems(pList) {
     return pList.map((product, index) => `
         <tr>
@@ -22,6 +28,7 @@ function createBasketItems(pList) {
     `).join("");
 }
 
+//Sepete eklenen ürünlerin fiyatlatini toplama fonksiyonu
 function createTotalSection(pList) {
     let total = 0;
     pList.forEach(p => total += p.price);
@@ -35,9 +42,7 @@ function createTotalSection(pList) {
     `;
 }
 
-
-//main
-function updateBasket(pProduct) {
-    basketList.push(pProduct);
-    document.querySelector("#basket-container").innerHTML = createBasket(basketList)
+//fiyati düzenleme
+function priceFormat(pMoney) {
+    return pMoney.toFixed(2);
 }

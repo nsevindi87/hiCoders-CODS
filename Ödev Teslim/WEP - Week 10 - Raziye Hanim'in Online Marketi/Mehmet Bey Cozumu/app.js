@@ -10,10 +10,10 @@
  * Silme islemi yine sepete container üzerine yerlestirilir. Olay gerceklestiginde alinan referans ile ilgili ürün sepet arrayinden kaldirilir 
  * ve sepert HTML güncellenir.
  */
-const basketList = [];
+
 
 document.querySelector("#products-container").innerHTML = createProductCatalog(productList);
-//EKLEME FONKSIYONU
+//URUN EKLEME FONKSIYONU
 document.querySelector("#products-container").addEventListener("click", addButtonClickedEvent)
 
 
@@ -50,5 +50,3 @@ document.querySelector("#products-container").addEventListener("click", addButto
  * BUNDAN SONRA URUNU BASKETE EKLEME ISLEMI
 
 */
-
-//buttona index id ataniyor.

@@ -24,23 +24,31 @@ function changeFormat(sayi) {
     }
 }
 
-function showTime(pHour) {
+function showTime(pAddHour) {
     let date = new Date;
     hours = changeFormat(date.getHours());
     minutes = changeFormat(date.getMinutes());
     seconds = changeFormat(date.getSeconds());
-
+    if (pAddHour == 2) {
+        hours = hours + 2;
+    }
     let time = hours + ":" + minutes + ":" + seconds
 
     document.getElementById("clock").innerHTML = time;
     document.getElementById("clock").textContent = time;
-    setTimeout(showTime, 1000)
-
+    setTimeout(function () {
+        return showTime(pAddHour)
+    }, 1000)
 }
 
-//setInterval(showTime, 1000);
 document.querySelector(".dropdown-content").addEventListener("click", function (pEvent) {
     if (pEvent.target.id === "switzerland") {
         return showTime()
+    }
+    if (pEvent.target.id === "istanbul") {
+        return showTime(-2)
+    }
+    if (pEvent.target.id === "newYork") {
+        return showTime(6)
     }
 })

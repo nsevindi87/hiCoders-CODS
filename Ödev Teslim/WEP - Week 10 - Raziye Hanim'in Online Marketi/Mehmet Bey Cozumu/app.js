@@ -11,11 +11,9 @@
  * ve sepert HTML güncellenir.
  */
 
-
 document.querySelector("#products-container").innerHTML = createProductCatalog(productList);
 //URUN EKLEME FONKSIYONU
 document.querySelector("#products-container").addEventListener("click", addButtonClickedEvent)
-
 
 
 /**Hazir array icindeki ürünleri listelemek icin neler yapilmasi gerekmektedir.

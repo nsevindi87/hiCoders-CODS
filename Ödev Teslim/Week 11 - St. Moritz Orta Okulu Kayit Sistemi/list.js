@@ -1,11 +1,10 @@
-document.querySelector("#ogrenci-container").innerHTML = listeCOntainer();
+document.querySelector("#ogrenci-container").innerHTML = listeCOntainer(eklenenOgrenciler);
 
-
-function listeCOntainer() {
+function listeCOntainer(pList) {
     return `
         <table>
-        ${listeBaslik}
-        ${elemanekle}
+            ${listeBaslik}
+            ${elemanekle(pList)}
         </table>
     `;
 }

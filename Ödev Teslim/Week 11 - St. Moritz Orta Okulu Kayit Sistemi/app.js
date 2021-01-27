@@ -52,6 +52,7 @@ function addItems(pIsim, pSoyad, pYas) {
         pSoyad: ogrenciSoyadi.value,
         pYas: ogrenciYasi.value
     }
+    alert(pIsim, pSoyad, pYas)
     return eklenenOgrenciler.push(student);
 }
 

@@ -16,13 +16,12 @@
 
 document.querySelector("#input-container").innerHTML = bilgiGirilenBolum();
 
-
 function bilgiGirilenBolum() {
     return `
         <form action="" id="urunForm">
-        ${bilgiGirdi}
+        ${bilgiGirdi()}
         </form>
-    `;
+    `
 }
 
 function bilgiGirdi() {
@@ -34,7 +33,7 @@ function bilgiGirdi() {
         <label for="ogrenciYasi" class="form-label">Ogrencinin Adi</label>
         <input type="text" class="form-control" id="ogrenciYasi" placeholder="Ogrencinin Yasi">
         <button type="submit" id="submit" class="btn btn-success">ADD</button>
-    `;
+    `
 }
 
 const ogrenciAdi = document.querySelector("#ogrenciAdi");
@@ -44,15 +43,14 @@ const button = document.querySelector("#submit")
 
 
 
-let eklenenOgrenciler = new Array();
+let eklenenOgrenciler = [];
 
-function addItems(pIsim, pSoyad, pYas) {
+function addItems() {
     let student = {
-        pIsim: ogrenciAdi.value,
-        pSoyad: ogrenciSoyadi.value,
-        pYas: ogrenciYasi.value
+        Isim: `${ogrenciAdi.value}`,
+        Soyad: `${ogrenciSoyadi.value}`,
+        Yas: `${ogrenciYasi.value}`
     }
-    alert(pIsim, pSoyad, pYas)
     return eklenenOgrenciler.push(student);
 }
 

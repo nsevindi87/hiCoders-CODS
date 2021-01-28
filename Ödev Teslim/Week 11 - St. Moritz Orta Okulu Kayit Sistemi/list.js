@@ -4,7 +4,9 @@ function listeContainer(pList) {
     return `
     <table>
         ${listeBaslik()}
-        ${elemanekle(pList)}​
+        <tbody id="eklenenOgrencilerBody>
+        ${elemanEkle(pList)}​
+        <tbody>
     </table>`;
 }
 
@@ -21,21 +23,30 @@ function listeBaslik() {
     `;
 }
 
-function elemanekle(pListe) {
-    return pListe.map((element, index) => ` 
-    <tbody>
+
+let listeOlusturma = document.querySelector("#eklenenOgrencilerBody");
+
+function elemanEkle(pListe) {
+    return pListe.map((element, index) => {
+        listeOlusturma.innerHTML += ` 
         <tr>
-            <td>geliyor</td>
             <td> ${index}</th>
             <td> ${element.ogrenciAdi} </td> 
             <td> ${element.ogrenciSoyadi} </td>
             <td> ${element.ogrenciYasi} </td> 
             <td> SIL </td> 
         </tr>
-    <tbody>
-    `);
+    `
+    }).join("");
 }
 
-let liste = document.querySelector("#eklenenOgrencilerBody")
 
-liste.innerHTML = elemanEkle(eklenenOgrenciler);
+button.addEventListener("click", () => {
+    if (ogrenciAdi.value != "" && ogrenciSoyadi.value != "" && ogrenciYasi.value != "") {
+        girilenOgrenciKaydi();
+        arrayeKaydiGonder();
+        elemanEkle();
+    } else {
+        alert("Bilgileri Doğru Giriniz...")
+    }
+});

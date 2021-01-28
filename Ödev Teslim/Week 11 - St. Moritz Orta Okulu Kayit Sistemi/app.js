@@ -41,17 +41,24 @@ const ogrenciSoyadi = document.querySelector("#ogrenciSoyadi");
 const ogrenciYasi = document.querySelector("#ogrenciYasi");
 const button = document.querySelector("#submit")
 
-
-
 let eklenenOgrenciler = [];
 
-function addItems() {
-    let student = {
-        Isim: `${ogrenciAdi.value}`,
-        Soyad: `${ogrenciSoyadi.value}`,
-        Yas: `${ogrenciYasi.value}`
-    }
-    return eklenenOgrenciler.push(student);
+let student = {
+    isim: "",
+    soyad: "",
+    yas: ""
 }
 
-button.addEventListener("click", addItems)
+function girilenOgrenciKaydi() {
+    student = {
+        isim: `${ogrenciAdi.value}`,
+        soyad: `${ogrenciSoyadi.value}`,
+        yas: `${ogrenciYasi.value}`
+    };
+    return student;
+}
+
+//ögrenci nesnesini eklenen öğrenciler arrayina gönderme...
+function arrayeKaydiGonder() {
+    return eklenenOgrenciler.push(girilenOgrenciKaydi());
+}

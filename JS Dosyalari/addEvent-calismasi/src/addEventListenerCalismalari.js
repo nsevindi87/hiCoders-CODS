@@ -3,6 +3,7 @@
  */
 
 let counter = 0;
+
 document.querySelector("#btn-increase").addEventListener("click", clickEventHandler);
 
 function clickEventHandler(pEvent) {
@@ -13,7 +14,6 @@ function clickEventHandler(pEvent) {
 
 
 function createTable(pCounter) {
-    counter++;
     let htmlFragment = `
     <table border=1>
         <tr>

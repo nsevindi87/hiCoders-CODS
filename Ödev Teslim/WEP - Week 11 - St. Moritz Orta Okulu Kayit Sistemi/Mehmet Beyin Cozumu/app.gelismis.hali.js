@@ -4,7 +4,8 @@ const personList =[];
 //controller
 document.querySelector("#btn-add-user").addEventListener("click", addUser);//1 - ekle butonuna tiklama ve sonrasinda olacak olanlar burada basliyor. Baglanti kuruyoruz
 
-function addUser(){
+function addUser(pEvent){
+    pEvent.preventDefault();
     let person = getPerson(); //2- selektorler ile baglanti kurup degerlerini degiskene atadik.
     validatePerson(person);
     addPersonToList(person);  //3- atadigimiz degiskeni ilk personListe push ladik.
@@ -20,15 +21,16 @@ function getPerson(){
     let age= document.querySelector("#age").value;
 
     return {
-        firstname: firstname,
+        firstname: firstname,           //object olarak aldik
         lastname: lastname,
-        age: age               //object olarak aldik
+        age: age               
     }
 };
 
 //2
 function addPersonToList(pPerson){
-    personList.push(pPerson); ////object olarak listeye gönderdik
+    personList.push(pPerson);                   //object olarak listeye gönderdik
+
 }
 function getPersonTotal(pList){
     return pList?.length;

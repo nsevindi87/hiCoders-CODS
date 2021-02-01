@@ -5,8 +5,9 @@ const personList =[];
 document.querySelector("#btn-add-user").addEventListener("click", addUser);//1 - ekle butonuna tiklama ve sonrasinda olacak olanlar burada basliyor. Baglanti kuruyoruz
 
 function addUser(){
-    let person = getPerson() //2- selektorler ile baglanti kurup degerlerini degiskene atadik.
-    addPersonToList(person)  //3- atadigimiz degiskeni ilk personListe push ladik.
+    let person = getPerson(); //2- selektorler ile baglanti kurup degerlerini degiskene atadik.
+    validatePerson(person);
+    addPersonToList(person);  //3- atadigimiz degiskeni ilk personListe push ladik.
 
      //render
      renderUI(personList);  //resultin icine olusturdugumuz tabloyu koyuyoruz.
@@ -19,7 +20,9 @@ function getPerson(){
     let age= document.querySelector("#age").value;
 
     return {
-        firstname,lastname,age //object olarak aldik
+        firstname: firstname,
+        lastname: lastname,
+        age: age               //object olarak aldik
     }
 };
 
@@ -27,9 +30,24 @@ function getPerson(){
 function addPersonToList(pPerson){
     personList.push(pPerson); ////object olarak listeye gönderdik
 }
+function getPersonTotal(pList){
+    return pList?.length;
+}
+
+function validatePerson (pPerson){
+    if(pPerson.firstname===""
+      ||pPerson.lastname===""
+      ||pPerson.age===""){
+          throw new Error ("Girilen degerler eksik!");
+      }
+    if(isNaN(pPerson.age)){
+        throw new Error("Yas degeri bir sayi olmali");
+    }
+}
+
 
 //3
-function renderUI(pList){
+function renderUI(pList=[]){
     document.querySelector("#result").innerHTML= createTable(pList);
 }
 
@@ -44,6 +62,11 @@ function createTable(pList){                           // Tabloyu olusturmak ve 
             <th>Age</th>
         </tr>
         ${createPersonRows(pList)}
+        <tr>
+            <td colspan=3>
+            ${getPersonTotal(pList)}
+            <td>
+        </tr>
     </table>
     `
     return table;
@@ -51,8 +74,8 @@ function createTable(pList){                           // Tabloyu olusturmak ve 
 
 //5
 function createPersonRows (pList){                     //Listeyi map e sokup istedigimiz bilgileri string olarak alma fonksiyonu
-    let personRows =
-            personList?.map(person => `                // ? soru isareti map e gönderilen lsitenin ici bos oldugunda hata vermemesini sagliyor.
+    let personRows =                                   // ? soru isareti map e gönderilen lsitenin ici bos oldugunda hata vermemesini sagliyor.
+            personList?.map(person => `                
                 <tr>
                     <td>${person.firstname}</td>
                     <td>${person.lastname}</td>

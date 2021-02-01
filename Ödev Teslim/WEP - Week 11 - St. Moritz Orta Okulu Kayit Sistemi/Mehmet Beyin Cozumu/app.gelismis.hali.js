@@ -5,11 +5,11 @@ const personList =[];
 document.querySelector("#btn-add-user").addEventListener("click", addUser);
 
 function addUser(){
-    let person = getPerson()
-    addPersonToList(person)
+    let person = getPerson() //selektorler ile baglanti kurup degerlerini degiskene atadik.
+    addPersonToList(person)  //atadigimiz degiskeni ilk personListe push ladik.
 
      //render
-     renderUI(personList);
+     renderUI(personList);  //
 };
 
 //1
@@ -29,6 +29,11 @@ function addPersonToList(pPerson){
 }
 
 //3
+function renderUI(pList){
+    document.querySelector("#result").innerHTML= createTable(pList);
+}
+
+//4
 function createTable(pList){
     let table =`
     <table border=1>
@@ -43,7 +48,7 @@ function createTable(pList){
     return table;
 }
 
-//4
+//5
 function createPersonRows (pList){
     let personRows =
             personList?.map(person => `
@@ -56,10 +61,5 @@ function createPersonRows (pList){
     return personRows;
 }
 
-//5
-function renderUI(pList){
-    document.querySelector("#result").innerHTML= createTable(pList);
-}
 
-
-renderUI(); // bununla tablonun basliklari cagriliyor.
+renderUI(); // bununla tablonun basliklari cagriliyor. ILK CAGRILAN

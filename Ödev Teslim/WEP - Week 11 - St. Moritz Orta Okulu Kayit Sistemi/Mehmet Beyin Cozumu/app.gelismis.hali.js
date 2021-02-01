@@ -19,13 +19,13 @@ function getPerson(){
     let age= document.querySelector("#age").value;
 
     return {
-        firstname,lastname,age
+        firstname,lastname,age //object olarak aldik
     }
 };
 
 //2
 function addPersonToList(pPerson){
-    personList.push(pPerson);
+    personList.push(pPerson); ////object olarak listeye gönderdik
 }
 
 //3
@@ -33,9 +33,10 @@ function renderUI(pList){
     document.querySelector("#result").innerHTML= createTable(pList);
 }
 
+                                                        //createPersonRows foksiyonu ==> createTable'ya bunu da ==> renderUI icine gömdük ve UI'yi cagirdik.
 //4
-function createTable(pList){
-    let table =`
+function createTable(pList){                           // Tabloyu olusturmak ve altina yeni satirlar eklenebilmesini sagladik.
+    let table =`                                       
     <table border=1>
         <tr>
             <th>First Name</th>
@@ -49,15 +50,15 @@ function createTable(pList){
 }
 
 //5
-function createPersonRows (pList){
+function createPersonRows (pList){                     //Listeyi map e sokup istedigimiz bilgileri string olarak alma fonksiyonu
     let personRows =
-            personList?.map(person => `
+            personList?.map(person => `                // ? soru isareti map e gönderilen lsitenin ici bos oldugunda hata vermemesini sagliyor.
                 <tr>
                     <td>${person.firstname}</td>
                     <td>${person.lastname}</td>
                     <td>${person.age}</td>
                 </tr>
-            `).join("");
+            `).join("");                                // string olarak yazilmasini sagliyor.
     return personRows;
 }
 

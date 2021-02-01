@@ -2,14 +2,14 @@
 const personList =[];
 
 //controller
-document.querySelector("#btn-add-user").addEventListener("click", addUser);
+document.querySelector("#btn-add-user").addEventListener("click", addUser);//1 - ekle butonuna tiklama ve sonrasinda olacak olanlar burada basliyor. Baglanti kuruyoruz
 
 function addUser(){
-    let person = getPerson() //selektorler ile baglanti kurup degerlerini degiskene atadik.
-    addPersonToList(person)  //atadigimiz degiskeni ilk personListe push ladik.
+    let person = getPerson() //2- selektorler ile baglanti kurup degerlerini degiskene atadik.
+    addPersonToList(person)  //3- atadigimiz degiskeni ilk personListe push ladik.
 
      //render
-     renderUI(personList);  //
+     renderUI(personList);  //resultin icine olusturdugumuz tabloyu koyuyoruz.
 };
 
 //1

@@ -43,7 +43,18 @@ function createTable(pList){
     return table;
 }
 
-
+//4
+function createPersonRows (pList){
+    let personRows =
+            personList?.map(person => `
+                <tr>
+                    <td>${person.firstname}</td>
+                    <td>${person.lastname}</td>
+                    <td>${person.age}</td>
+                </tr>
+            `).join("");
+    return personRows;
+}
 
 //5
 function renderUI(pList){

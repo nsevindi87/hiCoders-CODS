@@ -87,5 +87,4 @@ function createPersonRows (pList){                     //Listeyi map e sokup ist
     return personRows;
 }
 
-
 renderUI(); // bununla tablonun basliklari cagriliyor. ILK CAGRILAN

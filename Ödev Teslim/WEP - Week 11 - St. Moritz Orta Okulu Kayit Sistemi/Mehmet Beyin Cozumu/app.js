@@ -30,7 +30,6 @@ function addUser(){
         ${personRows}
     </table>
     `
-    
-     //render
+    //render
      document.querySelector("#result").innerHTML= table;
 };

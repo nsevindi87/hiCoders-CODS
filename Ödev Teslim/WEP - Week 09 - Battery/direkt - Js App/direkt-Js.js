@@ -21,7 +21,6 @@ function createButtons() {
             </section>`;
 }
 
-
 let energyLevel = 0; // max 3
 
 const mainElement = document.querySelector("#app");

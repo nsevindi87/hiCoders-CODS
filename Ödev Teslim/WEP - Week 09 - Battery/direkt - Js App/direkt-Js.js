@@ -27,7 +27,6 @@ let energyLevel = 0; // max 3
 const mainElement = document.querySelector("#app");
 
 
-
 mainElement.addEventListener("click", function (pEvent) {
     if (pEvent.target.id === "increase-handle") {
         if (energyLevel < 3) {

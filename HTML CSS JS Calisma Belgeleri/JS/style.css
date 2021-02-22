@@ -18,5 +18,22 @@ section {
 
 #battery div {
   height: 50px;
-  width: 100px;
+  width: 100%;
+}
+
+.energy-level-0 div {
+  background-color: white;
+}
+
+.energy-level-1 div:last-child {
+  background-color: red;
+}
+
+.energy-level-2 div:nth-child(2),
+.energy-level-2 div:last-child {
+  background-color: orange;
+}
+
+.energy-level-3 div {
+  background-color: green;
 }

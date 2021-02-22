@@ -1,0 +1,22 @@
+main {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#battery {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+#battery div {
+  height: 50px;
+  width: 100px;
+}

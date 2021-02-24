@@ -1,17 +1,33 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
+
 
 class User extends Component {
     render() {
+
+        //Destruction
+        const{name,department,salary}=this.props;
         return (
             <div>
                <ul>
-                   <li>isim: {this.props.name}</li>
-                   <li>Departman : {this.props.department}</li>
-                   <li>Maas: {this.props.salary} </li>
+                   <li>isim: {name}</li>
+                   <li>Departman : {department}</li>
+                   <li>Maas: {salary} </li>
                </ul>
             </div>
         )
     }
+}
+User.defaultProps={
+    name:"Bilgi Yok",
+    salary:"Bilgi Yok",
+    department:"Bilgi Yok"
+}
+User.propTypes={
+    name: PropTypes.string.isRequired,
+    salary: PropTypes.string.isRequired,
+    department: PropTypes.string.isRequired,
 }
 
 export default User;

@@ -5,6 +5,7 @@
 //Metin olusturma
 //Elementin icine appenChild ile metin yerlestirme
 //Elementi appendChild ile bir div icin yerlestirme
+//En sonda sifirlama fonksiyonunu cagirma
 
 function ageInDays(){
 let birthYear = prompt("Hangi yil dogdun?");
@@ -15,3 +16,7 @@ h1.setAttribute("id", "ageInDays");
 h1.appendChild(textAnswer);
 document.getElementById("flex-box-result").appendChild(h1);
 };
+
+function reset(){
+    document.getElementById("ageInDays").remove();
+}

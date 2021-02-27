@@ -1,11 +1,5 @@
 //Name: Your Age in Days
-//onclick ile fonksiyon cagirma
-//yeni elemen olusturma
-//Elemente attribute atama
-//Metin olusturma
-//Elementin icine appenChild ile metin yerlestirme
-//Elementi appendChild ile bir div icin yerlestirme
-//En sonda sifirlama fonksiyonunu cagirma
+
 
 function ageInDays(){
 let birthYear = prompt("Hangi yil dogdun?");

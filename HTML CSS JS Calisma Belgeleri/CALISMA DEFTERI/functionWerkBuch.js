@@ -39,7 +39,7 @@ hesaplaDaireCevre(yaricap); */
  * FONSIYON Ile ders notu hesaplama Hesaplama
  * ***********************************************/
 
- let vize = prompt("vize notunuzu giriniz");
+ /* let vize = prompt("vize notunuzu giriniz");
  let final = prompt("final notunuzu giriniz");
 
  function dersSonucu(vize, final){
@@ -51,4 +51,8 @@ hesaplaDaireCevre(yaricap); */
      }
  }
 
- dersSonucu(vize, final);
+ dersSonucu(vize, final); */
+
+/************************************************
+ * FONSIYON Ile 
+ * ***********************************************/

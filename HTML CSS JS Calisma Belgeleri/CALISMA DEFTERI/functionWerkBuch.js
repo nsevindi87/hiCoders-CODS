@@ -54,5 +54,22 @@ hesaplaDaireCevre(yaricap); */
  dersSonucu(vize, final); */
 
 /************************************************
- * FONSIYON Ile 
+ * FONSIYON Ile Foto Slayt hazirlama
  * ***********************************************/
+
+let i = 0;
+let images = [ "http://lorempixel.com/400/200/", "http://lorempixel.com/400/200/", "http://lorempixel.com/400/200/"];
+let duration = 2000;
+ 
+function slideImg(){
+    document.slide.src = images[i];
+
+    if (i<images -1){
+        i++
+    }else{
+        i=0;
+    }
+    setTimeout("slideImg()", duration);
+} 
+
+window.onload = slideImg;

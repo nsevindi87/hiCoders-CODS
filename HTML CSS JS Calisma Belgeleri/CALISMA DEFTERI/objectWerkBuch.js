@@ -76,15 +76,15 @@ console.log(playerC) */
 
 
 /****************************************************
- * 
+ * Arrey icerisindeki OBJECT ulasmak - object constructer
  * 
  * ************************************************ */
 
-let players = [
+/* let players = [
     new player ("ricardo", "queresma", 34),
     new player ("cenk", "tosun", 26),
     new player ("gökhan", "gönül", 33)
 ];
 
 console.log(players[0]);
-console.log(players[0].name);
+console.log(players[0].name); */

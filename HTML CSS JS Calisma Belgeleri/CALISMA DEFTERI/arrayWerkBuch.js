@@ -15,7 +15,7 @@ console.log(arabalar)
  * 
  * ************************************************ */
 
- let library=[
+ /* let library=[
     {
         title:"ince Memed",
         author:"Yasar Kemal",
@@ -41,4 +41,20 @@ for(let i=0; i<library.length; i++){
     }else{
         console.log(book + "okunmadi");
     }
-}
+} */
+
+
+
+/****************************************************
+ * Arrey icerisindeki OBJECT ulasmak - object constructer
+ * 
+ * ************************************************ */
+
+/*  let players = [
+    new player ("ricardo", "queresma", 34),
+    new player ("cenk", "tosun", 26),
+    new player ("gökhan", "gönül", 33)
+];
+
+console.log(players[0]);
+console.log(players[0].name); */

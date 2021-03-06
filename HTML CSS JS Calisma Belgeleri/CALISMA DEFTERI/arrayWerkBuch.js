@@ -61,6 +61,7 @@ console.log(players[0].name); */
 
 /****************************************************
  * ARRAY Metodlari - forEach         arrayAdi.forEach(fuction(arrayElementi, indexNumarasi){//kod blogu})
+ *                                   //var olan dizi üzerinde islem yapar ve yeni bir array vermez
  * 
  * ************************************************ */
 /*
@@ -159,14 +160,15 @@ console.log(newDays)
 
 /****************************************************
  * ARRAY Metodlari - map   arrayadi.map(foksiyonadi) veya arrayAdi.map(value=>value*2)
+ *                         // verilen array üzerinde islem yapip yeni bir array olusturur.
  * 
  * ************************************************ */
 
 const numbers = [1,2,3,4,5];
 
-numbers.map(double);
+numbers.map(double);                         //map ile fuction cagriliyor ve fuction her bir iteme gerekli islemi yaptiriyor
 
-function double(value, index, arr){
+function double(value, index, arr){                   
     return value*2;
 }
 
@@ -190,7 +192,14 @@ const products =[
     }
 ];
 
-const totalProductsValue = products.map(item => ({
+const totalProductsValue = products.map(item => ({     //array icerisindeki itemler map ile object e cevriliyor.
     name: item.name,
     totalValue: item.price * item.count
 }));
+
+//---------------------------------------------------------------
+
+const str = ["1","2","3","4"];
+
+const numberss = str.map(item=>Number(item));           // stringi sayiya cevirirler
+const numberss = str.map(Number);           // stringi sayiya cevirirler

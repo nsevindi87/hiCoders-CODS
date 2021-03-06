@@ -1,4 +1,4 @@
-
+/* 
 let arabalar = ["BMW", "Mercedes", "AUDI"];
 let makineler = new Array("Nikon", "Canon", "sony");
 
@@ -7,7 +7,7 @@ arabalar.unshift("FIAT en basa ekle");
 arabalar.pop();   //en sondakini sil
 arabalar.shift();   //en bastakini sil
 
-console.log(arabalar)
+console.log(arabalar) */
 
 
 /****************************************************
@@ -77,7 +77,7 @@ function consoleItem2(item, index, arr){
     console.log("a["+ index + "]="+ item);     // index kendiliginden gelen bir parametre  a[0]=1
 }
 
-//-----------------------------------------------------------------------------------------------------
+//veya-----------------------------------------------------------------------------------------------------
 
 const numbers =[1,2,3,4,5];
 
@@ -147,9 +147,10 @@ Object.keys(bisiklet).forEach(function(element){
 const days = ["pazartesi","salı","çarşamba","perşembe","cuma","cumartesi","pazar"];
 let newDays = [];
 
-days.forEach(function(element){
+days.forEach(function(element, index){
     if(element[0]=="p"){
         newDays.push(element);
+        alert(element+ " " + index + ".siradadir")
     }
 });
 console.log(newDays)
@@ -157,6 +158,39 @@ console.log(newDays)
 */
 
 /****************************************************
- * ARRAY Metodlari - 
+ * ARRAY Metodlari - map   arrayadi.map(foksiyonadi) veya arrayAdi.map(value=>value*2)
  * 
  * ************************************************ */
+
+const numbers = [1,2,3,4,5];
+
+numbers.map(double);
+
+function double(value, index, arr){
+    return value*2;
+}
+
+//---------------------------------------
+
+const products =[
+    {
+        name:"Laptop",
+        price:1000,
+        count:5
+    },
+    {
+        name:"Desktop",
+        price:1500,
+        count:2
+    },
+    {
+        name:"Phone",
+        price:500,
+        count:10
+    }
+];
+
+const totalProductsValue = products.map(item => ({
+    name: item.name,
+    totalValue: item.price * item.count
+}));

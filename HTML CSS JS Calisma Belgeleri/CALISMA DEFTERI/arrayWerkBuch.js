@@ -60,7 +60,7 @@ console.log(players[0]);
 console.log(players[0].name); */
 
 /****************************************************
- * ARRAY Metodlari - forEach
+ * ARRAY Metodlari - forEach         arrayAdi.forEach(fuction(arrayElementi, indexNumarasi){//kod blogu})
  * 
  * ************************************************ */
 /*
@@ -116,6 +116,44 @@ letters.forEach(item => {
     }
 });
 console.log(count)
+
+//------------------------------------------------------------------
+
+var sebzeReyonu = [“kabak”, “patlican”, “brokoli”, “lahana”, “havuç”, “ıspanak”, “kereviz”, “soğan”, “marul”,
+                    “roka”, “mantar”, “patates”, “kereviz”, “salatalık”, “sarımsak”];
+
+ sebzeReyonu.forEach(function(sebzeAdi, element, deneme){
+                     document.getElementById(“sebzeListesi”).innerHTML += “<li>” + sebzeAdi +”</li>”;
+});
+
+
+//---------------------------------------------------------------------------------
+
+let bisiklet = new Object();
+
+bisiklet = {
+    adi: "TREK FUEL EX 8 PLUS",
+    kadro: "Alpha Platinum Alüminyum, ABP, Boost148, Mino Bağlantısı, Kontrol Freak iç rotası, PF92, ISCG 05, G2 Geometri, 130 mm seyahat",
+    jant: "SUNringlé Duroc 40 SL 28 delikli, boru içermeyen şeritler ve valfler dahildir",
+    vites: "SRAM GX Kartal, 12 hızlı"
+};
+ 
+Object.keys(bisiklet).forEach(function(element){
+    document.getElementById("bisikletOz").innerHTML += "<li>" + element + ";" + bisiklet[element] + "</li>";
+})
+
+//-------------------------------------------------------------------------
+
+const days = ["pazartesi","salı","çarşamba","perşembe","cuma","cumartesi","pazar"];
+let newDays = [];
+
+days.forEach(function(element){
+    if(element[0]=="p"){
+        newDays.push(element);
+    }
+});
+console.log(newDays)
+
 */
 
 /****************************************************

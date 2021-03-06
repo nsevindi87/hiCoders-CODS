@@ -76,7 +76,7 @@ console.log(playerC) */
 
 
 /****************************************************
- * Arrey icerisindeki OBJECT ulasmak - object constructer
+ * ARRAY icerisindeki object ulasmak - object constructer
  * 
  * ************************************************ */
 

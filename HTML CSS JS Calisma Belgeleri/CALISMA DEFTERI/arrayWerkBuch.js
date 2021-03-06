@@ -62,6 +62,7 @@ console.log(players[0].name); */
 /****************************************************
  * ARRAY Metodlari - forEach         arrayAdi.forEach(fuction(arrayElementi, indexNumarasi){//kod blogu})
  *                                   //var olan dizi üzerinde islem yapar ve yeni bir array vermez
+ *                                  // her bir item icin bir kez calistirilir
  * 
  * ************************************************ */
 /*
@@ -159,11 +160,12 @@ console.log(newDays)
 */
 
 /****************************************************
- * ARRAY Metodlari - map   arrayadi.map(foksiyonadi) veya arrayAdi.map(value=>value*2)
- *                         // verilen array üzerinde islem yapip yeni bir array olusturur.
+ * ARRAY Metodlari - map   let newArray = arrayadi.map(foksiyonadi) veya arrayAdi.map(value=>value*2)
+ *                         // verilen array üzerinde islem yapip yeni bir array olusturur. ve bir degiskene atayabiliriz
+ *                         // her bir itemi tek seferde halleder
  * 
  * ************************************************ */
-
+/* 
 const numbers = [1,2,3,4,5];
 
 numbers.map(double);                         //map ile fuction cagriliyor ve fuction her bir iteme gerekli islemi yaptiriyor
@@ -203,3 +205,48 @@ const str = ["1","2","3","4"];
 
 const numberss = str.map(item=>Number(item));           // stringi sayiya cevirirler
 const numberss = str.map(Number);           // stringi sayiya cevirirler
+ */
+
+/****************************************************
+ * ARRAY Metodlari - filter   let newArray = arrayadi.filter(foksiyonadi) veya arrayAdi.map(value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+
+const numbers =[1,2,3,4,5,6,7];
+let even = numbers.filter(isEven);
+
+function isEven (value){
+    return value % 2 === 0;
+}
+console.log(even) 
+
+//------------------------------------------------------------------------
+
+const people = [
+    {
+        name:"Florin",
+        age:26
+    },
+    {
+        name:"Ivan",
+        age:18
+    },
+    {
+        name:"Jail",
+        age:15
+    }
+];
+
+let adult = people.filter(person => person.age>=18);     //array icerisindeki object leri filtre ile almak
+console.log(adult)
+
+//---------------------------------------------------------------------------------------
+
+let numberss = [1,2,3,2,1,4,5,6,7,4,3];
+
+let nums = numbers.filter((value, index,arr)=>{
+    return arr.indexOf(value)===index;                       //array halinde ariyor. indexe esit olani return ediyor
+})
+
+console.log(nums)

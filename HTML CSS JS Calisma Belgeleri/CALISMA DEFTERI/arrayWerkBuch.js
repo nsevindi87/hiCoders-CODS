@@ -205,6 +205,13 @@ const str = ["1","2","3","4"];
 
 const numberss = str.map(item=>Number(item));           // stringi sayiya cevirirler
 const numberss = str.map(Number);           // stringi sayiya cevirirler
+
+//------------------------------------------------------------------------------------
+
+let sayi = [4,9,25,36];
+
+let karekok = sayi.map(Math.sqrt);
+console.log(karekok)
  */
 
 /****************************************************
@@ -212,7 +219,7 @@ const numberss = str.map(Number);           // stringi sayiya cevirirler
  *                           // 
  *                           // 
  * ************************************************ */
-
+/* 
 const numbers =[1,2,3,4,5,6,7];
 let even = numbers.filter(isEven);
 
@@ -250,3 +257,6 @@ let nums = numbers.filter((value, index,arr)=>{
 })
 
 console.log(nums)
+
+//----------------------------------------------------------------------------------------
+ */

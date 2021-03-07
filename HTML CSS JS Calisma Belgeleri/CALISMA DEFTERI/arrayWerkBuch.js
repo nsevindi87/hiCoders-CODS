@@ -373,7 +373,19 @@ console.log(fillInNumbers(10))
  /* let fruits = ["Banana", "Orange", "Apple", "Mango"];
  let varmi = fruits.includes("Mango");
  console.log(varmi)
- */
+
+ //----------------------------------------------------------------------
+let fruits = ["Banana", "Apple", "Mango"];
+let siparis = fruits.includes("Orange");
+
+if(siparis){
+    console.log("Yuppyyy")
+}else{
+    console.log("Buy Orange");
+}
+*/
+
+
 
 /****************************************************
  * ARRAY Metodlari  reduce      let degisken = arrayadi.reduce(foksiyonadi)

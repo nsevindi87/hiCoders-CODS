@@ -408,12 +408,42 @@ console.log(totalValueStore) */
  *                           // arry icindeki belli itemlarin secilmesi
  *                           // yeni bir array olusturur
  * ************************************************ */
- let sayilar2 = [34,53,55,18,45];
+/*  let sayilar2 = [34,53,55,18,45];
  let sayilarYeni = sayilar2.slice(1,4);                //1.nci index dahil 4.ncü indexe kadar (haric) arasi secilir 3 tane
  let sayilarYeni2 = sayilar3.slice(-3);;             //son 3 index
  let sayilarYeni2 = sayilar3.slice(1);;             //1.nci indexten itibaren hepsini ayri bir array yapar
  
- 
+  */
+
+
+
+
+
+ /****************************************************
+  * ARRAY Metodlari - splice  let newArray = arrayadi.slice(1,4)
+  *                           // item silme, ,item silip yerine item ekleme, silmeden araya item ekleme,
+  *                           // (1,2,3,4,5,6...)1nci hangi itemdan baslayacagi, 2nci kac tane silinecegi, devami 1nci indexteki item sonrasi neler eklenecegi
+  *                           //yeni array vermiyor olan array üzerinde degisiklik yapiliyor
+  * ************************************************ */
+
+let numbers =[1,2,3,4,5];
+let deleted = numbers.splice(2,3);            //2nci item dahil 3 tane item siliyor
+let deleted2 = numbers.splice(2,3,6,7);            //2nci item dahil 3 tane item siliyor ve devamin 6,7 itemlari ekleniyor [1,2,6,7]
+let deleted3 = numbers.splice(2,0,6,7);            //2nci item sonrasi hic silmiyor ve oraya 6,7 ekleyip devam ediyor [1,2,6,7,3,4,5]
+
+console.log(numbers)
+console.log(deleted)  //345    sadece silme olunca arraye silinen itemler veriliyor
+console.log(deleted2)  //bos   ekleme oldugu zaman degisken bos array veriyor
+console.log(deleted3)  //bos   ekleme oldugu zaman degisken bos array veriyor
+
+
+
+
+
+
+
+
+
 
 
 /****************************************************
@@ -421,12 +451,6 @@ console.log(totalValueStore) */
  *                 -unshift    arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 
- * ************************************************ */
-/****************************************************
- * ARRAY Metodlari - splice  let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
- *                           // 
  * ************************************************ */
 /****************************************************
  * ARRAY Metodlari - toString  let newArray = arrayadi.       (foksiyonadi) 

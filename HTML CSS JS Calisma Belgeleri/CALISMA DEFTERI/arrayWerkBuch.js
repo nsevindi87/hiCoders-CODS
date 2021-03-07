@@ -361,7 +361,7 @@ console.log(newFruits)
  *                             // accumulate toplamin yapildigi yer. value da item
  *                             // arrayi azaltir bir sonu cikartir. en büyük en kücük toplama gibi islere yarar. 
  * ************************************************ */
- let sayilar = [34,53,55,18,45];
+/*  let sayilar = [34,53,55,18,45];
  let toplam = sayilar.reduce(sum,0);
  function sum(accumulator, value){
      return accumulator + value;
@@ -401,19 +401,26 @@ console.log(newFruits)
 ];
 
 let totalValueStore = store.reduce((acc, item) => acc + (item.count*item.price),0)
-console.log(totalValueStore)
+console.log(totalValueStore) */
+
+/****************************************************
+ * ARRAY Metodlari - slice   let newArray = arrayadi.slice(1,4) 
+ *                           // arry icindeki belli itemlarin secilmesi
+ *                           // yeni bir array olusturur
+ * ************************************************ */
+ let sayilar2 = [34,53,55,18,45];
+ let sayilarYeni = sayilar2.slice(1,4);                //1.nci index dahil 4.ncü indexe kadar (haric) arasi secilir 3 tane
+ let sayilarYeni2 = sayilar3.slice(-3);;             //son 3 index
+ let sayilarYeni2 = sayilar3.slice(1);;             //1.nci indexten itibaren hepsini ayri bir array yapar
+ 
+ 
+
 
 /****************************************************
  * ARRAY Metodlari -shift      let newArray = arrayadi.       (foksiyonadi) 
  *                 -unshift    arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 
- * ************************************************ */
-/****************************************************
- * ARRAY Metodlari - slice   let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
- *                           // 
  * ************************************************ */
 /****************************************************
  * ARRAY Metodlari - splice  let newArray = arrayadi.       (foksiyonadi) 

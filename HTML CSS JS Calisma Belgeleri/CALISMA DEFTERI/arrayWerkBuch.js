@@ -299,7 +299,7 @@ console.log(b)
 
 let controll = sayilar.every(age => age>=18);
 
-console.log(controll); */
+console.log(controll); 
 
 //----------------------------------------------------------------------------------------------
 let persons =[
@@ -320,6 +320,16 @@ let persons =[
 let res = persons.every(person => person.name!==undefined);
 console.log(res);
 
+//---------------------------------------------------------------------------------------------------
+
+let arrys = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+let res = arrys.every(arr => Array.isArray(arr));
+console.log(res)
+*/
 
 /********************************************************************************************************************************************
  * ARRAY Metodlari - fill    let arrayAdi = arrayAdi.fill(item)
@@ -378,6 +388,12 @@ console.log(fillInNumbers(10))
 
 /*  let myArr = Array.from("ABCDEF");
  console.log(myArr)
+
+ //--------------------------------------------------------------------
+ let str = "12345678";
+ let res = Array.from(str, x => Number(x)); [1,2,3,4,5,6,7,8]
+ //let res = Array.from(str, Number);
+ console.log(res);
  */
 
 
@@ -650,11 +666,48 @@ console.log(arabalar); */
 
 
 /********************************************************************************************************************************************
- * ARRAY Metodlari -   let newArray = arrayadi.       (foksiyonadi) 
+ * ARRAY Metodlari -  some   let newArray = arrayadi.some(foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)
- *                             // 
+ *                             // arraydeki herhangi bir item sarti yerine getiriyorsa true döner
  *                             // 
  * **************************************************************************************************************************************** */
+/* let numbers =[1,2,3,4,5];
+let res = numbers.some(greaterThanFour);
+
+function greaterThanFour(item){
+    return item>4;
+}
+console.log(res);
+
+//---------------------------------------
+
+const person =[
+    {
+        name:"Florin",
+        age:25
+    },
+    {
+        name:"Ivan",
+        age:20
+    },
+    {
+        name:"Liam",
+        age:16
+    }
+];
+
+let res = person.some(isAdult);
+
+function isAdult(person){
+    return person.age>=18;
+}
+console.log(res)
+ */
+
+
+
+
+
 /********************************************************************************************************************************************
  * ARRAY Metodlari -   let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)

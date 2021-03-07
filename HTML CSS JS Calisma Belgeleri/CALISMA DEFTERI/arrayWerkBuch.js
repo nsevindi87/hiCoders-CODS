@@ -312,9 +312,6 @@ console.log(newFruits)
 
 
 
-
-
-
 /****************************************************
  * ARRAY Metodlari -find     let newArray = arrayadi.find(age => age>=18)
  *                           // itemlar arasinda sarta uyan ilk itemi bulur
@@ -351,10 +348,10 @@ console.log(newFruits)
  *                               // array icerisinde bir item aramak icin kullanilir
  *                               // 
  * ************************************************ */
- let fruits = ["Banana", "Orange", "Apple", "Mango"];
+ /* let fruits = ["Banana", "Orange", "Apple", "Mango"];
  let varmi = fruits.includes("Mango");
  console.log(varmi)
-
+ */
 
 /****************************************************
  * ARRAY Metodlari  reduce      let degisken = arrayadi.reduce(foksiyonadi)
@@ -417,8 +414,6 @@ console.log(totalValueStore) */
 
 
 
-
-
  /****************************************************
   * ARRAY Metodlari - splice  let newArray = arrayadi.slice(1,4)
   *                           // item silme, ,item silip yerine item ekleme, silmeden araya item ekleme,
@@ -426,7 +421,7 @@ console.log(totalValueStore) */
   *                           //yeni array vermiyor olan array üzerinde degisiklik yapiliyor
   * ************************************************ */
 
-let numbers =[1,2,3,4,5];
+/* let numbers =[1,2,3,4,5];
 let deleted = numbers.splice(2,3);            //2nci item dahil 3 tane item siliyor
 let deleted2 = numbers.splice(2,3,6,7);            //2nci item dahil 3 tane item siliyor ve devamin 6,7 itemlari ekleniyor [1,2,6,7]
 let deleted3 = numbers.splice(2,0,6,7);            //2nci item sonrasi hic silmiyor ve oraya 6,7 ekleyip devam ediyor [1,2,6,7,3,4,5]
@@ -436,15 +431,65 @@ console.log(deleted)  //345    sadece silme olunca arraye silinen itemler verili
 console.log(deleted2)  //bos   ekleme oldugu zaman degisken bos array veriyor
 console.log(deleted3)  //bos   ekleme oldugu zaman degisken bos array veriyor
 
+ */
 
 
 
+/****************************************************
+ * ARRAY Metodlari -  sort     let newArray = arrayadi.sort()  veya .sort(fonksiyon)
+ *                             // string ve sayilari siralama icin kullanilir
+ *                             // 
+ * ************************************************ */
+/* let names =["Joe","Hans","Cris","Ali"];
+names.sort();
+console.log(names);
 
+//--------------------------------------------------------------
 
+let numbers = [10,55,6,24,87,86,45,25];
+numbers.sort();
+console.log(numbers);
 
+//-----------------------------------------------------------
 
+let numbers2 = [10,5,55,6,24,87,86,45,25];
+numbers2.sort(compareFunction);
 
+console.log(numbers2);
+function compareFunction (a,b){
+    //<0  ...a comes first
+    // 0  ...nothing will be changed
+    //>0  ...b comes first
+    return a-b;                         //a=10 b=5 10-5 = 5 pozitif yani b önce geliyor
+                                        //Kücükten büyüge a-b
+                                        //büyükten kücüge ise b-a
 
+};
+
+//-----------------------------------------------------------------------------------------------
+const products =[
+    {
+        name:"Laptop",
+        price:1000,
+        count:5
+    },
+    {
+        name:"Desktop",
+        price:1500,
+        count:2
+    },
+    {
+        name:"Phone",
+        price:500,
+        count:10
+    }
+];
+
+products.sort((a,b)=> b.price-a.price);  //pahalidan ucuza
+products.sort((a,b)=> a.price-b.price);  //ucuzdan pahaliya
+
+console.log(products);
+  */
 
 /****************************************************
  * ARRAY Metodlari -shift      let newArray = arrayadi.       (foksiyonadi) 
@@ -460,12 +505,6 @@ console.log(deleted3)  //bos   ekleme oldugu zaman degisken bos array veriyor
  * ************************************************ */
 /****************************************************
  * ARRAY Metodlari - valueOf  let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
- *                             // 
- * ************************************************ */
-/****************************************************
- * ARRAY Metodlari -  sort     let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 

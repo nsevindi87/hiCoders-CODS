@@ -394,6 +394,11 @@ console.log(fillInNumbers(10))
  let res = Array.from(str, x => Number(x)); [1,2,3,4,5,6,7,8]
  //let res = Array.from(str, Number);
  console.log(res);
+ 
+ //--------------------------------------------------------------------------
+ let friends = ["florin","Ivan","florin","Jai"]
+ let res = Array.from(new Set(friends));
+ console.log(res)
  */
 
 

@@ -306,7 +306,7 @@ console.log(controll); */
 
 /****************************************************
  * ARRAY Metodlari - fill    let arrayAdi = arrayAdi.fill(item)
- *                           // Arrayin itemlarinin baska bir item ile degistirilmesi
+ *                           // Arrayin itemlarinin baska bir item ile degistirilmesi - yeni array yapmaz olani degistirir
  *                           // Degistirmenin nerede baslayip bitirilmesi gerektigi verilebilir
  * ************************************************ */
 
@@ -315,7 +315,22 @@ console.log(controll); */
 let newFruits = fruits.fill("Kiwi");
 
 console.log(newFruits)
- */
+
+//---------------------------------------------
+let numbers =[1,2,3,4,5,6];
+numbers.fill(0, 3, 5);    //1nci deger = ne ile doldurulacagi       [1,2,3,0,0,6]
+//2nci deger = hangi indexten baslayacagi (dahil)
+//3nci deger = hangi indexe kadar doldurulacagi (haric)
+console.log(numbers)
+
+//-----------------------------------------------------------------------------
+
+function fillInNumbers(n){
+    return Array(n).fill(0).map((_,idx)=>idx+1);
+}
+console.log(fillInNumbers(10))
+*/
+
 
 
 

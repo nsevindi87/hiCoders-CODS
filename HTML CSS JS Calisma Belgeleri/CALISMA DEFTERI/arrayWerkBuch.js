@@ -3,11 +3,11 @@ Bakilacaklar Listesi
 copyWithin()
 
 let arabalar = ["BMW", "Mercedes", "AUDI"];
+arabalar.unshift("FIAT en basa ekle");
 let makineler = new Array("Nikon", "Canon", "sony");
 
 arabalar.push("FORD en sona ekle");
-arabalar.unshift("FIAT en basa ekle");
-arabalar.pop();   //en sondakini sil
+
 arabalar.shift();   //en bastakini sil
 
 console.log(arabalar) */
@@ -531,45 +531,86 @@ console.log(products);
  *                             // 
  *                             // 
  * ************************************************ */
-let countries =["Romania", "USA", "India"];
+/* let countries =["Romania", "USA", "India"];
 
 let res = countries.join(", ");  //(" - ") (" ")
 console.log("I want to visit " + res)
+ */
+
+
+
+
+/****************************************************
+ * ARRAY Metodlari - reverse  let newArray = arrayadi.reverse() 
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/* let numbers = [1,2,3,4,5];
+let newArray = numbers.reverse();
+console.log(newArray)
+
+//-----------------------------------------------------------------
+
+let str ="coding is fun!"
+let res=str.split("").reverse().join("");
+console.log(res) */
+
+
+/****************************************************
+ * ARRAY Metodlari - push  let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/* let numbers =[1,2,3];
+let total = numbers.push(4,5,6,7);
+console.log(numbers); */
+
 
 
 
 
 
 /****************************************************
- * ARRAY Metodlari - toString  let newArray = arrayadi.       (foksiyonadi) 
+ * ARRAY Metodlari - pop      let newArray = arrayadi.pop() 
  *                             arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 
  * ************************************************ */
+/*  let arabalar = ["BMW", "Mercedes", "AUDI"];
+ let lastItem = arabalar.pop();
+ console.log(lastItem) */
+
+
+
+
 /****************************************************
- * ARRAY Metodlari - valueOf  let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
+ * ARRAY Metodlari - unshift     
+ *                             // En basa ekleme yapiliyor
  *                             // 
  * ************************************************ */
+ /* let numbers =[1,2,3];
+ numbers.unshift(0);
+ numbers.unshift(-1);
+ numbers.unshift(0, -1);
+ 
+ console.log(numbers)
+ //-----------------------------------------------------------------------
+ let arabalar = ["BMW", "Mercedes", "AUDI"];
+arabalar.unshift("FIAT en basa ekle");
+console.log(arabalar); */
+
+
+
 /****************************************************
- * ARRAY Metodlari - some      let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
- *                             // 
- * ************************************************ */
-/****************************************************
- * ARRAY Metodlari - every     let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
+ * ARRAY Metodlari -  shift     
+ *                             // en bastakini cikariyo
  *                             // 
  * ************************************************ */
-/****************************************************
- * ARRAY Metodlari -  fill     let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
- *                             // 
- * ************************************************ */
+ let numbers =[1,2,3];
+ numbers.shift();
+ console.log(numbers);
+
 /****************************************************
  * ARRAY Metodlari - find     let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)

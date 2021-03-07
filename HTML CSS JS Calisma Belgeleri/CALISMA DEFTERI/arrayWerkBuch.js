@@ -258,5 +258,117 @@ let nums = numbers.filter((value, index,arr)=>{
 
 console.log(nums)
 
-//----------------------------------------------------------------------------------------
  */
+
+
+
+
+/****************************************************
+ * ARRAY Metodlari - concat  let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+
+/****************************************************
+ * ARRAY Metodlari - join    let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - pop     let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari -push     let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - reduce  let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - reverse let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari -shift      let newArray = arrayadi.       (foksiyonadi) 
+ *                 -unshift    arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - slice   let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - splice  let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
+ *                           // 
+ *                           // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - toString  let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - valueOf  let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari -  sort     let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - some      let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - every     let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari -  fill     let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - find     let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari - includes  let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */
+/****************************************************
+ * ARRAY Metodlari -   let newArray = arrayadi.       (foksiyonadi) 
+ *                             arrayAdi.         (value=>value%2===0)
+ *                             // 
+ *                             // 
+ * ************************************************ */

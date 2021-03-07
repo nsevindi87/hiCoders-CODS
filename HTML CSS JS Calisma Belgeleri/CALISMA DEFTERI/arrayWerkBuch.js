@@ -1,4 +1,7 @@
 /* 
+Bakilacaklar Listesi
+copyWithin()
+
 let arabalar = ["BMW", "Mercedes", "AUDI"];
 let makineler = new Array("Nikon", "Canon", "sony");
 
@@ -264,42 +267,142 @@ console.log(nums)
 
 
 /****************************************************
- * ARRAY Metodlari - concat  let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
+ * ARRAY Metodlari - concat  let newArray = ilkArrayAdi.concat(birlestirilecekArrayAdi) 
  *                           // 
  *                           // 
  * ************************************************ */
 
+/* let language = ["englisch", "deutsch"];
+let language2 = ["türkisch", "spanisch"];
+let allLanguages = language.concat(language2)
+console.log(allLanguages)
+ */
+
+
+
+
 /****************************************************
- * ARRAY Metodlari - join    let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
+ * ARRAY Metodlari - every    let newArray = arrayadi.every(age => age>=18) 
+ *                           
+ *                           // arraydeki her itemin sarti saglamasi durumunda true döner
  *                           // 
  * ************************************************ */
+
+/* let sayilar = [34,53,55,18,45];
+
+let controll = sayilar.every(age => age>=18);
+
+console.log(controll); */
+
+
+
+
 /****************************************************
- * ARRAY Metodlari - pop     let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
+ * ARRAY Metodlari - fill    let arrayAdi = arrayAdi.fill(item)
+ *                           // Arrayin itemlarinin baska bir item ile degistirilmesi
+ *                           // Degistirmenin nerede baslayip bitirilmesi gerektigi verilebilir
+ * ************************************************ */
+
+/* let fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+let newFruits = fruits.fill("Kiwi");
+
+console.log(newFruits)
+ */
+
+
+
+
+
+
+/****************************************************
+ * ARRAY Metodlari -find     let newArray = arrayadi.find(age => age>=18)
+ *                           // itemlar arasinda sarta uyan ilk itemi bulur
  *                           // 
  * ************************************************ */
+/*  let sayilar = [34,53,55,18,45];
+ let buyukSayi = sayilar.find(sayi=>sayi>=20);
+ console.log(buyukSayi)
+
+ //veya
+
+ function checkAdult(age){
+     return age >= 18;
+ }
+ document.getElementById("X").innerHTML=sayilar.find(checkAdult);
+ */
+
+
+
 /****************************************************
- * ARRAY Metodlari -push     let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
+ * ARRAY Metodlari - from   let newArray = Array.from("ABCDEF")
+ *                           // ABCDEF her birini ayri item yaparak object olusturur
  *                           // 
  * ************************************************ */
+
+/*  let myArr = Array.from("ABCDEF");
+ console.log(myArr)
+ */
+
+
 /****************************************************
- * ARRAY Metodlari - reduce  let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
- *                           // 
+ * ARRAY Metodlari - includes    let newArray = arrayadi.includes("aranacakSey") 
+ *                               
+ *                               // array icerisinde bir item aramak icin kullanilir
+ *                               // 
  * ************************************************ */
+ let fruits = ["Banana", "Orange", "Apple", "Mango"];
+ let varmi = fruits.includes("Mango");
+ console.log(varmi)
+
+
 /****************************************************
- * ARRAY Metodlari - reverse let newArray = arrayadi.       (foksiyonadi) 
- *                           arrayAdi.         (value=>value%2===0)
- *                           // 
- *                           // 
+ * ARRAY Metodlari  reduce      let degisken = arrayadi.reduce(foksiyonadi)
+ *                             // accumulate toplamin yapildigi yer. value da item
+ *                             // arrayi azaltir bir sonu cikartir. en büyük en kücük toplama gibi islere yarar. 
  * ************************************************ */
+ let sayilar = [34,53,55,18,45];
+ let toplam = sayilar.reduce(sum,0);
+ function sum(accumulator, value){
+     return accumulator + value;
+ }
+ console.log(toplam);
+ //---------------------------------------------------------------------
+
+ let sayilar2 = [34,53,55,18,45];
+ let max = sayilar.reduce(callback,-Infinity);            //array icerisindeki en büyük sayiyi buluyor
+ function callback(accumulator, value){               
+     if (accumulator>value){
+         return accumulator;
+     }else{
+         return value
+     }
+ }
+ console.log(max);
+
+ //------------------------------------------------------------------
+
+ const store =[
+    {
+        name:"Laptop",
+        price:1000,
+        count:5
+    },
+    {
+        name:"Desktop",
+        price:1500,
+        count:2
+    },
+    {
+        name:"Phone",
+        price:500,
+        count:10
+    }
+];
+
+let totalValueStore = store.reduce((acc, item) => acc + (item.count*item.price),0)
+console.log(totalValueStore)
+
 /****************************************************
  * ARRAY Metodlari -shift      let newArray = arrayadi.       (foksiyonadi) 
  *                 -unshift    arrayAdi.         (value=>value%2===0)

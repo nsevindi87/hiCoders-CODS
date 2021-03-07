@@ -526,11 +526,20 @@ console.log(products);
   */
 
 /****************************************************
- * ARRAY Metodlari -shift      let newArray = arrayadi.       (foksiyonadi) 
- *                 -unshift    arrayAdi.         (value=>value%2===0)
+ * ARRAY Metodlari join      let newArray = arrayadi.       (foksiyonadi) 
+ *                           arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 
  * ************************************************ */
+let countries =["Romania", "USA", "India"];
+
+let res = countries.join(", ");  //(" - ") (" ")
+console.log("I want to visit " + res)
+
+
+
+
+
 /****************************************************
  * ARRAY Metodlari - toString  let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)

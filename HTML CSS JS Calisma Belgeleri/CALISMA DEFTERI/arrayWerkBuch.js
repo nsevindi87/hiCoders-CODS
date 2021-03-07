@@ -274,8 +274,15 @@ console.log(nums)
 
 /* let language = ["englisch", "deutsch"];
 let language2 = ["türkisch", "spanisch"];
-let allLanguages = language.concat(language2)
+let language3 =["asd", "defe"]
+let allLanguages = language.concat(language2,language3)
 console.log(allLanguages)
+
+//--------------------------------------------------------------
+
+let a =[1,2,3];
+let b = a.concat(4,5,6);
+console.log(b)               
  */
 
 

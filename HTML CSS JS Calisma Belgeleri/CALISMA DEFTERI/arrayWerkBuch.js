@@ -301,7 +301,24 @@ let controll = sayilar.every(age => age>=18);
 
 console.log(controll); */
 
-
+//----------------------------------------------------------------------------------------------
+let persons =[
+    {
+        name:"Florin"
+    },
+    {
+        name:"Ivan"
+    },
+    {
+        name:"Liam"
+    },
+    {
+        name:"Jai"
+        //surname:"jai" False
+    },
+]
+let res = persons.every(person => person.name!==undefined);
+console.log(res);
 
 
 /********************************************************************************************************************************************
@@ -612,11 +629,26 @@ console.log(arabalar); */
 
 
 /********************************************************************************************************************************************
- * ARRAY Metodlari -      let newArray = arrayadi.       (foksiyonadi) 
+ * ARRAY Metodlari -  indexOf    let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 
  * **************************************************************************************************************************************** */
+/*  let numbers =[1,2,3];
+ let idx = numbers.indexOf(1);
+ if(idx>-1){
+     console.log( "hey we have number")
+ }else{
+    console.log( "Leider")
+ }
+ */
+
+
+
+
+
+
+
 /********************************************************************************************************************************************
  * ARRAY Metodlari -   let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)

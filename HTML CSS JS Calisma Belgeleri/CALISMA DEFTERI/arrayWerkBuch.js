@@ -160,6 +160,36 @@ days.forEach(function(element, index){
 });
 console.log(newDays)
 
+//------------------------------------------------------------------------
+
+let count = 0;
+
+const value = document.querySelector("#value");
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+        const styles = e.currentTarget.classList;
+        if (styles.contains("decrease")) {
+            count--;
+        } else if (styles.contains("increase")) {
+            count++;
+        } else {
+            count = 0;
+        }
+        if (count > 0) {
+            value.style.color = "green";
+        }
+        if (count < 0) {
+            value.style.color = "red";
+        }
+        if (count === 0) {
+            value.style.color = "#222";
+        }
+        value.textContent = count;
+    })
+})
+
 */
 
 /********************************************************************************************************************************************
@@ -472,8 +502,8 @@ let totalValueStore = store.reduce((acc, item) => acc + (item.count*item.price),
 console.log(totalValueStore) */
 
 /********************************************************************************************************************************************
- * ARRAY Metodlari - slice   let newArray = arrayadi.slice(1,4) 
- *                           // arry icindeki belli itemlarin secilmesi
+ * ARRAY Metodlari - slice   let newArray = arrayadi.slice(1,4)   //substring de ayni ise yarar(sadece negatif deger kabul etmez)
+ *                           // arry icindeki belli itemlarin secilmesi - Negatif degerde sondan saymaya baslar
  *                           // yeni bir array olusturur
  * **************************************************************************************************************************************** */
 /*  let sayilar2 = [34,53,55,18,45];
@@ -651,9 +681,9 @@ console.log(arabalar); */
 
 /********************************************************************************************************************************************
  * ARRAY Metodlari -  indexOf    let newArray = arrayadi.       (foksiyonadi) 
- *                             arrayAdi.         (value=>value%2===0)
- *                             // 
- *                             // 
+ *                lastIndexOf   
+ *                             // aranandegerin ilk ve son bulundugu yeri verir
+ *                             // deger bulunmazsa - degeri verir
  * **************************************************************************************************************************************** */
 /*  let numbers =[1,2,3];
  let idx = numbers.indexOf(1);
@@ -714,7 +744,7 @@ console.log(res)
 
 
 /********************************************************************************************************************************************
- * ARRAY Metodlari -   let newArray = arrayadi.       (foksiyonadi) 
+ * ARRAY Metodlari -    let newArray = arrayadi.       (foksiyonadi) 
  *                             arrayAdi.         (value=>value%2===0)
  *                             // 
  *                             // 

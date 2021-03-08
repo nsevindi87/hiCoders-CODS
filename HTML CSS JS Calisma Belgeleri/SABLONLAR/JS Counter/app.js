@@ -1,4 +1,11 @@
-//set initiak count
+/**BURADA NE VAR
+ * Bütün .btn classlari secme 
+ * Bütün .btn classlarinin gelmesini addeventListener ile durdurma ve click eventinden sonra gelmesini saglama
+ * ve hangi butona tiklandi ise onun bütün classlarini getirtme
+ * Bu classlari bir degiskene atama
+ * Bu degiskendeki classlardan birsey icermesi halinde bir event atama
+ */
+//set initial count
 let count = 0;
 
 //select value and buttons

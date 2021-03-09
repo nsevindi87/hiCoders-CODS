@@ -7,8 +7,8 @@ document.querySelector("#btn-add-user").addEventListener("click", addUser);//1 -
 function addUser(pEvent){
     pEvent.preventDefault();
     let person = getPerson(); //2- selektorler ile baglanti kurup degerlerini degiskene atadik.
-    addPersonToList(person);  //3- atadigimiz degiskeni ilk personListe push ladik.
     validatePerson(person);
+    addPersonToList(person);  //3- atadigimiz degiskeni ilk personListe push ladik.
 
      //render
      renderUI(personList);  //resultin icine olusturdugumuz tabloyu koyuyoruz.

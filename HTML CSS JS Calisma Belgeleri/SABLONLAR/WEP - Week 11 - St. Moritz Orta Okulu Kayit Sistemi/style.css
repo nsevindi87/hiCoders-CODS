@@ -1,0 +1,20 @@
+main{
+    width: 75vw;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+}
+section{
+    border: 1px solid black;
+    width: 45%;
+}
+
+#urunForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 20px auto;
+}
+#submit{
+    margin-top: 10px;
+}

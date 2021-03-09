@@ -1,18 +1,44 @@
-.container-1 {
-  border: 1px solid black;
-  text-align: center;
-}
-.flex-box-container-1 {
-  border: 1px solid black;
-  padding: 10px;
+body {
+  min-height: 100vh;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  color: black;
+  font-family: "calibri", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 
-.flex-box-container-1 div {
-  display: flex;
-  padding: 10px;
-  border: 1px solid black;
+.container {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  flex: 0 0 80%;
+}
+
+#btn {
+  border: none;
+  color: cornsilk;
+  background: darkcyan;
+  font-size: 1.3rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: darkolivegreen;
+}
+
+#yazi {
+  background: rgb(170, 235, 213);
+  border-left: rgb(92, 39, 39);
+  margin: 1.5rem;
+  padding: 0.5rem;
+}
+
+#yazar {
+  color: darkolivegreen;
 }

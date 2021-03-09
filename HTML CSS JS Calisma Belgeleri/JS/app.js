@@ -1,17 +1,18 @@
-let btn = document.querySelector(".btn");
-let bdy = document.querySelector(".bdy");
-
-let color = ["red", "blue", "yellow", "orange"];
-
-btn.addEventListener("click", change);
-
-function change(){
-    
-
-   bdy.style.backgroundColor = color[degistirRenk()]
-};
-
-function degistirRenk(){
-    return Math.floor(Math.random()*color.length)
-
-}   
+const yazilar = [
+    {
+        name:"king",
+        quote:" fuga nihil fugiat?"
+    },
+    {
+        name: "Queen",
+        quote: "Lorem ipsum dolor sit amet consectetur "  
+    },
+    {
+        name:"Kral",
+        quote:"adipisicing elit. Amet ab totam molestias nisi sint placeat"
+    },
+    {
+        name:"Kralice",
+        quote:"vero aliquid eligendi voluptate quidem quod error"
+    },
+]

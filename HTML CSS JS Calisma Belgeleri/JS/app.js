@@ -14,4 +14,4 @@ function change(){
 function degistirRenk(){
     return Math.floor(Math.random()*color.length)
 
-}
+}   

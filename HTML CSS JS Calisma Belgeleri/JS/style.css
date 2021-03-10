@@ -3,7 +3,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./background.JPGS) center/cover no-repeat;
+  background: url(./background.JPG) center/cover no-repeat;
 }
 
 .images {

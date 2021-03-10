@@ -3,14 +3,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./_DSC9420.JPG) center/cover no-repeat;
+  background: url(./background.JPGS) center/cover no-repeat;
 }
 
 .images {
   background: yellow;
   flex: 0 0 80%;
   min-height: 70vh;
-  background: url(./_DSC9287.JPG) center/cover no-repeat;
+  background: url(./bcg-1.JPG) center/cover no-repeat;
   border-radius: 15px;
   box-shadow: 5px 10px black;
   position: relative;

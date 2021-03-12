@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  border-bottom: 0.3remsolid #6baa75;
+  border-bottom: 0.3rem solid #6baa75;
 }
 
 .navbar_btn {
@@ -28,9 +28,25 @@
   transition: all 2sn ease;
 }
 
+.change .bar1 {
+  transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
 .navbar_links {
   list-style-type: none;
   transition: all 2sn ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.navbar_collapse {
+  height: 240px;
 }
 
 .navbar_single-link {
@@ -41,7 +57,7 @@
   text-decoration: none;
   text-transform: capitalize;
   color: #6baa75;
-  transition: all 2sn ease;
+  transition: all 1sn ease;
   cursor: pointer;
 }
 
@@ -50,6 +66,7 @@
   background: #545454;
 }
 
-header {
+.navbar {
+  min-height: 100vh;
   background: url("./DSC07557.jpg") center/cover no-repeat;
 }

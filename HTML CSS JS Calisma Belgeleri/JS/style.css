@@ -4,62 +4,52 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
+.navbar_header {
+  background: #545454;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 0.3remsolid #6baa75;
 }
 
-.calculator {
-  flex: 0 0 95%;
+.navbar_btn {
+  align-self: center;
+  border: 5px solid #6baa75;
+  cursor: pointer;
 }
 
-.screen {
-  width: 100%;
-  font-size: 7rem;
-  padding: 0.5rem;
-  background: rgb(41, 41, 56);
-  color: white;
-  border: none;
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: #6baa75;
+  transition: all 2sn ease;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  transition: all 0.5s linear;
+.navbar_links {
+  list-style-type: none;
+  transition: all 2sn ease;
 }
 
-button {
-  flex: 0 0 25%;
-  border: 1px solid black;
-  padding: 0.25rem 0;
-  transition: all 2s ease;
+.navbar_single-link {
+  display: block;
+  background: #69747c;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #6baa75;
+  transition: all 2sn ease;
+  cursor: pointer;
 }
 
-button:hover {
-  background: blue;
+.navbar_single-link:hover {
+  padding-left: 1.5rem;
+  background: #545454;
 }
 
-.btn-yellow {
-  background: rgb(254, 146, 62);
-  color: white;
-}
-
-.btn-grey {
-  background: rgb(224, 224, 224);
-}
-
-.btn,
-.btn-equal,
-.btn-clear {
-  font-size: 4rem;
-}
-
-.btn-equal {
-  background: green;
-}
-
-.btn-clear {
-  background: red;
+header {
+  background: url("./DSC07557.jpg") center/cover no-repeat;
 }

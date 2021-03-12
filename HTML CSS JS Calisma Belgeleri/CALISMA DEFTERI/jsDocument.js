@@ -9,7 +9,7 @@ document.getElementsByClassName("class").addEventListener("click", fonksiyonAdi)
 document.getElementsByClassName("class").addEventListener("mousemove", fonksiyonAdi)
 document.getElementById("id").style.width = document.getElementById("id").value
 document.getElementById("id").style.cssText = `width:${document.getElementById("id").value}`
-
+document.querySelector(".class").getAttribute("data-num");
 
 
 window.addEventListener("scroll", fonksiyonAdi)
